@@ -25,7 +25,6 @@
       display:flex;
       gap: 8px;
       align-items: center;
-      font-size: var(--14px);
       transition: all .3s;
       cursor: pointer;
       padding: 4px 16px 4px 8px;

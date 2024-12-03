@@ -5,14 +5,13 @@ import Chatting from "./tools/Chatting";
 import Phone from "./tools/phone/Phone";
 import Tips from "./tools/Tips";
 
-
 export default function ToolPanel(props:any) {
   return (
     <div class={`tool-panel ${props.selectedNav().length ? 'active' : ''}`}>
       <div class="tool-panel-header">
-        <div>{props.selectedNav()}</div>
+        <div class="panel-title">{props.selectedNav()}</div>
         <button class="close-icon" onClick={() => props.setSelectedNav('')}>
-          <i class="fa-solid fa-circle-xmark fa-xl"></i>
+          <i class="fa-solid fa-xmark fa-xl"></i>
         </button>
       </div>
       <Switch>

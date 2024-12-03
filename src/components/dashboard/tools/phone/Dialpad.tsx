@@ -27,7 +27,6 @@ export default function DialPad() {
   const handleCall = (): void => {
     if (displayValue().trim()) {
       alert(`Calling ${displayValue()}`);
-      // In a real app, you'd integrate with a calling service
     }
   };
 
@@ -49,12 +48,14 @@ export default function DialPad() {
       />
       <div class="dial-pad">
         {dialPadKeys.map(num => (
-          <button 
-            class="key"
-            onClick={() => handleKeyPress(num)}
-          >
-            {num}
-          </button>
+          <div class="number-button">
+            <button 
+              class="key"
+              onClick={() => handleKeyPress(num)}
+            >
+              {num}
+            </button>
+          </div>
         ))}
         <div class="action-row">
             <button class="key action-key" onClick={handleDelete}>

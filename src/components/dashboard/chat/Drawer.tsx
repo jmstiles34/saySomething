@@ -1,6 +1,6 @@
 import { createEffect, createSignal, For, Match, Show, Switch } from "solid-js";
 import "./Drawer.css";
-import Stakeholders from "../tipDashboard/stakeholders/Stakeholders";
+import Stakeholders from "./Stakeholders";
 
 export default function Drawer(props:any) {
   return (

@@ -1,6 +1,6 @@
 import { createSignal, For, Show } from 'solid-js';
 import { format } from 'date-fns';
-import case from "./Tips.css";
+import styles from "./Tips.module.css";
 import { tips } from '/src/data/tipData.json';
 
 export default function Tips(props:any) {
@@ -23,29 +23,29 @@ export default function Tips(props:any) {
       tips: tips.filter(t => t.assignedTo === "")
     }
   ];
- 
+
   return (
-    <div class="Case.case-wrapper">
-      <div class="Case.search-container">
-        <div class="Case.search-box">
-          <div class="Case.search-icon">
+    <div class={styles.tipsWrapper}>
+      <div class={styles.searchContainer}>
+        <div class={styles.searchBox}>
+          <div class={styles.searchIcon}>
             <i class="fa fa-magnifying-glass fa-lg"></i>
           </div>
-          <div class="Case.search-field">
-            <input class="Case.search-input" placeholder="Search tips" name="searchValue" />
+          <div class={styles.searchField}>
+            <input class={styles.searchInput} placeholder="Search tips" name="searchValue" />
           </div>
           <div></div>
         </div>
         <div>
-          <button class="Case.new-tip">New Tip</button>
+          <button class={styles.newTip}>New Tip</button>
         </div>
       </div>
  
-      <div class="Case.tabs-header">
+      <div class={styles.tabsHeader}>
         <For each={groupedTips}>
           {(tab, index) => (
             <button
-              class={`Case.tab-button ${activeTab() === index() ? 'active' : ''}`}
+              class={`styles.tabButton ${activeTab() === index() ? 'active' : ''}`}
               onClick={() => setActiveTab(index)}
             >
               {tab.label} ({tab.tips.length})
@@ -53,28 +53,28 @@ export default function Tips(props:any) {
           )}
         </For>
       </div>
-
-      <div class="Case.tip-list">
+ 
+      <ul class={styles.tipList}>
         <For each={groupedTips[activeTab()].tips}>
           {(tip, index) => (
-            <div class="Case.tip-card">
-              <div class="Case.tip-card-col">
+            <li class={styles.tipCard}>
+              <div>
                 <div>{tip.tipId}</div>
                 <div>Event: {tip.tipType}</div>
                 <div>Status: {tip.status}</div>
               </div>
-              <div class="Case.tip-card-col Case.align-end">
+              <div class={styles.rightCol}>
                 <div>{format(tip.submittedAt, 'MM/dd/yyyy hh:mm aa')}</div>
                 <Show when={tip.lifeSafety}>
-                  <div class="Case.danger">
-                    <i class="fa-solid fa-triangle-exclamation fa-xl"/>
+                  <div class={styles.dangerIcon}>
+                    <i class="fa-solid fa-triangle-exclamation fa-2xl"/>
                   </div>
                 </Show>
               </div>
-            </div>
+            </li>
           )}
         </For>
-      </div>
+      </ul>
     </div>
   );
 }

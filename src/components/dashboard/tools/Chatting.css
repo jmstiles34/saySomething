@@ -23,7 +23,6 @@ textarea {
 }
 .message-send {
   color: var(--color-white);
-  font-size: var(--15px);
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;

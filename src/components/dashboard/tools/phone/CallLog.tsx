@@ -14,7 +14,7 @@ export default function CallLog(props:any) {
             <div class="call-card-col">
               <div>{formatPhoneNumber(call.callerNumber)}</div>
               <div class="call-card-row">
-                <img src={`icons/call-${call.callType.toLowerCase()}.svg`} alt={`${call.callType} icon`} class="call-type" />
+                <img src={`/src/assets/icons/call-${call.callType.toLowerCase()}.svg`} alt={`${call.callType} icon`} class="call-type" />
                 {formatCallDuration(call.duration)}
               </div>
             </div>

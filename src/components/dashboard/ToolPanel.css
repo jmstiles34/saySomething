@@ -1,9 +1,8 @@
 .tool-panel {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto minmax(0, 1fr);
   gap:1rem;
-  height: 100%;
   margin-left: -350px;
   width: 350px;
   background-color: var(--color-white);
@@ -17,7 +16,10 @@
 
 .tool-panel-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
+}
+
+.panel-title {
   font-size: var(--h5);
 }
 

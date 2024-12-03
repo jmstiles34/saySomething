@@ -1,39 +1,37 @@
-.case-wrapper {
+.tipsWrapper {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr;
   gap: 1rem;
 }
 
-.search-container {
+.searchContainer {
   display: flex;
   gap: 16px;
 }
 
-.search-box {
+.searchBox {
   display: grid;
   grid-template-columns: 30px 1fr 30px;
   border: 1px solid var(--color-bg);
   border-radius: 4px;
 }
 
-.search-icon {
+.searchIcon {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-gray-75)
+  color: var(--color-gray-75);
 }
-
-.search-input {
+ 
+.searchInput {
   border: none;
   padding: 4px;
   outline: none;
-  font-size: var(--14px);
 }
 
-.new-tip {
+.newTip {
   color: var(--color-white);
-  font-size: var(--14px);
   cursor: pointer;
   font-weight: bold;
   background: var(--color-ltgreen);
@@ -46,28 +44,27 @@
 }
 
 /* TAB LIST */
-.tabs-header {
+.tabsHeader {
   display: flex;
   justify-content: space-around;
 }
 
-.tab-button {
+.tabButton {
   padding: 8px 16px;
   border: none;
   background: none;
   cursor: pointer;
-  font-size: var(--14px);
   border-bottom: 2px solid transparent;
   transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--color-dkgray);
+    border-radius: 4px;
+    background: var(--color-bg);
+  }
 }
 
-.tab-button:hover {
-  color: var(--color-dkgray);
-  border-radius: 4px;
-  background: var(--color-bg);
-}
-
-.tab-button.active {
+.tab-Button.active {
   color: var(--color-dkgray);
   border-bottom-color: var(--color-burntorange);
 
@@ -76,7 +73,7 @@
   }
 }
 
-.tip-list {
+.tipList {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -85,10 +82,11 @@
   padding: 8px;
 }
 
-.tip-card {
+.tipCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid var(--color-bg);
   border-radius: 4px;
-  display: flex;
   font-size: .75rem;
   padding: 4px;
 
@@ -97,16 +95,13 @@
   }
 }
 
-.tip-card-col {
+.rightCol {
+  justify-self: end;
+}
+
+.dangerIcon {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.align-end {
-  align-items: end;
-}
-
-.danger {
   color: var(--color-burntorange);
+  justify-content: end;
+  margin-top: 16px;
 }

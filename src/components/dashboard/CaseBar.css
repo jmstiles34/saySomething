@@ -1,7 +1,7 @@
 .caseBar {
   display: flex;
   background-color: var(--color-ltgreen);
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 .case-button {
@@ -9,7 +9,6 @@
   border: none;
   background: none;
   cursor: pointer;
-  font-size: var(--14px);
   border-right: 1px solid var(--color-white);
   transition: all 0.2s ease;
   color: var(--color-white);
