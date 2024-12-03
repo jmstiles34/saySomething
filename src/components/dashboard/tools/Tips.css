@@ -1,0 +1,112 @@
+.case-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  gap: 1rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 16px;
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  border: 1px solid var(--color-bg);
+  border-radius: 4px;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-gray-75)
+}
+
+.search-input {
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: var(--14px);
+}
+
+.new-tip {
+  color: var(--color-white);
+  font-size: var(--14px);
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--color-ltgreen);
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  &:hover {
+    background-color: var(--color-dkgreen);
+  }
+}
+
+/* TAB LIST */
+.tabs-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: var(--14px);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  color: var(--color-dkgray);
+  border-radius: 4px;
+  background: var(--color-bg);
+}
+
+.tab-button.active {
+  color: var(--color-dkgray);
+  border-bottom-color: var(--color-burntorange);
+
+  &:hover {
+    background: none;
+  }
+}
+
+.tip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+.tip-card {
+  border: 1px solid var(--color-bg);
+  border-radius: 4px;
+  display: flex;
+  font-size: .75rem;
+  padding: 4px;
+
+  &:hover {
+    background-color: var(--color-bg);
+  }
+}
+
+.tip-card-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.danger {
+  color: var(--color-burntorange);
+}

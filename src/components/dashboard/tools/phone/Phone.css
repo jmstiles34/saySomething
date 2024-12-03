@@ -1,0 +1,73 @@
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.search-container2 {
+  display: flex;
+  gap: 8px;
+  padding-left: 16px;
+  align-items: center;
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  border: 1px solid var(--color-bg);
+  border-radius: 4px;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-gray-75)
+}
+
+.search-input {
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: var(--14px);
+}
+
+.filter-select {
+  border: 1px solid var(--color-bg);
+  padding: 4px;
+  font-size: var(--14px);
+  border-radius: 4px;
+  outline: none;
+}
+
+/* TAB LIST */
+.tabs-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: var(--14px);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  color: var(--color-dkgray);
+  border-radius: 4px;
+  background: var(--color-bg);
+}
+
+.tab-button.active {
+  color: var(--color-dkgray);
+  border-bottom-color: var(--color-burntorange);
+
+  &:hover {
+    background: none;
+  }
+}

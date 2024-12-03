@@ -1,0 +1,83 @@
+/* styles.css */
+.dial-pad-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--color-bg);
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  margin: 16px auto
+}
+
+.display {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid var(--color-bg);
+  border-radius: 8px;
+  background: var(--color-white);
+  letter-spacing: 2px;
+}
+
+.dial-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  font-size: 20px;
+  border: 1px solid var(--color-bg);
+  border-radius: 50%;
+  background: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.key:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.key:active {
+  background: #d0d0d0;
+  transform: translateY(0);
+}
+
+.action-row {
+  grid-column: span 3;
+  display: flex;
+  gap: 8px;  
+}
+.action-key {
+  font-size: 16px;
+  background: #e8e8e8;
+  border-radius: 8px;
+  width: 100%;
+  aspect-ratio: 3;
+}
+
+.action-key:hover {
+  background: #d8d8d8;
+}
+
+.call-key {
+  background-color: var(--color-dkgreen);
+  color: var(--color-white);
+  font-weight: bold;
+  grid-column: span 3;
+  aspect-ratio: 5;
+  border-radius: 8px;
+}
+
+.call-key:hover {
+  background-color: var(--color-ltgreen);
+}

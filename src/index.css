@@ -1,0 +1,150 @@
+:root {
+  /*COLORS*/
+	--color-aquablue: hsl(190, 54%, 51%);
+  --color-aquablue-25: hsla(190, 54%, 51%, .25);
+  --color-bg: hsl(0, 0%, 90%);
+  --color-burntorange: hsl(14, 54%, 51%);
+  --color-gray: hsl(0, 0%, 70%);
+  --color-gray-25: hsla(0, 0%, 70%, .25);
+  --color-gray-75: hsla(0, 0%, 70%, .75);
+  --color-dkgray: hsl(0, 0%, 20%);
+  --color-dkgray-20: hsla(0, 0%, 20%, .2);
+  --color-dkgray-50: hsla(0, 0%, 20%, .50);
+  --color-dkgray-75: hsla(0, 0%, 20%, .75);
+	--color-dkgreen: hsl(148, 100%, 29%);
+	--color-ltgreen: hsl(85, 54%, 51%);
+  --color-ltgreen-25: hsla(85, 54%, 51%, .25);
+  --color-text: hsl(0, 0%, 30%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-yellow: hsl(51, 100%, 50%);
+
+  /* fonts */
+  --sans-serif: "Lato", sans-serif;
+  --primary-font: "Roboto", serif;
+  --secondary-font: "Roboto-Slab", serif;
+  --tertiary-font: "Varela Round", serif;
+
+  --base-size: 1rem;
+  --scale: 1.25;
+  --h1: calc(var(--h2) * var(--scale));
+  --h2: calc(var(--h3) * var(--scale));
+  --h3: calc(var(--h4) * var(--scale));
+  --h4: calc(var(--h5) * var(--scale));
+  --h5: calc(var(--h6) * var(--scale));
+  --h6: var(--base-size);
+}
+
+@layer reset {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--sans-serif);
+    font-size: var(--base-size);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    color: currentColor;
+  }
+
+  button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:not(:disabled):active {
+    transform: translateY(1px);
+  }
+  
+  button:disabled {
+    background-color: var(--color-gray-700);
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--h1);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--h2);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--h3);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--h4);
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--h5);
+  }
+
+  h6,
+  .h6 {
+    font-size: var(--h6);
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  :not([class]) {
+    h1&, h2&, h3&, h4&, h5&, h6& {
+      margin-block: 0.75em;
+      line-height: 1.25;
+      text-wrap: balance;
+      letter-spacing: -0.05ch;
+    }
+
+    p&, ol&, ul& {
+      margin-block: 1em;
+    }
+
+    ol&, ul& {
+      padding-inline-start: 1.5em;
+      list-style: revert;
+    }
+
+    li& {
+      margin-block: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "contacts": [
+    {
+      "id": "01",
+      "name": "Alice Johnson",
+      "title": "Principal",
+      "school": "Bright Future Academy",
+      "email": "alice.johnson@brightfuture.edu",
+      "cell_phone": "555-123-4567",
+      "work_phone": "555-987-6543",
+      "team_lead": false
+    },
+    {
+      "id": "02",
+      "name": "Robert Smith",
+      "title": "Vice Principal",
+      "school": "Bright Future Academy",
+      "email": "robert.smith@brightfuture.edu",
+      "cell_phone": "555-223-4567",
+      "work_phone": "555-987-6544",
+      "team_lead": false
+    },
+    {
+      "id": "03",
+      "name": "Maria Gonzalez",
+      "title": "School Counselor",
+      "school": "Bright Future Academy",
+      "email": "maria.gonzalez@brightfuture.edu",
+      "cell_phone": "555-323-4567",
+      "work_phone": "555-987-6545",
+      "team_lead": true
+    },
+    {
+      "id": "04",
+      "name": "James Lee",
+      "title": "Math Teacher",
+      "school": "Bright Future Academy",
+      "email": "james.lee@brightfuture.edu",
+      "cell_phone": "555-423-4567",
+      "work_phone": "555-987-6546",
+      "team_lead": true
+    },
+    {
+      "id": "05",
+      "name": "Sarah Brown",
+      "title": "English Teacher",
+      "school": "Bright Future Academy",
+      "email": "sarah.brown@brightfuture.edu",
+      "cell_phone": "555-523-4567",
+      "work_phone": "555-987-6547",
+      "team_lead": false
+    },
+    {
+      "id": "06",
+      "name": "Emily Davis",
+      "title": "Science Teacher",
+      "school": "Bright Future Academy",
+      "email": "emily.davis@brightfuture.edu",
+      "cell_phone": "555-623-4567",
+      "work_phone": "555-987-6548",
+      "team_lead": false
+    },
+    {
+      "id": "07",
+      "name": "John Wilson",
+      "title": "History Teacher",
+      "school": "Bright Future Academy",
+      "email": "john.wilson@brightfuture.edu",
+      "cell_phone": "555-723-4567",
+      "work_phone": "555-987-6549",
+      "team_lead": false
+    },
+    {
+      "id": "08",
+      "name": "Nancy Clark",
+      "title": "Special Education Coordinator",
+      "school": "Bright Future Academy",
+      "email": "nancy.clark@brightfuture.edu",
+      "cell_phone": "555-823-4567",
+      "work_phone": "555-987-6550",
+      "team_lead": false
+    },
+    {
+      "id": "09",
+      "name": "Karen Harris",
+      "title": "Art Teacher",
+      "school": "Bright Future Academy",
+      "email": "karen.harris@brightfuture.edu",
+      "cell_phone": "555-923-4567",
+      "work_phone": "555-987-6551",
+      "team_lead": false
+    },
+    {
+      "id": "10",
+      "name": "Michael Thomas",
+      "title": "Music Teacher",
+      "school": "Bright Future Academy",
+      "email": "michael.thomas@brightfuture.edu",
+      "cell_phone": "555-123-5678",
+      "work_phone": "555-987-6552",
+      "team_lead": false
+    },
+    {
+      "id": "11",
+      "name": "Laura Moore",
+      "title": "PE Teacher",
+      "school": "Bright Future Academy",
+      "email": "laura.moore@brightfuture.edu",
+      "cell_phone": "555-223-5678",
+      "work_phone": "555-987-6553",
+      "team_lead": false
+    },
+    {
+      "id": "12",
+      "name": "Richard Martin",
+      "title": "Technology Coordinator",
+      "school": "Bright Future Academy",
+      "email": "richard.martin@brightfuture.edu",
+      "cell_phone": "555-323-5678",
+      "work_phone": "555-987-6554",
+      "team_lead": false
+    },
+    {
+      "id": "13",
+      "name": "Jessica Garcia",
+      "title": "Librarian",
+      "school": "Bright Future Academy",
+      "email": "jessica.garcia@brightfuture.edu",
+      "cell_phone": "555-423-5678",
+      "work_phone": "555-987-6555",
+      "team_lead": false
+    },
+    {
+      "id": "14",
+      "name": "Daniel Miller",
+      "title": "Head of Maintenance",
+      "school": "Bright Future Academy",
+      "email": "daniel.miller@brightfuture.edu",
+      "cell_phone": "555-523-5678",
+      "work_phone": "555-987-6556",
+      "team_lead": false
+    },
+    {
+      "id": "15",
+      "name": "Patricia Rodriguez",
+      "title": "School Nurse",
+      "school": "Bright Future Academy",
+      "email": "patricia.rodriguez@brightfuture.edu",
+      "cell_phone": "555-623-5678",
+      "work_phone": "555-987-6557",
+      "team_lead": false
+    }
+  ]
+}

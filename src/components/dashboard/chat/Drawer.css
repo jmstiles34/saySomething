@@ -1,0 +1,33 @@
+.drawer {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: var(--color-white);
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.drawer.active {
+  right: 0;
+  box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.3);
+  -webkit-box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: -4px 0px 8px 0px rgba(0,0,0,0.3);
+}
+
+.drawer-content {
+  margin-top: 44px;
+  display: flex;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+
+}
+
+.case-bar {
+  background-color: var(--color-ltgreen);
+  padding-left: 1.5rem;
+}
