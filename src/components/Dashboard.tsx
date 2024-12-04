@@ -8,17 +8,17 @@ import Chat from "./dashboard/chat/Chat";
 
 export default function Dashboard() {
   const [selectedNav, setSelectedNav] = createSignal("");
-  const [activeTipId, setActiveTipId] = createSignal<string | null>(null);
+  const [activeTipId, setActiveTipId] = createSignal<string | null>('TIP-011');
   const [activeCase, setActiveCase] = createSignal<Tip | null>(null);
 
   return (
     <main>
       <BurgerButton setSelectedNav={setSelectedNav} />
       <CaseBar activeTipId={activeTipId} setActiveCase={setActiveCase} setActiveTipId={setActiveTipId} />
-      <ToolPanel selectedNav={selectedNav} setSelectedNav={setSelectedNav} />
+      <ToolPanel selectedNav={selectedNav} setSelectedNav={setSelectedNav} activeTipId={activeTipId} setActiveCase={setActiveCase} setActiveTipId={setActiveTipId} />
       <div class="tip-dash-chat">
         <Chat target="reporter" tipId={activeTipId()} case={activeCase()} />
-        <Chat target="team" tipId={activeTipId()} />
+        <Chat target="team" tipId={activeTipId()} case={activeCase()} />
       </div>
     </main>
   );

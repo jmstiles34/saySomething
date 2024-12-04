@@ -1,6 +1,17 @@
+export interface Contact {
+  id: string, 
+  name: string,
+  title: string,
+  school: string,
+  email: string,
+  cell_phone: string,
+  work_phone: string,
+  team_lead: boolean
+}
+
 export interface User {
   id: number;
-  displayName:string;
+  displayName: string;
   role: string;
   status: number;
   title: string;
@@ -10,7 +21,7 @@ export interface Message {
   id: number;
   text: string;
   user: User;
-  timestamp: string;
+  timestamp: Date;
 }
 
 export interface Tip {
@@ -20,4 +31,5 @@ export interface Tip {
   submittedAt: string;
   tipType: string;
   assignedTo: string;
+  stakeholders: string[];
 }

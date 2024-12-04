@@ -45,7 +45,7 @@ export default function Tips(props:any) {
         <For each={groupedTips}>
           {(tab, index) => (
             <button
-              class={`styles.tabButton ${activeTab() === index() ? 'active' : ''}`}
+              class={`${styles.tabButton} ${activeTab() === index() ? styles.active : ''}`}
               onClick={() => setActiveTab(index)}
             >
               {tab.label} ({tab.tips.length})
@@ -57,7 +57,7 @@ export default function Tips(props:any) {
       <ul class={styles.tipList}>
         <For each={groupedTips[activeTab()].tips}>
           {(tip, index) => (
-            <li class={styles.tipCard}>
+            <li class={`${styles.tipCard} ${props.activeTipId() === tip.tipId ? styles.tipActive : ''}`} onClick={() => props.setActiveTipId(tip.tipId)}>
               <div>
                 <div>{tip.tipId}</div>
                 <div>Event: {tip.tipType}</div>

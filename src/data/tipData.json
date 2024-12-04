@@ -6,7 +6,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-15T09:23:41Z",
           "tipType": "Cutting / Self-Harm",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-002", 
@@ -14,7 +15,8 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-16T11:45:22Z", 
           "tipType": "Bullying",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["01","05","08","15"]
       },
       {
           "tipId": "TIP-003",
@@ -22,7 +24,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-14T14:12:05Z",
           "tipType": "Vaping",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-004",
@@ -30,7 +33,8 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-17T08:30:15Z",
           "tipType": "Depression",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["02","04","05","26"]
       },
       {
           "tipId": "TIP-005",
@@ -38,7 +42,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-15T16:55:33Z",
           "tipType": "Substance Abuse",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["03","07","09","13"]
       },
       {
           "tipId": "TIP-006",
@@ -46,7 +51,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-16T13:22:47Z",
           "tipType": "Theft / Crime",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-007",
@@ -54,7 +60,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-18T10:11:29Z",
           "tipType": "Bullying",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","06","07","08"]
       },
       {
           "tipId": "TIP-008",
@@ -62,7 +69,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-14T17:44:56Z",
           "tipType": "Cutting / Self-Harm",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["01","02","03","04"]
       },
       {
           "tipId": "TIP-009",
@@ -70,7 +78,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-15T12:33:10Z",
           "tipType": "Vaping",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-010",
@@ -78,7 +87,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-16T15:01:37Z",
           "tipType": "Depression",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","03","07","14"]
       },
       {
           "tipId": "TIP-011",
@@ -86,7 +96,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-17T09:47:22Z",
           "tipType": "Substance Abuse",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["04","07","10","13"]
       },
       {
           "tipId": "TIP-012",
@@ -94,7 +105,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-14T16:20:05Z",
           "tipType": "Theft / Crime",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-013",
@@ -102,15 +114,17 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-15T14:55:41Z",
           "tipType": "Bullying",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-014",
           "status": "in-progress",
-          "lifeSafety": false,
+          "lifeSafety": true,
           "submittedAt": "2024-03-16T11:30:19Z",
           "tipType": "Cutting / Self-Harm",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["15","10","05","01"]
       },
       {
           "tipId": "TIP-015",
@@ -118,7 +132,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-17T13:42:33Z",
           "tipType": "Vaping",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-016",
@@ -126,7 +141,8 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-14T15:17:50Z",
           "tipType": "Depression",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-017",
@@ -134,7 +150,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-15T10:05:27Z",
           "tipType": "Substance Abuse",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["02","03","04","05"]
       },
       {
           "tipId": "TIP-018",
@@ -142,7 +159,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-16T16:33:44Z",
           "tipType": "Theft / Crime",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-019",
@@ -150,7 +168,8 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-18T14:22:56Z",
           "tipType": "Bullying",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-020",
@@ -158,7 +177,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-14T18:45:12Z",
           "tipType": "Cutting / Self-Harm",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["11","12","13","14"]
       },
       {
           "tipId": "TIP-021",
@@ -166,7 +186,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-15T13:11:39Z",
           "tipType": "Vaping",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-022",
@@ -174,7 +195,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-16T12:48:05Z",
           "tipType": "Depression",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-023",
@@ -182,7 +204,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-17T15:56:30Z",
           "tipType": "Substance Abuse",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["06","07","08","09"]
       },
       {
           "tipId": "TIP-024",
@@ -190,7 +213,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-14T19:33:17Z",
           "tipType": "Theft / Crime",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-025",
@@ -198,7 +222,8 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-15T11:20:44Z",
           "tipType": "Bullying",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-026",
@@ -206,7 +231,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-16T14:37:51Z",
           "tipType": "Cutting / Self-Harm",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["08","09","10","11"]
       },
       {
           "tipId": "TIP-027",
@@ -214,7 +240,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-17T16:45:03Z",
           "tipType": "Vaping",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       },
       {
           "tipId": "TIP-028",
@@ -222,7 +249,8 @@
           "lifeSafety": true,
           "submittedAt": "2024-03-14T20:11:26Z",
           "tipType": "Depression",
-          "assignedTo": "team"
+          "assignedTo": "team",
+          "stakeholders": ["01","04","10","14"]
       },
       {
           "tipId": "TIP-029",
@@ -230,7 +258,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-15T17:52:39Z",
           "tipType": "Substance Abuse",
-          "assignedTo": "mine"
+          "assignedTo": "mine",
+          "stakeholders": ["01","02","03","04"]
       },
       {
           "tipId": "TIP-030",
@@ -238,7 +267,8 @@
           "lifeSafety": false,
           "submittedAt": "2024-03-16T10:06:58Z",
           "tipType": "Theft / Crime",
-          "assignedTo": ""
+          "assignedTo": "",
+          "stakeholders": []
       }
   ]
 }

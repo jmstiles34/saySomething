@@ -89,10 +89,15 @@
   border-radius: 4px;
   font-size: .75rem;
   padding: 4px;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--color-bg);
   }
+}
+
+.tipActive {
+  background-color: var(--color-yellow);
 }
 
 .rightCol {

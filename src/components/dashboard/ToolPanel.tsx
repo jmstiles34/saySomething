@@ -22,7 +22,7 @@ export default function ToolPanel(props:any) {
           <Phone />
         </Match>
         <Match when={props.selectedNav() === LABEL_TIPS}>
-          <Tips />
+          <Tips activeTipId={props.activeTipId} setActiveCase={props.setActiveCase} setActiveTipId={props.setActiveTipId} />
         </Match>
       </Switch>
     </div>
