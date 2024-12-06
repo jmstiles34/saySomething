@@ -30,6 +30,12 @@ export const formatCallDuration = (totalSeconds: number) => {
   return `${minutesAndSeconds.minutes}min ${minutesAndSeconds.seconds}sec`;
 };
 
+export const formatCamelCase =(str:string) => {
+  return str
+      .replace(/([A-Z])/g, ' $1')  // Insert space before capital letters
+      .replace(/^./, char => char.toUpperCase());  // Capitalize first letter
+}
+
 export const formatPhoneNumber = (value: string) => {
   if (!value) return value;
 

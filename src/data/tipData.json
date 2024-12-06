@@ -16,7 +16,8 @@
           "submittedAt": "2024-03-16T11:45:22Z", 
           "tipType": "Bullying",
           "assignedTo": "mine",
-          "stakeholders": ["01","05","08","15"]
+          "stakeholders": ["01","05","08","15"],
+          "tags": []
       },
       {
           "tipId": "TIP-003",
@@ -97,7 +98,8 @@
           "submittedAt": "2024-03-17T09:47:22Z",
           "tipType": "Substance Abuse",
           "assignedTo": "mine",
-          "stakeholders": ["04","07","10","13"]
+          "stakeholders": ["04","07","10","13"],
+          "tags": []
       },
       {
           "tipId": "TIP-012",
@@ -122,9 +124,10 @@
           "status": "in-progress",
           "lifeSafety": true,
           "submittedAt": "2024-03-16T11:30:19Z",
-          "tipType": "Cutting / Self-Harm",
+          "tipType": "Self-Harm",
           "assignedTo": "mine",
-          "stakeholders": ["15","10","05","01"]
+          "stakeholders": ["15","10","05","01"],
+          "tags": []
       },
       {
           "tipId": "TIP-015",

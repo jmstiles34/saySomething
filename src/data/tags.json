@@ -1,0 +1,79 @@
+{
+  "tags": [
+    {
+      "IncidentType": [
+        "Bullying",
+        "Cyberbullying",
+        "Threat of Violence",
+        "Physical Assault",
+        "Sexual Harassment",
+        "Substance Abuse",
+        "Vandalism",
+        "Theft",
+        "Weapons Possession",
+        "Self-Harm",
+        "Suicidal Ideation",
+        "Mental Health Concern",
+        "Hate Speech/Discrimination",
+        "Missing Person",
+        "Abuse/Neglect",
+        "Suspicious Activity",
+        "Social Media Threat",
+        "Drug Dealing",
+        "Gang Activity",
+        "Trespassing"
+      ],
+      "Severity": [
+        "Low Risk",
+        "Moderate Risk",
+        "High Risk",
+        "Critical Risk"
+      ],
+      "Urgency": [
+        "Immediate Action Required",
+        "Follow-Up Required",
+        "Monitor Situation"
+      ],
+      "Location": [
+        "On School Grounds",
+        "Off Campus",
+        "Online",
+        "Home",
+        "Public Area"
+      ],
+      "InvolvedParties": [
+        "Student(s)",
+        "Teacher/Staff",
+        "Parent/Guardian",
+        "Unknown"
+      ],
+      "EvidenceType": [
+        "Video/Photo",
+        "Written Message",
+        "Witness Report",
+        "Anonymous Tip",
+        "Social Media Post"
+      ],
+      "ActionsTaken": [
+        "Contacted Law Enforcement",
+        "Informed School Administration",
+        "Informed Parents/Guardians",
+        "Counseling Provided",
+        "Referred to External Services"
+      ],
+      "IncidentContext": [
+        "Revenge",
+        "Peer Pressure",
+        "Mental Health Trigger",
+        "Accidental Discovery",
+        "Escalated Dispute"
+      ],
+      "Outcomes": [
+        "Verified",
+        "Unverified",
+        "Resolved",
+        "Ongoing Investigation"
+      ]
+    }    
+  ]
+}

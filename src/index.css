@@ -16,6 +16,7 @@
   --color-ltgreen-25: hsla(85, 54%, 51%, .25);
   --color-text: hsl(0, 0%, 30%);
   --color-white: hsl(0, 0%, 100%);
+  --color-white-75: hsla(0, 0%, 100%, .75);
   --color-yellow: hsl(51, 100%, 50%);
 
 
