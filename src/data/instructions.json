@@ -1,0 +1,22 @@
+{
+  "instructions": {
+    "schoolName": "Bright Future Academy",
+    "generalGuidelines": "Use phone as primary contact during school hours (8:00 AM - 3:30 PM). Use email for non-urgent matters after hours. Escalate high-risk incidents to the principal or vice-principal.",
+    "timeBasedInstructions": [
+      {"schoolHours": "Contact the school counselor for mental health or bullying tips. Notify the SRO for threats, weapons, or substance abuse. For immediate safety risks, call the front office at (XXX) XXX-XXXX and ask for the principal."},
+      {"afterSchoolHours": "Email the after-school coordinator for non-critical issues. For urgent matters, call the emergency hotline at (XXX) XXX-YYYY."},
+      {"eveningsNights": "Escalate emergencies to the district crisis team at (XXX) XXX-ZZZZ. Log non-urgent tips for follow-up during school hours."}
+    ],
+    "dayBasedInstructions": [
+      {"weekday": "Follow time-based instructions."},
+      {"weekendsHolidays": "Use the district emergency contact system for critical incidents. Notify local law enforcement if unavailable and inform the principal via email."}
+    ],
+    "tipTypeInstructions": [
+      {"threats": "Call the principal's direct line at (XXX) XXX-AAAA and the SRO at (XXX) XXX-BBBB. Follow up with a written report to violencetips@brightfutureacademy.edu."},
+      {"selfHarm": "Notify the school counselor or district crisis intervention team if outside school hours."},
+      {"bullying": "Contact the anti-bullying coordinator at antibullying@brightfutureacademy.edu. For urgent cases, escalate to the principal."},
+      {"substanceAbuseVandalism": "Report to the dean of students during school hours. After hours, email the administration team."}
+    ],
+    "additionalNotes": "Document all contact attempts in the tip management system, including time, method, and recipient. For conflicting priorities, escalate to the district superintendent at (XXX) XXX-CCCC."
+  }
+}

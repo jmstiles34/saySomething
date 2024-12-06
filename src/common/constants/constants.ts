@@ -16,6 +16,17 @@ export const DIALOG_TYPE = {
   },
 };
 
+export const POPOVER = {
+  CONTACTS: "contacts",
+  MESSAGES: "messages"
+}
+
+export const MODAL = {
+  INSTRUCTIONS: "instructions",
+  STAKEHOLDERS: "stakeholders",
+  TAGS: "tags"
+}
+
 export const TOOLS = [
   {
     label: "Tips",
