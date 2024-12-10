@@ -5,12 +5,26 @@
   height: 100%;
   width: 100%;
   display: none;
-  padding: 2rem;
+  padding: 1.5rem;
   z-index: 10;
+  position: relative;
 }
 
 .show-modal {
   display: block;
+}
+
+.close-icon-wrapper {
+  position: absolute;
+  right: 3rem;
+  top: 2.25rem;
+  padding: 4px;
+  border-radius: 4px;
+  z-index: 100;
+
+  &:hover {
+    background-color: var(--color-gray-25);
+  }
 }
 
 .modal-container {
@@ -18,18 +32,6 @@
   width: 100%;
   background-color: var(--color-white);
   border-radius: 4px;
-  position: relative;
   overflow-y: auto;
-}
+} 
 
-.close-icon-wrapper {
-  position: absolute;
-  right: 8px;
-  top: 4px;
-  padding: 4px;
-  border-radius: 4px;
-
-  &:hover {
-    background-color: var(--color-gray-25);
-  }
-}

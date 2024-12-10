@@ -3,7 +3,9 @@ import "./Instructions.css";
 export default function Instructions(props:any) {
   return (
     <div class="instruction-wrapper">
-      <h1 class="title">Special Contact Instructions</h1>
+      <div class="instruction-header">
+        <h1 class="title">Special Contact Instructions</h1>
+      </div>
 
       <h2 class="section">General Guidelines</h2>
       <p>Use phone during school hours (8:00 AM - 3:30 PM). Use email for non-urgent matters after hours. Escalate high-risk incidents to the principal or vice-principal.</p>

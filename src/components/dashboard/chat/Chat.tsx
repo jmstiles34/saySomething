@@ -5,14 +5,16 @@ import Editor  from "tinymce-solid";
 import "./Chat.css";
 import { format, isSameDay } from 'date-fns';
 import type { Contact, Message, User } from "./types";
-import { DIALOG_TYPE, MODAL, POPOVER, USERS } from '/src/common/constants/constants'
+import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, USERS } from '/src/common/constants/constants'
 import { contacts } from '/src/data/contacts.json'; 
 import { getOrdinalSuffix } from '/src/common/utils/utils';
 import Popover from './Popover';
+import Canned from './popovers/Canned';
 import Contacts from './popovers/Contacts';
-import Messages from './popovers/Messages';
 import Modal from './Modal';
 import Instructions from './modals/Instructions';
+import Stakeholders from "./modals/Stakeholders";
+import Tags from "./modals/Tags";
 
 export default function Chat(props:any) {
   const [chatMessage, setChatMessage] = createSignal("");
@@ -23,7 +25,7 @@ export default function Chat(props:any) {
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
   let editorRef!: TinyEditor;
-  const useRichEditor:boolean = true;
+  const useRichEditor:boolean = false;
   
   createEffect(() => {
     if (props.messages.length) {
@@ -37,9 +39,15 @@ export default function Chat(props:any) {
     }
   };
 
-  const createMessage = (user: User, text: string) => {
+  const addCallMessage = (message:string) => {
+    const newMessage = createMessage(USERS.counselor, message, MESSAGE_TYPE.CALL)
+    sendMessage(newMessage);
+  }
+
+  const createMessage = (user: User, text: string, type = MESSAGE_TYPE.CHAT) => {
     return {
       id: crypto.randomUUID(),
+      type,
       text,
       user,
       timestamp: new Date()
@@ -86,7 +94,7 @@ export default function Chat(props:any) {
     if (lastChar === '@') {
       setPopover(POPOVER.CONTACTS);
     } else if (lastChar === '/' && text.length === 1) {
-      setPopover(POPOVER.MESSAGES);
+      setPopover(POPOVER.CANNED);
     } else {
       if (text.includes("/")) (true);
       const mentionMatch = text.match(/@([^@\s]*)$/);
@@ -110,7 +118,7 @@ export default function Chat(props:any) {
     if (key === '@') {
       setPopover(POPOVER.CONTACTS);
     } else if (key === '/' && rawContent.length === 1) {
-      setPopover(POPOVER.MESSAGES);
+      setPopover(POPOVER.CANNED);
     } else {
       //if (text.includes("/")) (true);
       const mentionMatch = rawContent.match(/@([^@\s]*)$/);
@@ -143,9 +151,30 @@ export default function Chat(props:any) {
     setPopover(null);
     moveCursorToEnd();
   }
-  const handleMessagesPopoverClick = (name:string) => {
+  const handleCannedPopoverClick = (text:string) => {
+    setChatMessage(chatMessage().length ? `${chatMessage()} ${text}` : text);
     setPopover(null);
     moveCursorToEnd();
+  }
+
+  const manageStakeholders = (action: string, id:string, name:string) => {
+    if(action === 'add'){
+      props.setActiveCase({...props.case, stakeholders: [...props.case.stakeholders, id]});
+      const newMessage = createMessage(USERS.counselor, `${name} was added to team communication.`, MESSAGE_TYPE.STAKEHOLDERS)
+      sendMessage(newMessage);
+    } else if (action === 'remove') {
+      props.setActiveCase({...props.case, stakeholders: [...props.case.stakeholders.filter((v:string) => v !== id)]});
+      const newMessage = createMessage(USERS.counselor, `${name} was removed from team communication.`, MESSAGE_TYPE.STAKEHOLDERS)
+      sendMessage(newMessage);
+    }
+  }
+
+  const manageTags = (action: string, id:string) => {
+    if(action === 'add'){
+      props.setActiveCase({...props.case, tags: [...props.case.tags, id]});
+    } else if (action === 'remove') {
+      props.setActiveCase({...props.case, tags: [...props.case.tags.filter((v:string) => v !== id)]});
+    }
   }
 
   return (
@@ -205,18 +234,52 @@ export default function Chat(props:any) {
                 <For each={props.messages.filter((msg:Message) => isSameDay(new Date(mDate as string), new Date(msg.timestamp))) 
                 }>
                   {(message) => (
-                    <li class={`message-element message-element-${message.user.role}`}>
-                      <div class="message-element-avatar">
-                        <img src={`/src/assets/icons/${message.user.role}.svg`} alt={`${message.user.role} icon`} /> 
-                      </div>
-                      <div class="bold-author">
-                        {message.user.displayName}
-                      </div>
-                      <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
-                      
-                      <div innerHTML={message.text} class="message-element-text"/>
-                      {/* <div class="message-element-text">{message.text}</div> */}
-                    </li>
+                    <Switch>
+                      <Match when={message.type === MESSAGE_TYPE.CHAT}>
+                        <li class={`message-element message-element-${message.user.role}`}>
+                          <div class="message-element-avatar">
+                            <img src={`/src/assets/icons/${message.user.role}.svg`} alt={`${message.user.role} icon`} /> 
+                          </div>
+                          <div class="bold-author">
+                            {message.user.displayName}
+                          </div>
+                          <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
+                          
+                          <div innerHTML={message.text} class="message-element-text"/>
+                          {/* <div class="message-element-text">{message.text}</div> */}
+                        </li>
+                      </Match>
+                      <Match when={message.type === MESSAGE_TYPE.CALL}>
+                        <li class={`message-element message-element-call`}>
+                          <div class="message-element-avatar">
+                            <i class="fa-solid fa-phone fa-xl call-icon"></i>
+                            {/* <img src={`/src/assets/icons/call-outgoing.svg`} alt={`Phone icon`} /> */} 
+                          </div>
+                          <div class="bold-author">
+                            {message.user.displayName}
+                          </div>
+                          <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
+                          
+                          <div innerHTML={message.text} class="message-element-text"/>
+                          {/* <div class="message-element-text">{message.text}</div> */}
+                        </li>
+                      </Match>
+                      <Match when={message.type === MESSAGE_TYPE.STAKEHOLDERS}>
+                        <li class={`message-element message-element-call`}>
+                          <div class="message-element-avatar">
+                          <i class="fa-solid fa-right-left fa-xl call-icon"></i>
+                          </div>
+                          <div class="bold-author">
+                            {message.user.displayName}
+                          </div>
+                          <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
+                          
+                          <div innerHTML={message.text} class="message-element-text"/>
+                          {/* <div class="message-element-text">{message.text}</div> */}
+                        </li>
+                      </Match>
+                    </Switch>
+                    
                   )}
                 </For>
               </ul>
@@ -225,89 +288,99 @@ export default function Chat(props:any) {
         </For>
       </div>
 
-      {/* case input */}
+      {/* chap input */}
       <div class={`chat-input-wrapper ${display.style}`}>
-      <div class={`chat-input`}>
-        
-        <Show when={popover()}>
-          <Popover>
-            <Switch>
-              <Match when={popover() === POPOVER.CONTACTS}>
-                <Contacts 
-                  filteredContacts={filteredContacts()}
-                  stakeholders={props.case.stakeholders} 
-                  handleContactsPopoverClick={handleContactsPopoverClick} 
-                />
-              </Match>
-              <Match when={popover() === POPOVER.MESSAGES}>
-                <Messages handleMessagesPopoverClick={handleMessagesPopoverClick} />
-              </Match>
-            </Switch>
-          </Popover>
-        </Show>
-
-        <div class="editor-anchor">
-          <Show when={!useRichEditor}>
-            <textarea 
-              id={`message-box-${display.style}`} 
-              placeholder={`Message to ${display.name}...`} 
-              rows="2"
-              value={chatMessage()}
-              onInput={(e) => simpleInput(e.currentTarget.value)}
-              onKeyPress={(e) => e.key === "Enter" && handleMessageSubmit(e)}></textarea> 
-          </Show>
-        
-          <Show when={useRichEditor}>
-            <Editor
-              id={`message-box-${display.style}`}
-              ref={editorRef}
-              apiKey="zmj3mwd02jhm0petatetozceb2u06fqhpz8f9y9oi9bnihcr"
-              value={chatMessage()}
-              /* onInit={(_content: string, editor: TinyEditor) => (editorRef = editor)} */
-              init={{
-                menubar: false,
-                height: 125,
-                highlight_on_focus: false,
-                resize: false,
-                width: "100%",
-                statusbar: false,
-                placeholder: `Message to ${display.name}...`,
-                setup: function(editor) {
-                  editor.on('keypress', function(e) {
-                    richInput(e.key, editor.getContent());
-                  });                  
-                },
-                plugins:
-                  "advlist advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table code help wordcount",
-                toolbar:
-                  "undo redo | bold italic forecolor | bullist numlist | link image code",
-              }}
-              onEditorChange={(content: string, editor: TinyEditor) => {
-                // const newContent = editor.getContent();
-                setChatMessage(content);
-              }}
-            />
-          </Show>
-        </div>
-
-        <div class="input-icon-wrapper">
-          <button class="icon" onClick={() => {}}>
-            <i class="fa fa-paperclip fa-lg"></i>
-          </button>
-          <button class="icon" onClick={() => setPopover( popover() === POPOVER.MESSAGES ? null :POPOVER.MESSAGES)}>
-            <i class={`fa fa-comment-medical fa-lg ${popover() === POPOVER.MESSAGES ? 'icon-active' : ''}`}></i>
-          </button>   
-        </div> 
+        <div class={`chat-input`}>
           
-        <button class="message-send" onClick={handleMessageSubmit}>Send</button>       
-      </div>
+          <Show when={popover()}>
+            <Popover>
+              <Switch>
+                <Match when={popover() === POPOVER.CONTACTS}>
+                  <Contacts 
+                    filteredContacts={filteredContacts()}
+                    stakeholders={props.case.stakeholders} 
+                    handleContactsPopoverClick={handleContactsPopoverClick} 
+                  />
+                </Match>
+                <Match when={popover() === POPOVER.CANNED}>
+                  <Canned handleCannedPopoverClick={handleCannedPopoverClick} />
+                </Match>
+              </Switch>
+            </Popover>
+          </Show>
+
+          <div class="editor-anchor">
+            <Show when={!useRichEditor}>
+              <textarea 
+                id={`message-box-${display.style}`} 
+                placeholder={`Message to ${display.name}...`} 
+                rows="2"
+                value={chatMessage()}
+                onInput={(e) => simpleInput(e.currentTarget.value)}
+                onKeyPress={(e) => e.key === "Enter" && handleMessageSubmit(e)}></textarea> 
+            </Show>
+          
+            <Show when={useRichEditor}>
+              <Editor
+                id={`message-box-${display.style}`}
+                ref={editorRef}
+                apiKey="zmj3mwd02jhm0petatetozceb2u06fqhpz8f9y9oi9bnihcr"
+                value={chatMessage()}
+                /* onInit={(_content: string, editor: TinyEditor) => (editorRef = editor)} */
+                init={{
+                  menubar: false,
+                  height: 125,
+                  highlight_on_focus: false,
+                  resize: false,
+                  width: "100%",
+                  statusbar: false,
+                  placeholder: `Message to ${display.name}...`,
+                  setup: function(editor) {
+                    editor.on('keypress', function(e) {
+                      richInput(e.key, editor.getContent());
+                    });                  
+                  },
+                  plugins:
+                    "advlist advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table code help wordcount",
+                  toolbar:
+                    "undo redo | bold italic forecolor | bullist numlist | link image code",
+                }}
+                onEditorChange={(content: string, editor: TinyEditor) => {
+                  // const newContent = editor.getContent();
+                  setChatMessage(content);
+                }}
+              />
+            </Show>
+          </div>
+
+          <div class="input-icon-wrapper">
+            <button class="icon" onClick={() => {}}>
+              <i class="fa fa-paperclip fa-lg"></i>
+            </button>
+            <button class="icon" onClick={() => setPopover( popover() === POPOVER.MESSAGES ? null :POPOVER.MESSAGES)}>
+              <i class={`fa fa-comment-medical fa-lg ${popover() === POPOVER.MESSAGES ? 'icon-active' : ''}`}></i>
+            </button>   
+          </div> 
+            
+          <button class="message-send" onClick={handleMessageSubmit}>Send</button>       
+        </div>
       </div>
       
-      {/* modal layer */}
       <Modal modal={modal()} setModal={setModal}>
         <Switch>
           <Match when={modal() === MODAL.INSTRUCTIONS}>
               <Instructions />
+          </Match>
+          <Match when={modal() === MODAL.STAKEHOLDERS}>
+              <Stakeholders 
+                allContacts={contacts} 
+                contacts={props.case.stakeholders} 
+                addCallMessage={addCallMessage}
+                manageStakeholders={manageStakeholders}
+              />
+          </Match>
+          <Match when={modal() === MODAL.TAGS}>
+              <Tags caseTags={props.case.tags} manageTags={manageTags} />
           </Match>
         </Switch>
       </Modal>

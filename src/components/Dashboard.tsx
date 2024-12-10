@@ -35,6 +35,7 @@ export default function Dashboard() {
           case={activeCase()}
           messages={reporterMessages()}
           setMessages={setReporterMessages}
+          setActiveCase={setActiveCase}
         />
         <Chat 
           target="team" 
@@ -42,6 +43,7 @@ export default function Dashboard() {
           case={activeCase()}
           messages={teamMessages()}
           setMessages={setTeamMessages}
+          setActiveCase={setActiveCase}
         />
       </div>
     </main>

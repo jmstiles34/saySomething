@@ -1,0 +1,74 @@
+{
+  "canned": {
+      "LifeSafetyEscalation": [
+        {
+          "message": "We’ve received information regarding a critical safety concern. Please review the details immediately and advise on next steps.",
+          "type": "ImmediateActionRequired"
+        },
+        {
+          "message": "This situation involves a potential life safety issue. Can you confirm who is best to contact for immediate action?",
+          "type": "RequestForEmergencyContact"
+        },
+        {
+          "message": "Following up on the urgent matter shared earlier. Please confirm any actions taken or if further assistance is needed.",
+          "type": "FollowUpOnEscalation"
+        }
+      ],
+      "RequestForInformationOrAssistance": [
+        {
+          "message": "Can you confirm details about [SPECIFIC DETAIL] to ensure appropriate handling of this tip?",
+          "type": "ClarificationNeeded"
+        },
+        {
+          "message": "To proceed effectively, we need additional context about [RELEVANT SITUATION]. Could you provide that information?",
+          "type": "RequestForContext"
+        },
+        {
+          "message": "We are validating this tip and need confirmation about [DETAIL]. Your input is appreciated.",
+          "type": "VerificationOfInformation"
+        }
+      ],
+      "StatusUpdates": [
+        {
+          "message": "We’re actively reviewing the information provided. Let us know if there are additional details from your side.",
+          "type": "TipUnderReview"
+        },
+        {
+          "message": "We are working through the details and will notify you once we have further developments or recommendations.",
+          "type": "ProgressUpdate"
+        },
+        {
+          "message": "The tip is still under investigation. If you have updates or insights, please share them to expedite the process.",
+          "type": "InvestigationOngoing"
+        }
+      ],
+      "ResolutionOrNextSteps": [
+        {
+          "message": "This tip has been reviewed, and actions have been taken to address the concern. Let us know if further follow-up is required.",
+          "type": "ResolutionCommunicated"
+        },
+        {
+          "message": "After thorough review, this matter has been resolved. No further action is necessary at this time.",
+          "type": "NoFurtherActionNeeded"
+        },
+        {
+          "message": "While no immediate action is required, we recommend monitoring [DETAIL] for any changes.",
+          "type": "AdditionalMonitoringRequired"
+        }
+      ],
+      "GeneralCollaboration": [
+        {
+          "message": "Thank you for your assistance. Please confirm receipt of this update and let us know if further action is required.",
+          "type": "ConfirmationOfReceipt"
+        },
+        {
+          "message": "We’d like to coordinate with your team to ensure the most effective response. Please share your availability for discussion.",
+          "type": "CollaborativeInputRequested"
+        },
+        {
+          "message": "Thank you for your collaboration. Your prompt response is critical in ensuring a positive outcome.",
+          "type": "AcknowledgingSupport"
+        }
+      ]
+    }
+}

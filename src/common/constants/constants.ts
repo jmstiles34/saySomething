@@ -16,16 +16,22 @@ export const DIALOG_TYPE = {
   },
 };
 
-export const POPOVER = {
-  CONTACTS: "contacts",
-  MESSAGES: "messages"
-}
+export const MESSAGE_TYPE = {
+  CALL: "call",
+  CHAT: "chat",
+  STAKEHOLDERS: "stakeholders",
+};
 
 export const MODAL = {
   INSTRUCTIONS: "instructions",
   STAKEHOLDERS: "stakeholders",
-  TAGS: "tags"
-}
+  TAGS: "tags",
+};
+
+export const POPOVER = {
+  CANNED: "canned",
+  CONTACTS: "contacts"
+};
 
 export const TOOLS = [
   {

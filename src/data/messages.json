@@ -4,6 +4,7 @@
     "reporterDialog": [
     {
         "id": "12345",
+        "type": "chat",
         "text": "Hi, I need to report something. There's this kid at my school who’s been saying some really scary stuff about hurting people. I don’t know if he’s serious, but it’s freaking me out.",
         "user": {
             "id": 1,
@@ -16,6 +17,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Thank you for reaching out. I’m here to help. Can you tell me more about what this student has been saying or doing?",
         "user": {
             "id": 1,
@@ -28,6 +30,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "He’s been talking about bringing a knife to school and saying things like, \"You’ll see what happens.\" He also gets really mad at people a lot. I’m scared he might actually do something.",
         "user": {
             "id": 1,
@@ -40,6 +43,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "I understand why that would be concerning. Your safety and the safety of others are very important. Have you seen him with any weapons, or is this based on what he’s said?",
         "user": {
             "id": 1,
@@ -52,6 +56,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Just what he’s said. But he’s kind of... I don’t know... unpredictable. He’s been getting into fights too.",
         "user": {
             "id": 1,
@@ -64,6 +69,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": " I appreciate you sharing this. Your information can help us take steps to keep everyone safe. Can you tell me the student’s name or anything else that might help us identify him?",
         "user": {
             "id": 1,
@@ -76,6 +82,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "His name is Ryan. He’s in 9th grade. He’s in some of my classes.",
         "user": {
             "id": 1,
@@ -88,6 +95,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Got it. I’m going to bring another team member into this conversation so we can act quickly. Please stay with us for a moment.",
         "user": {
             "id": 1,
@@ -100,6 +108,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Hi, this is Maria. I’ve been briefed on the situation. Thank you for reaching out—it’s really brave of you to do so. I’ll be working with Ellie to make sure this gets addressed safely and quickly.",
         "user": {
             "id": 1,
@@ -114,6 +123,7 @@
 "teamComm": [
     {
         "id": "12345",
+        "type": "chat",
         "text": "Maria, I’ve got a tipster reporting a 9th grader named Ryan. The student has been making threats about bringing a knife to school and hurting others. Tipster says Ryan is unpredictable and has been in fights recently.",
         "user": {
             "id": 1,
@@ -126,6 +136,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Got it. Let’s prioritize safety here. Are we clear on whether this is direct planning or general threats?",
         "user": {
             "id": 1,
@@ -138,6 +149,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "No indication of direct planning yet—tipster says it’s based on verbal threats. No sightings of a weapon.",
         "user": {
             "id": 1,
@@ -150,6 +162,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Understood. Let’s treat it as a high-risk case until we know more. Have we confirmed the school’s name and the grade level?",
         "user": {
             "id": 1,
@@ -162,6 +175,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Yes, 9th grade, confirmed school is Bright Future Academy. Tipster shared that Ryan says these things around his friends, so multiple witnesses may know about this.",
         "user": {
             "id": 1,
@@ -174,6 +188,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "That’s helpful. I’ll notify school officials as soon as we’re done with the chat. Let’s also flag this for a behavioral threat assessment. Any indication the tipster feels personally targeted?",
         "user": {
             "id": 1,
@@ -186,6 +201,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "No direct threats toward the tipster, but they’re scared and want to remain anonymous. I reassured them we’re protecting their identity.",
         "user": {
             "id": 1,
@@ -198,6 +214,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Good call. Let’s make sure we emphasize their safety if they bring up any further concerns. Do we need to follow up with the tipster about any other recent incidents?",
         "user": {
             "id": 1,
@@ -210,6 +227,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Not yet. Tipster mentioned fights and a pattern of unpredictable behavior. They don’t seem to have more specific details right now.",
         "user": {
             "id": 1,
@@ -222,6 +240,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Okay. Let’s keep the tone supportive and gather as much as we can. If they share additional details about his behaviors or possible triggers, that’ll help the school’s intervention team.",
         "user": {
             "id": 1,
@@ -234,6 +253,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Agreed. I’ll keep the conversation open and focused on their safety and what they know.",
         "user": {
             "id": 1,
@@ -246,6 +266,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Perfect. If the tipster mentions Ryan’s friends or potential allies, we should document that too—it could help with assessing the broader context of the threats.",
         "user": {
             "id": 1,
@@ -258,6 +279,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Got it. I’ll bring it up gently if it feels appropriate. For now, they seem nervous but willing to share what they know.",
         "user": {
             "id": 1,
@@ -270,6 +292,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Great. I’ll monitor this chat in case you need backup or need me to take over. Let me know when you’re ready to escalate this to the school.",
         "user": {
             "id": 1,
@@ -282,6 +305,7 @@
     },
     {
         "id": "12345",
+        "type": "chat",
         "text": "Will do. Thanks, Maria.",
         "user": {
             "id": 1,
@@ -298,6 +322,7 @@
         "reporterDialog": [
         {
             "id": "12345",
+        "type": "chat",
             "text": "Hi, I want to report something going on at my school. There are kids vaping in the bathrooms, and it’s happening a lot. I’m worried about what it’s doing to them and how it’s affecting others.",
             "user": {
                 "id": 1,
@@ -310,6 +335,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Hi there, thank you for reaching out and letting us know. Your concern is important, and we appreciate you stepping forward. Can you tell me which school you’re referring to and which bathrooms this is happening in?",
             "user": {
                 "id": 1,
@@ -322,6 +348,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "It’s at Jefferson High School. Mostly in the upstairs bathrooms near the science wing. It happens between classes and during lunch.",
             "user": {
                 "id": 1,
@@ -334,6 +361,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Got it. Thanks for the details. Are there any specific times or people involved that you’re aware of? This will help us address the issue more effectively.",
             "user": {
                 "id": 1,
@@ -346,6 +374,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Not specific people, but I see a group of older students hanging around there a lot. They make it hard for anyone else to use the bathroom. I’ve even seen them try to get younger kids to join in.",
             "user": {
                 "id": 1,
@@ -358,6 +387,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "That sounds really concerning. Thank you for sharing this. I’d like to bring in another team member who works closely with school administrators to help ensure this issue gets the right attention. One moment.",
             "user": {
                 "id": 1,
@@ -370,6 +400,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Hi, I’m Maria. I work on coordinating with schools to address situations like these. Thanks for letting us know about this. Have you mentioned this to any staff at your school, like a teacher or counselor?",
             "user": {
                 "id": 1,
@@ -382,6 +413,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "No, I didn’t want to get involved directly. I just wanted to let someone know without causing trouble for myself.",
             "user": {
                 "id": 1,
@@ -394,6 +426,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Completely understandable, and your privacy is our top priority. Thanks to your information, we can notify the school in a way that doesn’t point back to you. We’ll ensure they’re aware of what’s happening in those bathrooms during the times you mentioned.",
             "user": {
                 "id": 1,
@@ -406,6 +439,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "In the meantime, are you feeling safe at school? Is there anything else about this situation or anything else that’s been bothering you?",
             "user": {
                 "id": 1,
@@ -418,6 +452,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Yeah, I’m safe. I just think it’s not right, and someone needs to do something. That’s all.",
             "user": {
                 "id": 1,
@@ -430,6 +465,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "You’re doing the right thing by speaking up. We’ll handle this carefully and work with the school to address it. If you see anything else or need to talk again, you can always reach out to us here. Does that sound good?",
             "user": {
                 "id": 1,
@@ -442,6 +478,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Yeah, thank you. That’s all I needed to say.",
             "user": {
                 "id": 1,
@@ -454,6 +491,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Thanks again for trusting us. We’ll take it from here. Take care!",
             "user": {
                 "id": 1,
@@ -466,6 +504,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Thanks. Bye.",
             "user": {
                 "id": 1,
@@ -478,6 +517,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Bye! Stay safe! 😊",
             "user": {
                 "id": 1,
@@ -492,6 +532,7 @@
     "teamComm": [
         {
             "id": "12345",
+        "type": "chat",
             "text": "Hey Maria, I’ve got a tipster reporting students vaping in the bathrooms at Jefferson High School. It’s happening mostly in the upstairs bathrooms near the science wing, during lunch and between classes. Sounds like a recurring issue.",
             "user": {
                 "id": 1,
@@ -504,6 +545,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Got it. Any specific individuals named or just general observations?",
             "user": {
                 "id": 1,
@@ -516,6 +558,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "No specific names so far. They mentioned a group of older students hanging around and even trying to get younger kids to join in. The tipster seems worried but doesn’t want to involve themselves directly.",
             "user": {
                 "id": 1,
@@ -528,6 +571,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Makes sense. We should assure them their anonymity is protected while gathering just enough detail for the school to take action. Have they mentioned any staff or authority figures being aware?",
             "user": {
                 "id": 1,
@@ -540,6 +584,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Not yet. I’ll check, but it seems like they came to us first. Do you think we should flag this as an urgent situation or monitor it further?",
             "user": {
                 "id": 1,
@@ -552,6 +597,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "I’d classify it as a medium priority for now unless we hear more about immediate danger or health concerns. Schools usually take vaping issues seriously, so a well-timed report can make a difference.",
             "user": {
                 "id": 1,
@@ -564,6 +610,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Agreed. I’ll keep the conversation focused on their observations and make sure they know we’ll handle it without exposing them. Should we include the school resource officer (SRO) in this report?",
             "user": {
                 "id": 1,
@@ -576,6 +623,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Yes, but only after confirming the details we have so far. The SRO can investigate further, but we don’t want to overload the school with vague reports. Precision is key.",
             "user": {
                 "id": 1,
@@ -588,6 +636,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Got it. I’ll gather as much as I can from the tipster. They seem a little hesitant, so I’ll keep it light and supportive.",
             "user": {
                 "id": 1,
@@ -600,6 +649,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Perfect. Let me know once the chat wraps up, and I’ll prep the report for the school admin and SRO. We’ll also recommend adding monitoring or periodic walkthroughs in that area.",
             "user": {
                 "id": 1,
@@ -612,6 +662,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Will do. Thanks, Maria! I’ll update you shortly. 😊",
             "user": {
                 "id": 1,
@@ -628,6 +679,7 @@
     "reporterDialog": [
         {
             "id": "12345",
+        "type": "chat",
             "text": "Hi, I need to report something. There’s this student at my school who’s being really abusive to his girlfriend. It’s bad… like he pushes her around in the hallways and calls her awful names.",
             "user": {
                 "id": 1,
@@ -640,6 +692,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>Thank you for reaching out. This is very serious, and I&rsquo;m here to listen and help. Can you tell me a bit more about what you&rsquo;ve seen or heard?</p>",
             "user": {
                 "id": 1,
@@ -652,6 +705,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "He’s always yelling at her in public, like in the cafeteria, and I’ve seen him grab her arm really hard when she tries to walk away. But it’s not just her. He’s threatening anyone who tries to help her, saying stuff like, “If you say anything, I’ll kill you.” He scares everyone.",
             "user": {
                 "id": 1,
@@ -664,6 +718,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>I&rsquo;m so sorry you and others are experiencing this. You did the right thing by reaching out. It&rsquo;s very important that everyone feels safe. Do you know his name and the girlfriend&rsquo;s name, or would you prefer to keep this anonymous for now?</p>",
             "user": {
                 "id": 1,
@@ -676,6 +731,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "I’d rather keep it anonymous. I’m really scared he’ll find out. He’s dangerous, and I don’t want to make things worse.",
             "user": {
                 "id": 1,
@@ -688,6 +744,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>Your safety is our top priority. I&rsquo;ll make sure this stays confidential. This situation is serious, and we&rsquo;ll take steps to help the girlfriend and address the threats. Can you tell me if this has been going on for a while or if it&rsquo;s something new?</p>",
             "user": {
                 "id": 1,
@@ -700,6 +757,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "It’s been going on for months, but the threats have gotten worse lately. I’m worried he might actually do something violent.",
             "user": {
                 "id": 1,
@@ -712,6 +770,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>That&rsquo;s very concerning, and your fear is valid. We&rsquo;ll make sure the right steps are taken to protect everyone involved. I&rsquo;m going to bring in another counselor to help us act quickly and effectively. One moment.</p>",
             "user": {
                 "id": 1,
@@ -724,6 +783,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Hi, I’m joining the chat. Thank you for speaking up about this. I’m here to help as well. Can I ask if you’ve seen or heard anything that makes you think the threats could lead to immediate danger?",
             "user": {
                 "id": 1,
@@ -736,6 +796,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Not exactly, but he keeps saying stuff like, “You’ll regret it if you talk.” I don’t know if he’s serious or just trying to scare people, but it’s making everyone afraid to even say something to a teacher.",
             "user": {
                 "id": 1,
@@ -748,6 +809,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "I understand. Threats like this, whether meant to intimidate or followed through, are taken very seriously. We want to ensure everyone feels safe to speak out. Do you think his girlfriend or any of the friends he’s threatened would be willing to share what’s happening if we assured them it would be handled confidentially?",
             "user": {
                 "id": 1,
@@ -760,6 +822,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Maybe, but they’re just as scared as I am. If there’s a way to help without getting them in trouble or putting them in danger, that would be better.",
             "user": {
                 "id": 1,
@@ -774,6 +837,7 @@
     "teamComm": [
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>Hey, I&rsquo;ve got a tip from an anonymous student. It&rsquo;s about a classmate who&rsquo;s abusive toward his girlfriend and threatening others who might report him. It&rsquo;s escalating, and I think we need to take immediate steps.</p>",
             "user": {
                 "id": 1,
@@ -786,6 +850,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Got it. What details do we have so far?",
             "user": {
                 "id": 1,
@@ -798,6 +863,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>The tipster says the abusive behavior has been happening for months, but the threats are getting more intense. He&rsquo;s explicitly said things like, &ldquo;If you talk, I&rsquo;ll kill you.&rdquo; No direct signs of a weapon or immediate plans for violence yet, but the fear is widespread.</p>",
             "user": {
                 "id": 1,
@@ -810,6 +876,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "That’s alarming. Did the tipster share any names or identifying details?",
             "user": {
                 "id": 1,
@@ -822,6 +889,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>Not yet. They&rsquo;re very cautious about staying anonymous, which makes sense given the threats. I don&rsquo;t want to push too hard on that and risk shutting them down.</p>",
             "user": {
                 "id": 1,
@@ -834,6 +902,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "Agreed. Let’s work with what we have for now. Have we reassured them about confidentiality and safety while gathering as much detail as possible?",
             "user": {
                 "id": 1,
@@ -846,6 +915,7 @@
         },
         {
             "id": "12345",
+        "type": "chat",
             "text": "<p>Yes, I&rsquo;ve stressed that we&rsquo;ll keep their identity protected. They&rsquo;ve agreed to stay in touch if we have further questions. I&rsquo;m trying to gauge if there&rsquo;s an immediate risk to the girlfriend or others.</p>",
             "user": {
                 "id": 1,
