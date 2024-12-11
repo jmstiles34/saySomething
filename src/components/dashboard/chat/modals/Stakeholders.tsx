@@ -26,7 +26,7 @@ export default function Stakeholders(props:any) {
         setFilteredContacts(props.allContacts);
       } else {
         setFilteredContacts([...props.allContacts.filter((contact:Contact) => {
-          return contact.name.toLowerCase().includes(text)
+          return contact.name.toLowerCase().includes(text.toLowerCase())
         })]) 
       }
   }

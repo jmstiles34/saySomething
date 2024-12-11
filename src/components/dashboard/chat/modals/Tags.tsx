@@ -17,7 +17,7 @@ export default function Tags(props:any) {
       </div>
 
       <div class="tags-category-list">
-        <For each={Object.entries(tags[0])}>
+        <For each={Object.entries(tags)}>
             {(cat) => (
               <div>
                 <h2 class="tags-section">{formatCamelCase(cat[0])}</h2>

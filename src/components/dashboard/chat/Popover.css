@@ -5,10 +5,9 @@
   border: 2px solid var(--color-bg);
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-height: 200px;
-  min-height: 200px;
-  overflow-y: auto;
-  width: 400px;
+  height: fit-content;
+  width: fit-content;
   z-index: 1000;
-  bottom: calc(anchor(start) - 51px);
+  /* bottom: calc(anchor(start) - 51px); */
+  bottom: calc(anchor(start));
 }

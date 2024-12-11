@@ -1,4 +1,9 @@
-.popover-item {
+.contacts-wrapper {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.contacts-item {
   display: grid;
   grid-template-columns: auto auto 1fr;
   align-items: center;
@@ -12,7 +17,7 @@
   }
 }
 
-.popover-align-end {
+.contacts-align-end {
   color: var(--color-gray);
   justify-self: end;
 }

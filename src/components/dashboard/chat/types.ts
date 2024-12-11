@@ -1,4 +1,4 @@
-export interface Contact {
+export type Contact = {
   id: string, 
   name: string,
   title?: string,
@@ -10,7 +10,7 @@ export interface Contact {
   notify_msg: string
 }
 
-export interface User {
+export type User = {
   id: number;
   displayName: string;
   role: string;
@@ -18,7 +18,7 @@ export interface User {
   title: string;
 }
 
-export interface Message {
+export type Message = {
   id: string;
   type?: string;
   text: string;
@@ -26,7 +26,7 @@ export interface Message {
   timestamp: Date;
 }
 
-export interface Tip {
+export type Tip = {
   tipId: string;
   status: string;
   lifeSafety: boolean;

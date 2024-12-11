@@ -99,19 +99,17 @@ export default function Chat(props:any) {
       if (text.includes("/")) (true);
       const mentionMatch = text.match(/@([^@\s]*)$/);
       if (mentionMatch) {
+        setPopover(POPOVER.CONTACTS);
         const searchTerm = mentionMatch[1].toLowerCase();
         setFilteredContacts(contacts.sort((a:Contact, b:Contact) => a.name.localeCompare(b.name)).filter((contact:Contact) =>
           contact.name.toLowerCase().includes(searchTerm)
         ));
+
+        if(filteredContacts().length === 0) setPopover(null);
       } else {
         setPopover(null);
       }
     }
-                
-    // Close canned responses if not immediately after /
-    /* if (!text.endsWith('/')) {
-      setPopover(null);
-    } */
   };
   const richInput = (key:string, content:string): void => {
     const rawContent = stripHtmlTags(content) + key;
@@ -120,22 +118,17 @@ export default function Chat(props:any) {
     } else if (key === '/' && rawContent.length === 1) {
       setPopover(POPOVER.CANNED);
     } else {
-      //if (text.includes("/")) (true);
       const mentionMatch = rawContent.match(/@([^@\s]*)$/);
       if (mentionMatch) {
         const searchTerm = mentionMatch[1].toLowerCase();
         setFilteredContacts(contacts.sort((a:Contact, b:Contact) => a.name.localeCompare(b.name)).filter((contact:Contact) =>
           contact.name.toLowerCase().includes(searchTerm)
         ));
+        if(filteredContacts().length === 0) setPopover(null);
       } else {
         setPopover(null);
       }
     }
-                
-    // Close canned responses if not immediately after /
-    /* if (key !== '/') {
-      setPopover(null);
-    } */
   };
 
   const stripHtmlTags = (html:string) => {
@@ -152,7 +145,7 @@ export default function Chat(props:any) {
     moveCursorToEnd();
   }
   const handleCannedPopoverClick = (text:string) => {
-    setChatMessage(chatMessage().length ? `${chatMessage()} ${text}` : text);
+    setChatMessage(chatMessage() === "/" ? text : `${chatMessage()} ${text}`);
     setPopover(null);
     moveCursorToEnd();
   }
@@ -160,11 +153,11 @@ export default function Chat(props:any) {
   const manageStakeholders = (action: string, id:string, name:string) => {
     if(action === 'add'){
       props.setActiveCase({...props.case, stakeholders: [...props.case.stakeholders, id]});
-      const newMessage = createMessage(USERS.counselor, `${name} was added to team communication.`, MESSAGE_TYPE.STAKEHOLDERS)
+      const newMessage = createMessage(USERS.counselor, `${name} was added to ${props.target === 'team' ? 'Team Communication' : 'Reporter Dialog'}.`, MESSAGE_TYPE.STAKEHOLDERS)
       sendMessage(newMessage);
     } else if (action === 'remove') {
       props.setActiveCase({...props.case, stakeholders: [...props.case.stakeholders.filter((v:string) => v !== id)]});
-      const newMessage = createMessage(USERS.counselor, `${name} was removed from team communication.`, MESSAGE_TYPE.STAKEHOLDERS)
+      const newMessage = createMessage(USERS.counselor, `${name} was removed from ${props.target === 'team' ? 'Team Communication' : 'Reporter Dialog'}.`, MESSAGE_TYPE.STAKEHOLDERS)
       sendMessage(newMessage);
     }
   }
@@ -357,8 +350,8 @@ export default function Chat(props:any) {
             <button class="icon" onClick={() => {}}>
               <i class="fa fa-paperclip fa-lg"></i>
             </button>
-            <button class="icon" onClick={() => setPopover( popover() === POPOVER.MESSAGES ? null :POPOVER.MESSAGES)}>
-              <i class={`fa fa-comment-medical fa-lg ${popover() === POPOVER.MESSAGES ? 'icon-active' : ''}`}></i>
+            <button class="icon" onClick={() => setPopover( popover() === POPOVER.CANNED ? null : POPOVER.CANNED)}>
+              <i class={`fa fa-comment-medical fa-lg ${popover() === POPOVER.CANNED ? 'icon-active' : ''}`}></i>
             </button>   
           </div> 
             
