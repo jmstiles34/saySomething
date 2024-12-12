@@ -107,6 +107,19 @@
         "timestamp": "2024-12-03T21:42:20.715Z"
     },
     {
+        "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
+        "type": "stakeholders",
+        "text": "Maria Gonzalez was added to Reporter Dialog.",
+        "user": {
+            "id": 1,
+            "displayName": "Ellie Johnson",
+            "role": "counselor",
+            "status": 1,
+            "title": "SHP Counselor"
+        },
+        "timestamp": "2024-12-03T21:42:27.343Z"
+    },
+    {
         "id": "12345",
         "type": "chat",
         "text": "Hi, this is Maria. I’ve been briefed on the situation. Thank you for reaching out—it’s really brave of you to do so. I’ll be working with Ellie to make sure this gets addressed safely and quickly.",
@@ -387,7 +400,7 @@
         },
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "That sounds really concerning. Thank you for sharing this. I’d like to bring in another team member who works closely with school administrators to help ensure this issue gets the right attention. One moment.",
             "user": {
                 "id": 1,
@@ -399,8 +412,21 @@
             "timestamp": "2024-12-03T21:48:43.339Z"
         },
         {
+            "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
+            "type": "stakeholders",
+            "text": "Maria Gonzalez was added to Reporter Dialog.",
+            "user": {
+                "id": 1,
+                "displayName": "Ellie Johnson",
+                "role": "counselor",
+                "status": 1,
+                "title": "SHP Counselor"
+            },
+            "timestamp": "2024-12-03T21:48:07.132Z"
+        },
+        {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "Hi, I’m Maria. I work on coordinating with schools to address situations like these. Thanks for letting us know about this. Have you mentioned this to any staff at your school, like a teacher or counselor?",
             "user": {
                 "id": 1,
@@ -413,7 +439,7 @@
         },
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "No, I didn’t want to get involved directly. I just wanted to let someone know without causing trouble for myself.",
             "user": {
                 "id": 1,
@@ -439,7 +465,7 @@
         },
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "In the meantime, are you feeling safe at school? Is there anything else about this situation or anything else that’s been bothering you?",
             "user": {
                 "id": 1,
@@ -780,6 +806,19 @@
                 "title": "SHP Counselor"
             },
             "timestamp": "2024-12-04T18:58:57.510Z"
+        },
+        {
+            "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
+            "type": "stakeholders",
+            "text": "Maria Gonzalez was added to Reporter Dialog.",
+            "user": {
+                "id": 1,
+                "displayName": "Ellie Johnson",
+                "role": "counselor",
+                "status": 1,
+                "title": "SHP Counselor"
+            },
+            "timestamp": "2024-12-04T18:58:59.966Z"
         },
         {
             "id": "12345",

@@ -1,5 +1,77 @@
 {
-  "canned": {
+  "reporter": {
+    "AcknowledgmentOfTip": [
+      {
+        "message": "Thank you for reaching out and sharing this information. Your tip is important to us.",
+        "type": "AcknowledgingSubmission"
+      },
+      {
+        "message": "We appreciate you taking the time to report this. Your safety and privacy are our top priorities.",
+        "type": "AppreciatingInput"
+      }
+    ],
+    "RequestingClarification": [
+      {
+        "message": "Could you provide more details about [SPECIFIC TOPIC]? This will help us better understand the situation.",
+        "type": "GeneralClarification"
+      },
+      {
+        "message": "You mentioned [DETAIL]. Can you clarify what you saw or experienced?",
+        "type": "SpecificFollowUp"
+      }
+    ],
+    "Reassurance": [
+      {
+        "message": "We are here to help and take every report seriously. Your privacy is completely protected.",
+        "type": "SupportAssurance"
+      },
+      {
+        "message": "You’re doing the right thing by reporting this. Let us know if there’s anything else we should know.",
+        "type": "Encouragement"
+      }
+    ],
+    "NextSteps": [
+      {
+        "message": "We’re reviewing the information you’ve provided and will take the appropriate steps to address the issue.",
+        "type": "ActionBeingTaken"
+      },
+      {
+        "message": "If we need additional details, is it okay to message you here? Your identity will remain anonymous.",
+        "type": "FollowingUp"
+      }
+    ],
+    "SafetyChecks": [
+      {
+        "message": "Are you safe right now? If you need immediate assistance, please let us know so we can help.",
+        "type": "CheckingOnTipster"
+      },
+      {
+        "message": "If you feel unsafe, consider reaching out to someone you trust or local authorities for immediate help.",
+        "type": "EncouragingSupport"
+      }
+    ],
+    "Closure": [
+      {
+        "message": "Thank you again for sharing this with us. If you think of anything else, feel free to reach out anytime.",
+        "type": "ThankingTipster"
+      },
+      {
+        "message": "We’ve noted everything you’ve shared. Thank you for trusting us with this information.",
+        "type": "EndingConversation"
+      }
+    ],
+    "EncouragementToStayInContact": [
+      {
+        "message": "If there’s any new information or anything else you’d like to share, please don’t hesitate to message us again.",
+        "type": "InvitationToUpdate"
+      },
+      {
+        "message": "Your messages will remain confidential, and you can reach out anytime if you need help.",
+        "type": "ReassuranceOfPrivacy"
+      }
+    ]
+  },
+  "team": {
       "LifeSafetyEscalation": [
         {
           "message": "We’ve received information regarding a critical safety concern. Please review the details immediately and advise on next steps.",

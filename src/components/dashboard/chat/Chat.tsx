@@ -15,6 +15,7 @@ import Modal from './Modal';
 import Instructions from './modals/Instructions';
 import Stakeholders from "./modals/Stakeholders";
 import Tags from "./modals/Tags";
+import Summary from "./modals/Summary";
 
 export default function Chat(props:any) {
   const [chatMessage, setChatMessage] = createSignal("");
@@ -25,7 +26,7 @@ export default function Chat(props:any) {
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
   let editorRef!: TinyEditor;
-  const useRichEditor:boolean = false;
+  const useRichEditor:boolean = true;
   
   createEffect(() => {
     if (props.messages.length) {
@@ -93,10 +94,11 @@ export default function Chat(props:any) {
     const lastChar = text[text.length - 1];
     if (lastChar === '@') {
       setPopover(POPOVER.CONTACTS);
-    } else if (lastChar === '/' && text.length === 1) {
+    } else if (lastChar === '/') {
       setPopover(POPOVER.CANNED);
+    } else if (text.includes("/") && popover() === POPOVER.CANNED) {
+      setPopover(null);
     } else {
-      if (text.includes("/")) (true);
       const mentionMatch = text.match(/@([^@\s]*)$/);
       if (mentionMatch) {
         setPopover(POPOVER.CONTACTS);
@@ -115,7 +117,7 @@ export default function Chat(props:any) {
     const rawContent = stripHtmlTags(content) + key;
     if (key === '@') {
       setPopover(POPOVER.CONTACTS);
-    } else if (key === '/' && rawContent.length === 1) {
+    } else if (key === '/') {
       setPopover(POPOVER.CANNED);
     } else {
       const mentionMatch = rawContent.match(/@([^@\s]*)$/);
@@ -138,14 +140,26 @@ export default function Chat(props:any) {
   const handleContactsPopoverClick = (name:string) => {
     const atInd = chatMessage().indexOf('@');
     setChatMessage(useRichEditor ? 
-      chatMessage().substring(0, atInd) + `<span style="background-color: #c5eff6;">@${name}</span> <span>&nbsp;</span>`
+      chatMessage().substring(0, atInd) + `<span class="callout">@${name}</span> <span>&nbsp;</span>`
       : `@${name} `
     )
     setPopover(null);
     moveCursorToEnd();
   }
   const handleCannedPopoverClick = (text:string) => {
-    setChatMessage(chatMessage() === "/" ? text : `${chatMessage()} ${text}`);
+    const rawContent = useRichEditor ? stripHtmlTags(chatMessage()) : chatMessage();
+    const lastChar = rawContent[rawContent.length - 1];
+
+    if(rawContent === "/"){
+      setChatMessage(text);
+    } else {
+      if( useRichEditor){
+        setChatMessage(lastChar === "/" ? `${chatMessage().replace('/</p>', '')} ${text}</p>` : `${chatMessage().slice(0, -4)} ${text}</p>`);
+      } else {
+        setChatMessage(lastChar === "/" ? `${chatMessage().slice(0, -1)} ${text}` : `${chatMessage()} ${text}`);
+      }
+    }
+    
     setPopover(null);
     moveCursorToEnd();
   }
@@ -201,7 +215,11 @@ export default function Chat(props:any) {
           <button class="icon" onClick={() => openModal(MODAL.INSTRUCTIONS)}>
             <i class={`fa-solid fa-circle-info fa-lg ${modal() === MODAL.INSTRUCTIONS ? 'icon-active' : ''}`}></i>
           </button>
-        </Show>        
+        </Show> 
+
+        <button class="icon" onClick={() => openModal(MODAL.SUMMARY)}>
+            <i class={`fa-solid fa-wand-magic-sparkles fa-lg ${modal() === MODAL.SUMMARY ? 'icon-active' : ''}`}></i>
+          </button>       
       </div>
 
       {/* case details */}
@@ -296,7 +314,7 @@ export default function Chat(props:any) {
                   />
                 </Match>
                 <Match when={popover() === POPOVER.CANNED}>
-                  <Canned handleCannedPopoverClick={handleCannedPopoverClick} />
+                  <Canned target={props.target} handleCannedPopoverClick={handleCannedPopoverClick} />
                 </Match>
               </Switch>
             </Popover>
@@ -374,6 +392,9 @@ export default function Chat(props:any) {
           </Match>
           <Match when={modal() === MODAL.TAGS}>
               <Tags caseTags={props.case.tags} manageTags={manageTags} />
+          </Match>
+          <Match when={modal() === MODAL.SUMMARY}>
+              <Summary target={props.target} tipId={props.tipId} />
           </Match>
         </Switch>
       </Modal>

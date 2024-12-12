@@ -1,6 +1,6 @@
 import { createSignal, For } from "solid-js";
 import "./Canned.css";
-import { canned } from '/src/data/canned.json';
+import { reporter, team } from '/src/data/canned.json';
 import { formatCamelCase } from '/src/common/utils/utils';
 
 export default function Canned(props:any) {
@@ -18,7 +18,7 @@ export default function Canned(props:any) {
     <div class="canned-wrapper">
       <div class="canned-grid">
         <ul class="canned-category-list">
-          <For each={Object.keys(canned)}>
+          <For each={Object.keys(props.target === 'team' ? team : reporter)}>
             {(cat) => (
               <li class={`canned-category ${cat === category() ? 'canned-category-selected' : ''}`} onClick={() => {
                 handleCategoryClick(cat);
@@ -30,7 +30,7 @@ export default function Canned(props:any) {
         </ul>
 
         <ul class="canned-message-list">
-          <For each={Object.entries(canned).filter((can) => can[0] === category() || category() ===  "")}>
+          <For each={Object.entries(props.target === 'team' ? team : reporter).filter((can) => can[0] === category() || category() ===  "")}>
             {(cat) => (
               <For each={cat[1]}>
                 {(item) => (

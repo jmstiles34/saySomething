@@ -157,6 +157,13 @@
   }
 }
 
+.callout {
+  background-color: #c5eff6;
+  padding: 2px;
+  border-radius: 2px;
+  color: blue;
+}
+
 .call-icon {
   display: flex;
   width: 100%;

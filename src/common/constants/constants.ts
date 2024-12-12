@@ -25,6 +25,7 @@ export const MESSAGE_TYPE = {
 export const MODAL = {
   INSTRUCTIONS: "instructions",
   STAKEHOLDERS: "stakeholders",
+  SUMMARY: "summary",
   TAGS: "tags",
 };
 

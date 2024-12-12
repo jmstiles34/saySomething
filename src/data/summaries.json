@@ -1,0 +1,167 @@
+{
+  "summaries": {
+    "TIP-002": {
+      "reporterDialog": [
+        {
+          "title": "Tipster Report:",
+          "notes": "A 9th-grade student, Ryan [last name redacted], has been making verbal threats about bringing a knife to school and hurting others. The tipster finds Ryan unpredictable and mentions he has been involved in fights recently."
+        },
+        {
+          "title": "Tipster Details:",
+          "notes": "The threats have been made in the presence of a group Ryan associates with, and other students may have overheard them. The tipster has not seen Ryan with a weapon but feels frightened by his behavior."
+        },
+        {
+          "title": "Anonymity:",
+          "notes": "The tipster expressed concern about staying anonymous to avoid retaliation. The crisis counselors reassured the tipster that their identity would be protected."
+        },
+        {
+          "title": "Action Plan Communicated to Tipster:",
+          "notes": "The information will be shared with school authorities for further investigation, and steps will be taken to ensure safety. The counselors thanked the tipster for their bravery and encouraged them to reach out again if needed."
+        }
+        ],
+      "teamComm": [
+        {
+          "title": "Initial Assessment:",
+          "notes": "Ryan's behavior is flagged as high-risk due to the verbal threats and history of fights. No confirmed sighting of a weapon, but the threats are taken seriously."
+        },
+        {
+          "title": "Details Gathered:",
+          "notes": "Ryan is a 9th-grade student at [school name redacted]. He has reportedly made these statements in front of peers, suggesting there may be witnesses."
+        },
+        {
+          "title": "Tipster's Safety:",
+          "notes": "The tipster is not personally targeted but feels scared. Their anonymity has been prioritized and reinforced."
+        },
+        {
+          "title": "Next Steps:",
+          "notes": [
+            "Notify school authorities and recommend a behavioral threat assessment for Ryan.",
+            "Continue to document any additional details provided by the tipster, including information about Ryan’s peers or any triggers for his behavior.",
+            "Maintain a supportive tone with the tipster to encourage further sharing."
+          ]
+        }
+      ]
+    },
+    "TIP-011": {
+      "reporterDialog": [
+        {
+          "title": "Tip Details:",
+          "notes": "An anonymous tipster reported students vaping in the upstairs bathrooms near the science wing at Jefferson High School. The incidents primarily occur during lunch and between classes."
+        },
+        {
+          "title": "Key Observations:",
+          "notes": [
+            "A group of older students frequently use the area and discourage others from using the bathroom.",
+            "The group has reportedly tried to involve younger students in vaping."
+          ]
+        },
+        {
+          "title": "Tipster's Position:",
+          "notes": "The tipster is concerned but wants to remain anonymous and has not reported this to any school staff."
+        },
+        {
+          "title": "Actions Taken by Counselors:",
+          "notes": 
+          [
+            "Assured the tipster their identity and anonymity are protected.",
+            "Gathered details about the location, timing, and general nature of the issue.",
+            "Confirmed that the information will be shared with the school in a confidential manner."
+          ]
+        }
+      ],
+      "teamComm": [
+        {
+          "title": "Initial Discussion:",
+          "notes": "Jamie informed Alex about the anonymous report, including the location, timing, and recurring nature of the vaping incidents."
+        },
+        {
+          "title": "Plan of Action:",
+          "notes": [
+            "Classify the situation as medium priority unless immediate health or safety concerns emerge.",
+            "Gather additional details from the tipster for precision in reporting.",
+            "Recommend involving the school resource officer (SRO) after confirming all relevant information."
+          ]
+        },
+        {
+          "title": "Next Steps:",
+          "notes": [
+            "Alex will prepare the report for the school administrators and SRO once the tip with all collected details is complete.",
+            "The team plans to suggest increased monitoring or walkthroughs in the area where vaping incidents are reported."
+          ]
+        }
+      ]
+    },
+    "TIP-014": {
+      "reporterDialog": [
+        {
+          "title": "Tip Report Details:",
+          "notes": [
+            "An anonymous tipster reported that a male student at their school is being abusive toward his girlfriend. The abuse includes yelling, name-calling, and physical aggression (e.g., grabbing her arm hard in public).",
+            "The male student has threatened peers, saying, “If you talk, I’ll kill you,” to deter them from reporting the abuse to adults.",
+            "The tipster is afraid and prefers to remain anonymous but is cooperative in providing information."
+          ]
+        },
+        {
+          "title": "Key Concerns:",
+          "notes": [
+            "The abusive behavior has been ongoing for months, with the threats escalating recently.",
+            "Students, including the girlfriend, are scared to come forward due to fear of retaliation.",
+            "There is no immediate indication of weapons or specific plans for violence, but the threats are credible and concerning."
+          ]
+        },
+        {
+          "title": "Details Provided:",
+          "notes": [
+            "Abuse incidents have been observed in public areas like the cafeteria and hallways.",
+            "The tipster has not shared names but is willing to stay in touch for further questions."
+          ]
+        },
+        {
+          "title": "Actions Taken:",
+          "notes": [
+            "Reassured the tipster of confidentiality and safety.",
+            "Asked about patterns of behavior to identify high-risk times or locations.",
+            "Began exploring whether others, like the girlfriend, have approached any adults for help."
+          ]
+        }
+      ],
+      "teamComm": [
+        {
+          "title": "Current Situation:",
+          "notes": "The tip involves a male student being abusive toward his girlfriend and making credible threats to peers to silence them. The abuse is public, and fear among students is widespread."
+        },
+        {
+          "title": "Information Available:",
+          "notes": [
+            "Abuse occurs in visible areas (cafeteria, hallways) and has been ongoing for months.",
+            "Threats have recently escalated but no weapons or explicit plans have been mentioned.",
+            "The tipster is maintaining anonymity but is providing useful context."
+          ]
+        
+        
+        },
+        {
+          "title": "Counselor Actions:",
+          "notes": [
+            "Built trust with the tipster to keep them engaged and cooperative.",
+            "Emphasized confidentiality and assured their safety.",
+            "Collected details about the nature and locations of the incidents.",
+            "Explored the possibility of corroborating the tip through observed patterns or other witnesses."
+          ]
+        
+        
+        },
+        {
+          "title": "Next Steps:",
+          "notes": [
+            "Continue engaging the tipster to gather more specific information, especially about immediate risks to the girlfriend or others.",
+            "Develop a plan to involve school officials or law enforcement if the situation escalates or more actionable details are provided.",
+            "Prepare to create a targeted safety plan for high-risk areas like the cafeteria and hallways."
+          ]
+        
+        
+        }
+      ]
+    }
+  }
+}
