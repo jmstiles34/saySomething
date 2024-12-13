@@ -1,13 +1,14 @@
-import { createEffect, createSignal, For, Match, Show, Switch } from "solid-js";
+import { createEffect, createSignal, For, JSX, Match, Show, Switch } from "solid-js";
 import { type Editor as TinyEditor } from "tinymce";
 import DOMPurify from 'dompurify';
 import Editor  from "tinymce-solid";
 import "./Chat.css";
-import { format, isSameDay } from 'date-fns';
+import { format, toZonedTime } from 'date-fns-tz'
+import { isSameDay } from 'date-fns';
 import type { Contact, Message, User } from "./types";
-import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, USERS } from '/src/common/constants/constants'
+import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, USERS } from '/src/common/constants/constants'
 import { contacts } from '/src/data/contacts.json'; 
-import { getOrdinalSuffix } from '/src/common/utils/utils';
+import { dateInTimezone, getOrdinalSuffix } from '/src/common/utils/utils';
 import Popover from './Popover';
 import Canned from './popovers/Canned';
 import Contacts from './popovers/Contacts';
@@ -22,12 +23,17 @@ export default function Chat(props:any) {
   const [filteredContacts, setFilteredContacts] = createSignal<Contact[]>(contacts);
   const [modal, setModal] = createSignal<string | null>(null);
   const [popover, setPopover] = createSignal<string | null>(null);
+  const [useSchoolTimezone, setUseSchoolTimezone] = createSignal<boolean>(false);
 
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
   let editorRef!: TinyEditor;
-  const useRichEditor:boolean = true;
-  
+  const useRichEditor:boolean = false;
+
+  const defaultTimezone:string = "EST";
+  const schoolTimezone:string = "PST";
+  const [timezone, setTimezone] = createSignal<string>(defaultTimezone);
+
   createEffect(() => {
     if (props.messages.length) {
       scrollToBottom()
@@ -49,26 +55,46 @@ export default function Chat(props:any) {
     return {
       id: crypto.randomUUID(),
       type,
-      text,
+      text: replaceVariables(text),
       user,
       timestamp: new Date()
     }
   };
 
-  const formatMessageGroupDate = (date:Date) => {
+  const replaceVariables = (msg:string): string => {
+    if(msg.includes("[TIPID]")){
+      msg = msg.replace("[TIPID]", props.tipId);
+    }
+
+    const {fullDateTime, dateOnly, timeOnly, timeWithLocale, timezone} = dateInTimezone(new Date, schoolTimezone);
+
+    if(msg.includes("[DATE]")){
+      msg = msg.replaceAll("[DATE]", dateOnly);
+    }
+    if(msg.includes("[TIME]")){
+      msg = msg.replaceAll("[TIME]", timeWithLocale);
+    }
+    if(msg.includes("[DATETIME]")){
+      msg = msg.replaceAll("[DATETIME]", dateOnly + ' ' + timeWithLocale);
+    }
+
+    return msg
+  }
+
+  const formatMessageGroupDate = (date:Date): string => {
     const day = format(date, 'd');
     const suffix = getOrdinalSuffix(Number(day));
     return format(date, `EEEE, MMMM d`) + suffix;
   }
 
-  const handleMessageSubmit = (e: Event) => {
+  const handleMessageSubmit = (e: Event): void => {
     e.preventDefault();
     const newMessage = createMessage(USERS.counselor, chatMessage())
     sendMessage(newMessage);
     setChatMessage("");
   };
 
-  const moveCursorToEnd = () => {
+  const moveCursorToEnd = (): void => {
     if(useRichEditor){
       editorRef.focus();
       const lastElement = editorRef.getBody().lastChild;
@@ -81,16 +107,16 @@ export default function Chat(props:any) {
     }
   }
 
-  const openModal = (buttonKey:string) => {
+  const openModal = (buttonKey:string): void => {
     setModal(buttonKey === modal() ? null : buttonKey);
   };
 
-  const sendMessage = (newMessage:Message) => {
+  const sendMessage = (newMessage:Message): void => {
     props.setMessages([...props.messages, newMessage]);
   };
 
   const simpleInput = (text:string): void => {
-    setChatMessage(text);
+    setChatMessage(replaceVariables(text));
     const lastChar = text[text.length - 1];
     if (lastChar === '@') {
       setPopover(POPOVER.CONTACTS);
@@ -133,11 +159,11 @@ export default function Chat(props:any) {
     }
   };
 
-  const stripHtmlTags = (html:string) => {
+  const stripHtmlTags = (html:string): string => {
     return DOMPurify.sanitize(html, {ALLOWED_TAGS: []});
   }
 
-  const handleContactsPopoverClick = (name:string) => {
+  const handleContactsPopoverClick = (name:string): void => {
     const atInd = chatMessage().indexOf('@');
     setChatMessage(useRichEditor ? 
       chatMessage().substring(0, atInd) + `<span class="callout">@${name}</span> <span>&nbsp;</span>`
@@ -146,17 +172,19 @@ export default function Chat(props:any) {
     setPopover(null);
     moveCursorToEnd();
   }
-  const handleCannedPopoverClick = (text:string) => {
+
+  const handleCannedPopoverClick = (text:string): void => {
     const rawContent = useRichEditor ? stripHtmlTags(chatMessage()) : chatMessage();
     const lastChar = rawContent[rawContent.length - 1];
+    const replacedText = replaceVariables(text);
 
     if(rawContent === "/"){
-      setChatMessage(text);
+      setChatMessage(replacedText);
     } else {
       if( useRichEditor){
-        setChatMessage(lastChar === "/" ? `${chatMessage().replace('/</p>', '')} ${text}</p>` : `${chatMessage().slice(0, -4)} ${text}</p>`);
+        setChatMessage(lastChar === "/" ? `${chatMessage().replace('/</p>', '')} ${replacedText}</p>` : `${chatMessage().slice(0, -4)} ${replacedText}</p>`);
       } else {
-        setChatMessage(lastChar === "/" ? `${chatMessage().slice(0, -1)} ${text}` : `${chatMessage()} ${text}`);
+        setChatMessage(lastChar === "/" ? `${chatMessage().slice(0, -1)} ${replacedText}` : `${chatMessage()} ${replacedText}`);
       }
     }
     
@@ -183,6 +211,12 @@ export default function Chat(props:any) {
       props.setActiveCase({...props.case, tags: [...props.case.tags.filter((v:string) => v !== id)]});
     }
   }
+
+  const toggleTimezone: JSX.EventHandlerUnion<HTMLInputElement, InputEvent> = (e) => {
+    const isChecked = (e.target as HTMLInputElement).checked;
+    setUseSchoolTimezone(isChecked);
+    setTimezone(isChecked ? schoolTimezone : defaultTimezone);
+  };
 
   return (
     <div class="chat-wrapper">
@@ -224,10 +258,20 @@ export default function Chat(props:any) {
 
       {/* case details */}
       <div class="case-details">
-        <Show when={display.style === 'reporter'}>
+        <Show when={props.target === 'reporter'}>
           <div>Case type: {props.case?.tipType}</div>
           <div>|</div>
           <div>Status: {props.case?.status}</div>
+        </Show>
+        <Show when={props.target === 'team'}>
+        <label class="timezone-toggle">
+          <input 
+            type="checkbox" 
+            checked={useSchoolTimezone()} 
+            onInput={toggleTimezone}
+          />
+          <span>Show local times ({schoolTimezone})</span>
+        </label>
         </Show>
       </div>
 
@@ -254,7 +298,9 @@ export default function Chat(props:any) {
                           <div class="bold-author">
                             {message.user.displayName}
                           </div>
-                          <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
+                          <div class="message-element-date">
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
+                            </div>
                           
                           <div innerHTML={message.text} class="message-element-text"/>
                           {/* <div class="message-element-text">{message.text}</div> */}
@@ -269,7 +315,9 @@ export default function Chat(props:any) {
                           <div class="bold-author">
                             {message.user.displayName}
                           </div>
-                          <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
+                          <div class="message-element-date">
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
+                          </div>
                           
                           <div innerHTML={message.text} class="message-element-text"/>
                           {/* <div class="message-element-text">{message.text}</div> */}
@@ -283,7 +331,9 @@ export default function Chat(props:any) {
                           <div class="bold-author">
                             {message.user.displayName}
                           </div>
-                          <div class="message-element-date">{format(message.timestamp, 'h:mm aa')}</div>
+                          <div class="message-element-date">
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
+                          </div>
                           
                           <div innerHTML={message.text} class="message-element-text"/>
                           {/* <div class="message-element-text">{message.text}</div> */}
@@ -337,7 +387,7 @@ export default function Chat(props:any) {
                 ref={editorRef}
                 apiKey="zmj3mwd02jhm0petatetozceb2u06fqhpz8f9y9oi9bnihcr"
                 value={chatMessage()}
-                /* onInit={(_content: string, editor: TinyEditor) => (editorRef = editor)} */
+                onInit={(_content: string, editor: TinyEditor) => (editorRef = editor)}
                 init={{
                   menubar: false,
                   height: 125,
@@ -346,6 +396,7 @@ export default function Chat(props:any) {
                   width: "100%",
                   statusbar: false,
                   placeholder: `Message to ${display.name}...`,
+                  content_style: '.callout { background-color: hsla(51, 100%, 50%, .5); padding: 4px; border-radius: 4px; color: #4682b4; }',
                   setup: function(editor) {
                     editor.on('keypress', function(e) {
                       richInput(e.key, editor.getContent());
@@ -358,7 +409,7 @@ export default function Chat(props:any) {
                 }}
                 onEditorChange={(content: string, editor: TinyEditor) => {
                   // const newContent = editor.getContent();
-                  setChatMessage(content);
+                  setChatMessage(replaceVariables(content));
                 }}
               />
             </Show>

@@ -12,11 +12,11 @@
     ],
     "RequestingClarification": [
       {
-        "message": "Could you provide more details about [SPECIFIC TOPIC]? This will help us better understand the situation.",
+        "message": "Could you provide more details about this situation? This will help us better understand the situation.",
         "type": "GeneralClarification"
       },
       {
-        "message": "You mentioned [DETAIL]. Can you clarify what you saw or experienced?",
+        "message": "You mentioned this specific incident. Can you clarify what you saw or experienced?",
         "type": "SpecificFollowUp"
       }
     ],
@@ -74,7 +74,7 @@
   "team": {
       "LifeSafetyEscalation": [
         {
-          "message": "We’ve received information regarding a critical safety concern. Please review the details immediately and advise on next steps.",
+          "message": "We’ve received information at [TIME] regarding a critical safety concern. Please review the details immediately and advise on next steps.",
           "type": "ImmediateActionRequired"
         },
         {
@@ -88,15 +88,15 @@
       ],
       "RequestForInformationOrAssistance": [
         {
-          "message": "Can you confirm details about [SPECIFIC DETAIL] to ensure appropriate handling of this tip?",
+          "message": "Can you confirm details about the student's whereabouts to ensure appropriate handling of this tip?",
           "type": "ClarificationNeeded"
         },
         {
-          "message": "To proceed effectively, we need additional context about [RELEVANT SITUATION]. Could you provide that information?",
+          "message": "To proceed effectively, we need additional context about this incident. Could you provide that information?",
           "type": "RequestForContext"
         },
         {
-          "message": "We are validating this tip and need confirmation about [DETAIL]. Your input is appreciated.",
+          "message": "We are validating this tip and need confirmation about the student referenced. Your input is appreciated.",
           "type": "VerificationOfInformation"
         }
       ],
@@ -116,7 +116,7 @@
       ],
       "ResolutionOrNextSteps": [
         {
-          "message": "This tip has been reviewed, and actions have been taken to address the concern. Let us know if further follow-up is required.",
+          "message": "Tip [TIPID] has been reviewed, and actions have been taken to address the concern. Let us know if further follow-up is required.",
           "type": "ResolutionCommunicated"
         },
         {
@@ -124,13 +124,13 @@
           "type": "NoFurtherActionNeeded"
         },
         {
-          "message": "While no immediate action is required, we recommend monitoring [DETAIL] for any changes.",
+          "message": "While no immediate action is required, we recommend monitoring this situation for any changes.",
           "type": "AdditionalMonitoringRequired"
         }
       ],
       "GeneralCollaboration": [
         {
-          "message": "Thank you for your assistance. Please confirm receipt of this update and let us know if further action is required.",
+          "message": "Thank you for your assistance with [TIPID]. Please confirm receipt of this update on [DATE] at [TIME] and let us know if further action is required.",
           "type": "ConfirmationOfReceipt"
         },
         {

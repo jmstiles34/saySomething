@@ -1,3 +1,5 @@
+import { format, toZonedTime } from 'date-fns-tz'
+
 export const convertToMinutesAndSeconds = (totalSeconds: number) => {
   // Handle negative numbers and non-numeric inputs
   if (typeof totalSeconds !== "number" || isNaN(totalSeconds)) {
@@ -70,3 +72,28 @@ export const getOrdinalSuffix = (n:number) => {
   if (j === 3 && k !== 13) return 'rd';
   return 'th';
 };
+
+export const dateInTimezone = (date:Date, timezone:string) => {
+  // Convert the date to the specified timezone
+  const zonedDate = toZonedTime(date, timezone);
+  
+  // Format the date with timezone information
+  return {
+    // Full date and time with timezone
+    fullDateTime: format(zonedDate, 'yyyy-MM-dd HH:mm:ss zzz', { timeZone: timezone }),
+    
+    // Date only
+    dateOnly: format(zonedDate, 'PP', { timeZone: timezone }),
+    
+    // AM or PM
+    meridiem: format(zonedDate, 'aa', { timeZone: timezone }),
+
+    // Time only
+    timeOnly: format(zonedDate, 'h:mm', { timeZone: timezone }),
+
+    // Time with locale
+    timeWithLocale: format(zonedDate, 'h:mm aa (zzz)', { timeZone: timezone }),
+  
+    timezone: format(zonedDate, 'zzz', { timeZone: timezone })
+  };
+}

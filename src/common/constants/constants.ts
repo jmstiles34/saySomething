@@ -101,6 +101,8 @@ export const USERS = {
   },
 };
 
+export const REPLACE_VALUES = ['TIPID','DATE','TIME']
+
 export const LABEL_CHATTING = "Chatting";
 export const LABEL_HOME = "Home";
 export const LABEL_PHONE = "Phone";
@@ -110,3 +112,11 @@ export const LABEL_SEARCH = "Search";
 export const LABEL_SETTINGS = "Settings";
 export const LABEL_STAFF = "Staff";
 export const LABEL_TIPS = "Tips";
+
+
+export const TIME_ZONES = {
+  CST: 'America/Chicago',
+  EST: 'America/New_York',
+  MST: 'America/Denver',
+  PST: 'America/Los_Angeles'
+}
