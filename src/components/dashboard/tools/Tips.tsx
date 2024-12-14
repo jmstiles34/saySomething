@@ -23,7 +23,7 @@ export default function Tips(props:any) {
       tips: tips.filter(t => t.assignedTo === "")
     }
   ];
-
+ 
   return (
     <div class={styles.tipsWrapper}>
       <div class={styles.searchContainer}>
