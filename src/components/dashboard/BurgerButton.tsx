@@ -46,7 +46,7 @@ export default function BurgerButton(props:any) {
     <div class="burger-button" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <button class="icon" onClick={toggleMenu}>
           <i class={`fa fa-bars fa-lg`}></i>
-        </button>
+        </button> 
 
         {isMenuOpen() && (
           <nav 

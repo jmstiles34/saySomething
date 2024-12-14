@@ -227,7 +227,7 @@ export default function Chat(props:any) {
         <Show when={display.style === 'reporter'}>
           {display.name} Dialog — {`${props.tipId} `}
           <Show when={props.case?.lifeSafety}>
-            <i class="fa-solid fa-triangle-exclamation fa danger"/>
+            <img class="title-danger-icon" src={`/src/assets/icons/life-safety.svg`} alt="Life Safety Icon" />
           </Show>
         </Show>
       </div>
@@ -405,7 +405,7 @@ export default function Chat(props:any) {
                   plugins:
                     "advlist advlist autolink lists link image charmap preview anchor searchreplace visualblocks code fullscreen insertdatetime media table code help wordcount",
                   toolbar:
-                    "undo redo | bold italic forecolor | bullist numlist | link image code",
+                    "undo redo | bold italic forecolor | bullist numlist | link code",
                 }}
                 onEditorChange={(content: string, editor: TinyEditor) => {
                   // const newContent = editor.getContent();

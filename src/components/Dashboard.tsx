@@ -4,9 +4,7 @@ import { useChatContext } from "/src/context/ChatContext";
 import { messages } from '/src/data/messages.json';
 import type { Message } from "./types";
 import "./Dashboard.css";
-import BurgerButton from "./dashboard/BurgerButton";
-import ToolPanel from "./dashboard/ToolPanel";
-import CaseBar from "./dashboard/CaseBar";
+import ToolBar from "./dashboard/ToolBar";
 import { Tip } from './dashboard/chat/types';
 import Chat from "./dashboard/chat/Chat";
 
@@ -14,7 +12,6 @@ export default function Dashboard() {
   const {reporterChat, teamChat} = useChatContext() as {reporterChat:Signal<Message[]>, teamChat:Signal<Message[]>};
   const [reporterMessages, setReporterMessages] = reporterChat;
   const [teamMessages, setTeamMessages] = teamChat;
-  const [selectedNav, setSelectedNav] = createSignal("");
   const [activeTipId, setActiveTipId] = createSignal<string | null>('TIP-014');
   const [activeCase, setActiveCase] = createSignal<Tip | null>(null);
 
@@ -25,9 +22,8 @@ export default function Dashboard() {
 
   return (
     <main>
-      <BurgerButton setSelectedNav={setSelectedNav} />
-      <CaseBar activeTipId={activeTipId} setActiveCase={setActiveCase} setActiveTipId={setActiveTipId} />
-      <ToolPanel selectedNav={selectedNav} setSelectedNav={setSelectedNav} activeTipId={activeTipId} setActiveCase={setActiveCase} setActiveTipId={setActiveTipId} />
+      <ToolBar tipId={activeTipId()} setActiveTipId={setActiveTipId} setActiveCase={setActiveCase}/>
+
       <div class="tip-dash-chat">
         <Chat 
           target="reporter" 

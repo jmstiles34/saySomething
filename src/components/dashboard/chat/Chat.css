@@ -21,10 +21,19 @@
   margin-top: -19px;
   margin-left: 12px;
   white-space: nowrap;
+  display: flex;
+  gap: 4px;
 
   i {
     padding-left: 4px;
   }
+}
+
+.title-danger-icon {
+  height: 22px;
+  width: 22px;
+  margin-left: 8px;
+  align-self: center;
 }
 
 .chat-tool-icons {
