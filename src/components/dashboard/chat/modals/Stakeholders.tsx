@@ -1,11 +1,11 @@
 import { createSignal, For, Show } from 'solid-js';
 import "./Stakeholders.css";
 import { formatPhoneNumber } from '/src/common/utils/utils';
-import { Contact } from '../types';
+import { Staff } from '../../../../common/types/types';
 
 export default function Stakeholders(props:any) {
   const [expandedList, setExpandedList] = createSignal<string[]>([]);
-  const [filteredContacts, setFilteredContacts] = createSignal<Contact[]>(props.allContacts);
+  const [filteredContacts, setFilteredContacts] = createSignal<Staff[]>(props.allContacts);
   const [searchValue, setSearchValue] = createSignal<string>("");
 
   const handleCallClick = (message:string) => {
@@ -20,17 +20,18 @@ export default function Stakeholders(props:any) {
     }
   }
 
-    const handleSearchInput = (text:string): void => {
-      setSearchValue(text);
-      if(text === ""){
-        setFilteredContacts(props.allContacts);
-      } else {
-        setFilteredContacts([...props.allContacts.filter((contact:Contact) => {
-          return contact.name.toLowerCase().includes(text.toLowerCase())
-        })]) 
-      }
+  const handleSearchInput = (text:string): void => {
+    setSearchValue(text);
+    if(text === ""){
+      setFilteredContacts(props.allContacts);
+    } else {
+      setFilteredContacts([...props.allContacts.filter((contact:Staff) => {
+        const joinedName = `${contact.firstName} ${contact.lastName}`
+        return joinedName.toLowerCase().includes(text.toLowerCase())
+      })]) 
+    }
   }
- 
+
   return (
     <div class="stakeholder-wrapper">
       <div class="stakeholder-header">
@@ -62,28 +63,28 @@ export default function Stakeholders(props:any) {
           </div>
         </Show>
 
-        <For each={filteredContacts().filter((contact:Contact) => props.contacts.includes(contact.id))}>
+        <For each={filteredContacts().filter((contact:Staff) => props.contacts.includes(contact.id))}>
           {(contact) => (
             <div class="stakeholder-card" onClick={() => handleCardClick(contact.id)}>
               <div>
-                <div><strong>{contact.name}</strong>, {contact.title}</div>
-                <div>{contact.school}</div>
+                <div><strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}</div>
+                <div>{props.school.name}</div>
                 <Show when={expandedList().includes(contact.id)}>
                   <div>{contact.email}</div>
-                  <div>Cell: {formatPhoneNumber(contact.cell_phone)}</div>
-                  <div>Phone: {formatPhoneNumber(contact.work_phone)}</div>
+                  <div>Cell: {formatPhoneNumber(contact.phone.cell)}</div>
+                  <div>Phone: {formatPhoneNumber(contact.phone.work)}</div>
                 </Show>
               </div>
 
               <div class="stakeholder-actions">                  
                 <button class="icon" onClick={(e) => {
                     e.stopPropagation();
-                    handleCallClick(`${contact.name}, ${contact.title}`)}}>
+                    handleCallClick(`${contact.firstName} ${contact.lastName}, ${contact.title}`)}}>
                   <i class={`fa-solid fa-square-phone fa-lg`}></i>
                 </button>
                 <button class="icon" onClick={(e) => {
                   e.stopPropagation();
-                  props.manageStakeholders('remove', contact.id, contact.name)
+                  props.manageStakeholders('remove', contact.id, `${contact.firstName} ${contact.lastName}`)
                 }}>
                   <i class="fa fa-user-minus fa-lg"></i>
                 </button>
@@ -103,28 +104,28 @@ export default function Stakeholders(props:any) {
           </div>
         </Show>
       
-        <For each={filteredContacts().filter((contact:Contact) => !props.contacts.includes(contact.id))}>
+        <For each={filteredContacts().filter((contact:Staff) => !props.contacts.includes(contact.id))}>
           {(contact) => (
             <div class="stakeholder-card" onClick={() => handleCardClick(contact.id)}>
               <div>
-                <div><strong>{contact.name}</strong>, {contact.title}</div>
-                <div>{contact.school}</div>
+                <div><strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}</div>
+                <div>{props.school.name}</div>
                 <Show when={expandedList().includes(contact.id)}>
                   <div>{contact.email}</div>
-                  <div>Cell: {formatPhoneNumber(contact.cell_phone)}</div>
-                  <div>Phone: {formatPhoneNumber(contact.work_phone)}</div>
+                  <div>Cell: {formatPhoneNumber(contact.phone.cell)}</div>
+                  <div>Phone: {formatPhoneNumber(contact.phone.work)}</div>
                 </Show>
               </div>
 
               <div class="stakeholder-actions">                  
                 <button class="icon" onClick={(e) => {
                     e.stopPropagation();
-                    handleCallClick(`${contact.name}, ${contact.title}`)}}>
+                    handleCallClick(`${contact.firstName} ${contact.lastName}, ${contact.title}`)}}>
                   <i class={`fa-solid fa-square-phone fa-lg`}></i>
                 </button>
                 <button class="icon" onClick={(e) => {
                   e.stopPropagation();
-                  props.manageStakeholders('add', contact.id, contact.name)
+                  props.manageStakeholders('add', contact.id, `${contact.firstName} ${contact.lastName}`)
                 }}>
                   <i class="fa fa-user-plus fa-lg"></i>
                 </button>

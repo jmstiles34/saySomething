@@ -1,0 +1,1474 @@
+{
+  "schools": [
+    {
+      "id": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+      "name": "Springfield High School",
+      "address": {
+        "street": "123 Main St",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001"
+      },
+      "contact": {
+        "phone": "983-142-9932",
+        "email": "info@springfieldhigh.com"
+      },
+      "timezone": "PST",
+      "staff": [
+        {
+          "id": "d22008ce-f6ca-4e88-8472-2ba3e2e41187",
+          "firstName": "Jesse",
+          "lastName": "Smith",
+          "title": "Librarian",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "jesse.smith@springfieldhigh.com",
+          "teamLead": true,
+          "phone": {
+            "work": "877-478-1258",
+            "cell": "466-453-5053"
+          }
+        },
+        {
+          "id": "1624c7f9-bd57-4ff8-b006-87da330bd754",
+          "firstName": "Taylor",
+          "lastName": "Brown",
+          "title": "Teacher",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "taylor.brown@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "563-800-1908",
+            "cell": "393-544-5801"
+          }
+        },
+        {
+          "id": "5c1a16b2-e369-4217-aa1b-68e9f52381e5",
+          "firstName": "Jordan",
+          "lastName": "Smith",
+          "title": "Librarian",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "jordan.smith@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "799-231-5812",
+            "cell": "624-743-7777"
+          }
+        },
+        {
+          "id": "8aff346a-043d-477e-8469-ed38b7242e7c",
+          "firstName": "Alex",
+          "lastName": "Smith",
+          "title": "Secretary",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "alex.smith@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "431-130-8412",
+            "cell": "998-753-5798"
+          }
+        },
+        {
+          "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
+          "firstName": "Robin",
+          "lastName": "Martinez",
+          "title": "Coach",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "robin.martinez@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "678-961-4451",
+            "cell": "267-264-3577"
+          }
+        },
+        {
+          "id": "8ae70c14-8e7e-43a5-adc4-0b9f4e691ab9",
+          "firstName": "Alex",
+          "lastName": "Johnson",
+          "title": "Principal",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "alex.johnson@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "282-404-6042",
+            "cell": "963-896-3774"
+          }
+        },
+        {
+          "id": "a6cebbae-0d27-43d1-9454-0bd4f646aa7b",
+          "firstName": "Taylor",
+          "lastName": "Johnson",
+          "title": "Secretary",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "taylor.johnson@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "938-890-5981",
+            "cell": "274-292-5033"
+          }
+        },
+        {
+          "id": "090aaf0b-2ee1-4496-80fe-f44d6423a6a6",
+          "firstName": "Jordan",
+          "lastName": "Davis",
+          "title": "Vice Principal",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "jordan.davis@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "200-245-4461",
+            "cell": "697-874-9149"
+          }
+        },
+        {
+          "id": "26ec3ac9-edf9-4127-becb-e8059bd4c589",
+          "firstName": "Dana",
+          "lastName": "Brown",
+          "title": "Vice Principal",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "dana.brown@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "664-759-9109",
+            "cell": "621-149-4479"
+          }
+        },
+        {
+          "id": "aebefbf1-63ef-4424-a531-326d429085ec",
+          "firstName": "Casey",
+          "lastName": "Johnson",
+          "title": "Vice Principal",
+          "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+          "email": "casey.johnson@springfieldhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "972-506-2132",
+            "cell": "516-544-1231"
+          }
+        }
+      ]
+    },
+    {
+      "id": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+      "name": "Riverview Middle School",
+      "address": {
+        "street": "456 River Rd",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80203"
+      },
+      "contact": {
+        "phone": "280-229-5601",
+        "email": "info@riverviewmiddle.com"
+      },
+      "timezone": "MST",
+      "staff": [
+        {
+          "id": "69d270ba-0b3f-49ff-917d-cac965fa2643",
+          "firstName": "Robin",
+          "lastName": "Johnson",
+          "title": "Librarian",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "robin.johnson@riverviewmiddle.com",
+          "teamLead": true,
+          "phone": {
+            "work": "210-149-4122",
+            "cell": "487-721-6665"
+          }
+        },
+        {
+          "id": "bf165271-8b99-4036-9743-6d0d3584bbc5",
+          "firstName": "Jamie",
+          "lastName": "Davis",
+          "title": "School Counselor",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "jamie.davis@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "788-957-4733",
+            "cell": "665-354-8823"
+          }
+        },
+        {
+          "id": "6f2e4f47-84c5-47d5-922d-a1a7ac99ce4e",
+          "firstName": "Morgan",
+          "lastName": "Martinez",
+          "title": "Secretary",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "morgan.martinez@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "583-142-8102",
+            "cell": "316-421-8874"
+          }
+        },
+        {
+          "id": "80f82f1b-f8ce-4997-ac33-826fc6cf5c9c",
+          "firstName": "Jordan",
+          "lastName": "Lopez",
+          "title": "Vice Principal",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "jordan.lopez@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "369-755-6136",
+            "cell": "485-393-9413"
+          }
+        },
+        {
+          "id": "1cf595d4-1772-41fe-b49f-c86b593400fb",
+          "firstName": "Morgan",
+          "lastName": "Garcia",
+          "title": "Coach",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "morgan.garcia@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "771-618-3850",
+            "cell": "630-617-2502"
+          }
+        },
+        {
+          "id": "4cb4decd-0e55-4273-b6dd-c9c6616c6315",
+          "firstName": "Taylor",
+          "lastName": "Smith",
+          "title": "Librarian",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "taylor.smith@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "374-144-6284",
+            "cell": "732-510-9756"
+          }
+        },
+        {
+          "id": "b8c20d2c-3db1-42d0-9c39-63d05a8c653e",
+          "firstName": "Chris",
+          "lastName": "Lopez",
+          "title": "Vice Principal",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "chris.lopez@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "851-230-4698",
+            "cell": "208-273-2173"
+          }
+        },
+        {
+          "id": "aea943db-b51a-4a8c-ad30-0e590b1c4bbc",
+          "firstName": "Dana",
+          "lastName": "Brown",
+          "title": "Teacher",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "dana.brown@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "756-818-8574",
+            "cell": "857-125-2834"
+          }
+        },
+        {
+          "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+          "firstName": "Chris",
+          "lastName": "Lopez",
+          "title": "Teacher",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "chris.lopez@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "625-247-4486",
+            "cell": "302-817-1950"
+          }
+        },
+        {
+          "id": "daedb23b-09ab-40a1-aaf0-d8d4ff61a824",
+          "firstName": "Morgan",
+          "lastName": "Hernandez",
+          "title": "Librarian",
+          "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+          "email": "morgan.hernandez@riverviewmiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "506-176-3050",
+            "cell": "599-686-4431"
+          }
+        }
+      ]
+    },
+    {
+      "id": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+      "name": "Oakwood Academy",
+      "address": {
+        "street": "789 Oak Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60601"
+      },
+      "contact": {
+        "phone": "824-922-5281",
+        "email": "info@oakwoodacademy.com"
+      },
+      "timezone": "CST",
+      "staff": [
+        {
+          "id": "3bf1c745-7520-4a89-902d-c084c20a73e8",
+          "firstName": "Alex",
+          "lastName": "Johnson",
+          "title": "Vice Principal",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "alex.johnson@oakwoodacademy.com",
+          "teamLead": true,
+          "phone": {
+            "work": "785-331-8511",
+            "cell": "781-958-1074"
+          }
+        },
+        {
+          "id": "3e8e0be8-741b-4bce-92d6-13fc3e59dd0c",
+          "firstName": "Jamie",
+          "lastName": "Jones",
+          "title": "Principal",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "jamie.jones@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "369-623-6966",
+            "cell": "423-745-8402"
+          }
+        },
+        {
+          "id": "85c93d59-1d42-4bb6-a421-e0490739d0ce",
+          "firstName": "Alex",
+          "lastName": "Martinez",
+          "title": "Counselor",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "alex.martinez@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "721-611-8824",
+            "cell": "694-211-7093"
+          }
+        },
+        {
+          "id": "5f25926c-3d67-41fe-b7b8-caf93cd04ce6",
+          "firstName": "Robin",
+          "lastName": "Jones",
+          "title": "Vice Principal",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "robin.jones@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "434-231-8755",
+            "cell": "569-646-8742"
+          }
+        },
+        {
+          "id": "00ee9b68-f51b-490b-9eef-9846bd21307c",
+          "firstName": "Jesse",
+          "lastName": "Brown",
+          "title": "Vice Principal",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "jesse.brown@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "510-211-6915",
+            "cell": "892-821-3657"
+          }
+        },
+        {
+          "id": "418914ce-de54-4e62-aa31-4d3f215b6015",
+          "firstName": "Chris",
+          "lastName": "Smith",
+          "title": "Librarian",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "chris.smith@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "410-502-8172",
+            "cell": "547-581-3252"
+          }
+        },
+        {
+          "id": "f9a291d9-5410-4ed9-b72c-8833b3d045f2",
+          "firstName": "Alex",
+          "lastName": "Lopez",
+          "title": "Teacher",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "alex.lopez@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "768-631-4359",
+            "cell": "403-642-3319"
+          }
+        },
+        {
+          "id": "3e4c26a1-08da-4f09-8e3e-d7fb43046b13",
+          "firstName": "Jordan",
+          "lastName": "Brown",
+          "title": "Counselor",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "jordan.brown@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "211-950-1090",
+            "cell": "712-900-5218"
+          }
+        },
+        {
+          "id": "46a290e8-76e7-4ef6-81f8-048cbead1aba",
+          "firstName": "Chris",
+          "lastName": "Lopez",
+          "title": "Vice Principal",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "chris.lopez@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "701-161-7996",
+            "cell": "546-958-8256"
+          }
+        },
+        {
+          "id": "d274d943-cf22-44f8-9ccf-988fe0e60538",
+          "firstName": "Robin",
+          "lastName": "Miller",
+          "title": "Principal",
+          "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+          "email": "robin.miller@oakwoodacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "533-209-7639",
+            "cell": "945-112-4278"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+      "name": "Pinecrest Elementary",
+      "address": {
+        "street": "101 Pine St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77001"
+      },
+      "contact": {
+        "phone": "700-750-6609",
+        "email": "info@pinecrestelementary.com"
+      },
+      "timezone": "CST",
+      "staff": [
+        {
+          "id": "c98c1206-cb7a-4e03-933e-ff7fe4463aee",
+          "firstName": "Morgan",
+          "lastName": "Davis",
+          "title": "Nurse",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "morgan.davis@pinecrestelementary.com",
+          "teamLead": true,
+          "phone": {
+            "work": "205-884-1653",
+            "cell": "995-433-6027"
+          }
+        },
+        {
+          "id": "bd672e9c-9365-4322-9702-d9e7015c5cbe",
+          "firstName": "Jesse",
+          "lastName": "Brown",
+          "title": "Coach",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "jesse.brown@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "283-899-1590",
+            "cell": "342-578-4250"
+          }
+        },
+        {
+          "id": "bba3102d-1f02-4551-a2b9-2fcb1562f0f3",
+          "firstName": "Dana",
+          "lastName": "Johnson",
+          "title": "School Counselor",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "dana.johnson@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "854-458-5208",
+            "cell": "777-519-7400"
+          }
+        },
+        {
+          "id": "d8b48f65-c4d8-492a-be04-5f30c2d1f7e4",
+          "firstName": "Chris",
+          "lastName": "Hernandez",
+          "title": "Counselor",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "chris.hernandez@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "715-558-7308",
+            "cell": "879-405-2102"
+          }
+        },
+        {
+          "id": "f269d484-f1c6-4f88-81cf-0d7be84782c7",
+          "firstName": "Taylor",
+          "lastName": "Brown",
+          "title": "Teacher",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "taylor.brown@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "354-791-8843",
+            "cell": "219-423-5486"
+          }
+        },
+        {
+          "id": "7cc53b30-60de-4450-95b5-e1bbceb3fc72",
+          "firstName": "Casey",
+          "lastName": "Johnson",
+          "title": "Librarian",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "casey.johnson@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "984-592-3870",
+            "cell": "835-299-8530"
+          }
+        },
+        {
+          "id": "c38c95c5-20e4-4ea7-807c-d92109228ddb",
+          "firstName": "Dana",
+          "lastName": "Johnson",
+          "title": "Vice Principal",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "dana.johnson@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "508-901-4756",
+            "cell": "963-689-2316"
+          }
+        },
+        {
+          "id": "ca0cfe38-3537-471d-9558-02bf24d05ba5",
+          "firstName": "Casey",
+          "lastName": "Smith",
+          "title": "Librarian",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "casey.smith@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "487-214-7207",
+            "cell": "243-250-8951"
+          }
+        },
+        {
+          "id": "9f8353c0-9a9a-43fb-af16-ced720452040",
+          "firstName": "Alex",
+          "lastName": "Davis",
+          "title": "Teacher",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "alex.davis@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "210-880-1571",
+            "cell": "518-580-5690"
+          }
+        },
+        {
+          "id": "3816413d-ec8a-49c3-8f28-373950cdb3d4",
+          "firstName": "Casey",
+          "lastName": "Brown",
+          "title": "Counselor",
+          "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+          "email": "casey.brown@pinecrestelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "632-773-3930",
+            "cell": "890-540-7540"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+      "name": "Lakeside Charter School",
+      "address": {
+        "street": "202 Cedar Ln",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85001"
+      },
+      "contact": {
+        "phone": "374-269-2540",
+        "email": "info@lakesidecharter.com"
+      },
+      "timezone": "MST",
+      "staff": [
+        {
+          "id": "02ac6c97-ced2-4dfa-bc64-12f12fad91be",
+          "firstName": "Dana",
+          "lastName": "Miller",
+          "title": "Secretary",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "dana.miller@lakesidecharter.com",
+          "teamLead": true,
+          "phone": {
+            "work": "738-463-6773",
+            "cell": "656-909-5651"
+          }
+        },
+        {
+          "id": "3153a050-8b7a-493c-8263-a6465e7ee253",
+          "firstName": "Robin",
+          "lastName": "Brown",
+          "title": "Teacher",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "robin.brown@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "828-352-1789",
+            "cell": "914-849-9616"
+          }
+        },
+        {
+          "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+          "firstName": "Jordan",
+          "lastName": "Garcia",
+          "title": "Principal",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "jordan.garcia@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "705-301-5355",
+            "cell": "866-780-2573"
+          }
+        },
+        {
+          "id": "674d5dd9-e533-4b6a-a57e-c81d0b24de61",
+          "firstName": "Jordan",
+          "lastName": "Martinez",
+          "title": "Librarian",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "jordan.martinez@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "790-974-1042",
+            "cell": "368-647-4300"
+          }
+        },
+        {
+          "id": "87f54a5d-e877-41b3-a39d-22065c8d0e23",
+          "firstName": "Alex",
+          "lastName": "Miller",
+          "title": "Teacher",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "alex.miller@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "585-506-9615",
+            "cell": "984-814-3559"
+          }
+        },
+        {
+          "id": "f31a2e31-8746-43d5-a83d-435f71d461ce",
+          "firstName": "Taylor",
+          "lastName": "Brown",
+          "title": "Teacher",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "taylor.brown@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "986-122-9915",
+            "cell": "452-672-3311"
+          }
+        },
+        {
+          "id": "a07214a2-d9e2-483c-8864-14bd616d256e",
+          "firstName": "Taylor",
+          "lastName": "Johnson",
+          "title": "Counselor",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "taylor.johnson@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "799-526-4410",
+            "cell": "663-246-5916"
+          }
+        },
+        {
+          "id": "3eed15e7-2ae4-4b3b-9b0a-47dbb830337b",
+          "firstName": "Jordan",
+          "lastName": "Smith",
+          "title": "Coach",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "jordan.smith@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "412-624-3648",
+            "cell": "547-757-4843"
+          }
+        },
+        {
+          "id": "5c5ac272-b7dc-468b-9fca-a1f53d799cff",
+          "firstName": "Jesse",
+          "lastName": "Miller",
+          "title": "Coach",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "jesse.miller@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "372-684-6483",
+            "cell": "914-265-4961"
+          }
+        },
+        {
+          "id": "a1db7f8f-c17e-4ba5-82b4-c593ccdcfd24",
+          "firstName": "Jordan",
+          "lastName": "Garcia",
+          "title": "Coach",
+          "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+          "email": "jordan.garcia@lakesidecharter.com",
+          "teamLead": false,
+          "phone": {
+            "work": "996-426-1540",
+            "cell": "229-806-5611"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+      "name": "Mountainview High",
+      "address": {
+        "street": "303 Maple Dr",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+      },
+      "contact": {
+        "phone": "205-906-2966",
+        "email": "info@mountainviewhigh.com"
+      },
+      "timezone": "EST",
+      "staff": [
+        {
+          "id": "7917d31a-c3f0-4c44-8457-2a831396b7d2",
+          "firstName": "Chris",
+          "lastName": "Smith",
+          "title": "Nurse",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "chris.smith@mountainviewhigh.com",
+          "teamLead": true,
+          "phone": {
+            "work": "820-475-7362",
+            "cell": "544-379-4136"
+          }
+        },
+        {
+          "id": "b5c35b29-b5bb-41fe-bc15-229c9d8319ad",
+          "firstName": "Chris",
+          "lastName": "Miller",
+          "title": "Principal",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "chris.miller@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "770-812-8093",
+            "cell": "324-243-9851"
+          }
+        },
+        {
+          "id": "35282abd-cba9-4b56-9eed-1e1e0a6c7b19",
+          "firstName": "Jordan",
+          "lastName": "Johnson",
+          "title": "Nurse",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "jordan.johnson@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "561-979-6062",
+            "cell": "240-391-9900"
+          }
+        },
+        {
+          "id": "a9496f46-f34d-45f2-ae96-68adc5105a06",
+          "firstName": "Morgan",
+          "lastName": "Garcia",
+          "title": "Nurse",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "morgan.garcia@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "365-289-8164",
+            "cell": "739-428-1478"
+          }
+        },
+        {
+          "id": "f8a8736b-461c-4356-9ca8-953ff7683be8",
+          "firstName": "Robin",
+          "lastName": "Hernandez",
+          "title": "Counselor",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "robin.hernandez@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "323-465-2068",
+            "cell": "303-388-4871"
+          }
+        },
+        {
+          "id": "0728b998-4c30-46fe-b416-5eee5dc46b23",
+          "firstName": "Chris",
+          "lastName": "Lopez",
+          "title": "Vice Principal",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "chris.lopez@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "901-751-5374",
+            "cell": "938-543-5253"
+          }
+        },
+        {
+          "id": "89c1db8a-a479-415c-8e93-373653125302",
+          "firstName": "Jesse",
+          "lastName": "Jones",
+          "title": "School Counselor",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "jesse.jones@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "397-133-5428",
+            "cell": "270-516-7826"
+          }
+        },
+        {
+          "id": "d3674047-cafb-4038-bae9-942b00f68fad",
+          "firstName": "Morgan",
+          "lastName": "Hernandez",
+          "title": "Secretary",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "morgan.hernandez@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "642-901-2766",
+            "cell": "238-536-6305"
+          }
+        },
+        {
+          "id": "ae701e8a-ae6d-42fa-bc06-344693c92188",
+          "firstName": "Jamie",
+          "lastName": "Smith",
+          "title": "Counselor",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "jamie.smith@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "796-714-8642",
+            "cell": "643-848-8335"
+          }
+        },
+        {
+          "id": "8b26389b-c88f-4f3f-89fe-75b90b0addea",
+          "firstName": "Jordan",
+          "lastName": "Brown",
+          "title": "Teacher",
+          "schoolId": "2571d88e-560a-4755-8659-ab36ebbb6a69",
+          "email": "jordan.brown@mountainviewhigh.com",
+          "teamLead": false,
+          "phone": {
+            "work": "721-603-1150",
+            "cell": "717-185-3088"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+      "name": "Sunset Valley Middle",
+      "address": {
+        "street": "404 Birch Rd",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33101"
+      },
+      "contact": {
+        "phone": "680-906-1521",
+        "email": "info@sunsetvalleymiddle.com"
+      },
+      "timezone": "EST",
+      "staff": [
+        {
+          "id": "23d7b054-7a86-4e7e-88cf-4d5bb697b058",
+          "firstName": "Robin",
+          "lastName": "Davis",
+          "title": "Librarian",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "robin.davis@sunsetvalleymiddle.com",
+          "teamLead": true,
+          "phone": {
+            "work": "304-656-1399",
+            "cell": "649-614-5725"
+          }
+        },
+        {
+          "id": "560a5260-d5f0-4792-9279-37107286835b",
+          "firstName": "Morgan",
+          "lastName": "Lopez",
+          "title": "Vice Principal",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "morgan.lopez@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "614-415-4314",
+            "cell": "484-103-1985"
+          }
+        },
+        {
+          "id": "80d0e881-1eb7-4019-95c4-be23074908eb",
+          "firstName": "Alex",
+          "lastName": "Jones",
+          "title": "Vice Principal",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "alex.jones@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "226-392-6388",
+            "cell": "274-102-4135"
+          }
+        },
+        {
+          "id": "c260e3bb-cd90-438d-8f44-43cf38e8af86",
+          "firstName": "Dana",
+          "lastName": "Davis",
+          "title": "Vice Principal",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "dana.davis@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "257-467-7156",
+            "cell": "421-262-3757"
+          }
+        },
+        {
+          "id": "665bfdb0-f161-4890-8742-7c271f157e56",
+          "firstName": "Alex",
+          "lastName": "Garcia",
+          "title": "Teacher",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "alex.garcia@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "798-398-8441",
+            "cell": "650-705-6995"
+          }
+        },
+        {
+          "id": "b328ec09-a4fe-4871-8d0b-4296ed3619ed",
+          "firstName": "Taylor",
+          "lastName": "Brown",
+          "title": "Nurse",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "taylor.brown@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "642-841-7460",
+            "cell": "744-363-2653"
+          }
+        },
+        {
+          "id": "bd640dae-2ca0-423c-ab7d-14eba2fd947c",
+          "firstName": "Alex",
+          "lastName": "Smith",
+          "title": "Nurse",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "alex.smith@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "813-745-9225",
+            "cell": "247-986-2239"
+          }
+        },
+        {
+          "id": "3706a6b4-364c-406e-9a9c-f331a2675842",
+          "firstName": "Jordan",
+          "lastName": "Lopez",
+          "title": "Counselor",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "jordan.lopez@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "831-334-5089",
+            "cell": "548-493-8236"
+          }
+        },
+        {
+          "id": "69f52661-feb7-4513-ae15-18921250faa1",
+          "firstName": "Jamie",
+          "lastName": "Garcia",
+          "title": "Principal",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "jamie.garcia@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "611-829-9699",
+            "cell": "912-358-3631"
+          }
+        },
+        {
+          "id": "ce8a0d99-5eef-4dad-8765-fd64a1d691cd",
+          "firstName": "Alex",
+          "lastName": "Davis",
+          "title": "Vice Principal",
+          "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+          "email": "alex.davis@sunsetvalleymiddle.com",
+          "teamLead": false,
+          "phone": {
+            "work": "767-619-7807",
+            "cell": "349-627-3639"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+      "name": "Greenfield Elementary",
+      "address": {
+        "street": "505 Spruce Ct",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98101"
+      },
+      "contact": {
+        "phone": "933-190-8223",
+        "email": "info@greenfieldelementary.com"
+      },
+      "timezone": "PST",
+      "staff": [
+        {
+          "id": "1bd4af69-3a61-4497-8331-c2cc3caa9246",
+          "firstName": "Robin",
+          "lastName": "Davis",
+          "title": "Vice Principal",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "robin.davis@greenfieldelementary.com",
+          "teamLead": true,
+          "phone": {
+            "work": "755-624-1082",
+            "cell": "649-661-1344"
+          }
+        },
+        {
+          "id": "c660545a-2773-482d-9175-627377d369c0",
+          "firstName": "Jordan",
+          "lastName": "Johnson",
+          "title": "School Counselor",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "jordan.johnson@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "893-533-7609",
+            "cell": "711-150-4166"
+          }
+        },
+        {
+          "id": "8f5a0bd8-d573-4d2a-b951-1aa502519051",
+          "firstName": "Robin",
+          "lastName": "Garcia",
+          "title": "Principal",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "robin.garcia@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "766-719-3837",
+            "cell": "390-888-5917"
+          }
+        },
+        {
+          "id": "41aacb05-511c-404a-8901-544806e1a910",
+          "firstName": "Robin",
+          "lastName": "Martinez",
+          "title": "School Counselor",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "robin.martinez@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "276-103-6422",
+            "cell": "305-379-5904"
+          }
+        },
+        {
+          "id": "efcae344-cde0-4771-9028-749f89061aec",
+          "firstName": "Morgan",
+          "lastName": "Lopez",
+          "title": "Coach",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "morgan.lopez@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "893-693-8626",
+            "cell": "225-515-3232"
+          }
+        },
+        {
+          "id": "1760753a-939b-43c0-8de1-c3df105b5c9f",
+          "firstName": "Jordan",
+          "lastName": "Smith",
+          "title": "School Counselor",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "jordan.smith@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "440-159-6215",
+            "cell": "418-378-5709"
+          }
+        },
+        {
+          "id": "f363cc15-3ea8-4765-9cd8-41951f9968c9",
+          "firstName": "Robin",
+          "lastName": "Davis",
+          "title": "Nurse",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "robin.davis@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "795-381-3546",
+            "cell": "535-566-8070"
+          }
+        },
+        {
+          "id": "ff6812fa-f352-41ad-a097-b0cb7348da4c",
+          "firstName": "Taylor",
+          "lastName": "Martinez",
+          "title": "Principal",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "taylor.martinez@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "379-632-2825",
+            "cell": "561-972-1545"
+          }
+        },
+        {
+          "id": "53f0923f-33e9-4b60-8aca-1fb3a6cb1a86",
+          "firstName": "Dana",
+          "lastName": "Lopez",
+          "title": "Principal",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "dana.lopez@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "695-228-2404",
+            "cell": "388-433-9303"
+          }
+        },
+        {
+          "id": "5c373f00-7faa-45b7-91ef-0a49c2107cfd",
+          "firstName": "Casey",
+          "lastName": "Garcia",
+          "title": "Secretary",
+          "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+          "email": "casey.garcia@greenfieldelementary.com",
+          "teamLead": false,
+          "phone": {
+            "work": "740-799-2608",
+            "cell": "714-948-1576"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+      "name": "Cedar Ridge Academy",
+      "address": {
+        "street": "606 Elm St",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30301"
+      },
+      "contact": {
+        "phone": "223-308-1579",
+        "email": "info@cedarridgeacademy.com"
+      },
+      "timezone": "EST",
+      "staff": [
+        {
+          "id": "a97fabbb-abc4-49c0-933e-4d3e03a7d7a5",
+          "firstName": "Taylor",
+          "lastName": "Davis",
+          "title": "Vice Principal",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "taylor.davis@cedarridgeacademy.com",
+          "teamLead": true,
+          "phone": {
+            "work": "230-182-1032",
+            "cell": "543-949-8969"
+          }
+        },
+        {
+          "id": "fed689de-3db7-4979-8496-e77e6918a342",
+          "firstName": "Morgan",
+          "lastName": "Davis",
+          "title": "Counselor",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "morgan.davis@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "956-311-8052",
+            "cell": "444-466-7156"
+          }
+        },
+        {
+          "id": "a041bb29-abbb-41f8-8258-a72494229b5d",
+          "firstName": "Dana",
+          "lastName": "Garcia",
+          "title": "Secretary",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "dana.garcia@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "789-118-4298",
+            "cell": "545-372-1235"
+          }
+        },
+        {
+          "id": "89a36d18-aebc-4843-9bad-d0e3ff9e3f87",
+          "firstName": "Robin",
+          "lastName": "Hernandez",
+          "title": "School Counselor",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "robin.hernandez@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "261-699-1757",
+            "cell": "827-841-8571"
+          }
+        },
+        {
+          "id": "3c9600e4-7464-45bc-894d-ddc9e44da537",
+          "firstName": "Taylor",
+          "lastName": "Jones",
+          "title": "Teacher",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "taylor.jones@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "205-192-1780",
+            "cell": "834-398-7765"
+          }
+        },
+        {
+          "id": "4339471e-d116-4aef-a35a-8a9d9d1c09c7",
+          "firstName": "Alex",
+          "lastName": "Lopez",
+          "title": "Counselor",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "alex.lopez@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "718-565-4953",
+            "cell": "875-662-7625"
+          }
+        },
+        {
+          "id": "94cf5ded-465d-4986-ae99-5d28908f6233",
+          "firstName": "Dana",
+          "lastName": "Brown",
+          "title": "Counselor",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "dana.brown@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "334-565-2056",
+            "cell": "737-169-9675"
+          }
+        },
+        {
+          "id": "28c9f908-4e05-477f-ac24-06ff308ab9d2",
+          "firstName": "Jesse",
+          "lastName": "Johnson",
+          "title": "Librarian",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "jesse.johnson@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "525-812-2678",
+            "cell": "249-463-5997"
+          }
+        },
+        {
+          "id": "93328c2f-0b40-4a34-9c70-f88da2032b28",
+          "firstName": "Robin",
+          "lastName": "Brown",
+          "title": "Principal",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "robin.brown@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "648-442-9908",
+            "cell": "355-847-6040"
+          }
+        },
+        {
+          "id": "542f9567-ce3f-4d6d-bb08-ad9e719f740d",
+          "firstName": "Jesse",
+          "lastName": "Lopez",
+          "title": "Vice Principal",
+          "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+          "email": "jesse.lopez@cedarridgeacademy.com",
+          "teamLead": false,
+          "phone": {
+            "work": "610-102-4407",
+            "cell": "375-487-4641"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+      "name": "Maple Grove School",
+      "address": {
+        "street": "707 Willow Way",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94101"
+      },
+      "contact": {
+        "phone": "893-332-3647",
+        "email": "info@maplegrove.com"
+      },
+      "timezone": "PST",
+      "staff": [
+        {
+          "id": "96968ffa-aa08-4433-934c-f88a1df44485",
+          "firstName": "Jesse",
+          "lastName": "Martinez",
+          "title": "School Counselor",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "jesse.martinez@maplegrove.com",
+          "teamLead": true,
+          "phone": {
+            "work": "719-208-3563",
+            "cell": "548-598-6745"
+          }
+        },
+        {
+          "id": "9de225da-af57-4f2b-9669-06aaca50aaf9",
+          "firstName": "Taylor",
+          "lastName": "Miller",
+          "title": "Counselor",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "taylor.miller@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "379-845-6456",
+            "cell": "459-671-4517"
+          }
+        },
+        {
+          "id": "1ae49f5a-7e0d-4c6b-9d27-1446479b344c",
+          "firstName": "Chris",
+          "lastName": "Martinez",
+          "title": "Vice Principal",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "chris.martinez@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "874-902-9778",
+            "cell": "879-650-7540"
+          }
+        },
+        {
+          "id": "3ba84fbe-25ea-47ac-9956-30ffe34cbd03",
+          "firstName": "Jesse",
+          "lastName": "Martinez",
+          "title": "Secretary",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "jesse.martinez@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "210-913-3182",
+            "cell": "603-380-5780"
+          }
+        },
+        {
+          "id": "c37f6e5d-e685-48f5-990f-dfc0760e46eb",
+          "firstName": "Robin",
+          "lastName": "Garcia",
+          "title": "Vice Principal",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "robin.garcia@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "235-542-5580",
+            "cell": "860-436-4800"
+          }
+        },
+        {
+          "id": "f883a6d4-3853-4a13-85ef-c097793affdf",
+          "firstName": "Dana",
+          "lastName": "Lopez",
+          "title": "Principal",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "dana.lopez@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "465-358-1553",
+            "cell": "356-755-1687"
+          }
+        },
+        {
+          "id": "ddae5d91-4e9f-45dc-888d-8a35e5a7f0fc",
+          "firstName": "Alex",
+          "lastName": "Martinez",
+          "title": "Coach",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "alex.martinez@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "542-746-9666",
+            "cell": "332-265-1854"
+          }
+        },
+        {
+          "id": "821d4523-926f-4572-baaa-b8e0dcb8847e",
+          "firstName": "Chris",
+          "lastName": "Hernandez",
+          "title": "Librarian",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "chris.hernandez@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "883-348-8607",
+            "cell": "633-945-5632"
+          }
+        },
+        {
+          "id": "060b005c-874c-422a-8791-43d12c2e5b11",
+          "firstName": "Dana",
+          "lastName": "Martinez",
+          "title": "Librarian",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "dana.martinez@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "850-900-6523",
+            "cell": "907-829-9125"
+          }
+        },
+        {
+          "id": "42fed687-653a-4403-8373-c30d78b8e210",
+          "firstName": "Casey",
+          "lastName": "Davis",
+          "title": "Vice Principal",
+          "schoolId": "6c3c3809-9653-4858-97a1-f1b94e63f5ea",
+          "email": "casey.davis@maplegrove.com",
+          "teamLead": false,
+          "phone": {
+            "work": "747-274-3541",
+            "cell": "633-143-3229"
+          }
+        }
+      ]
+    }
+  ]  
+}

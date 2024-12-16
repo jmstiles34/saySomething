@@ -6,14 +6,14 @@
   --color-blue: hsl(207, 44%, 49%);
   --color-burntorange: hsl(14, 54%, 51%);
   --color-burntorange-50: hsla(14, 54%, 51%, .50);
-  --color-gray: hsl(0, 0%, 70%);
-  --color-gray-25: hsla(0, 0%, 70%, .25);
-  --color-gray-75: hsla(0, 0%, 70%, .75);
   --color-dkgray: hsl(0, 0%, 20%);
   --color-dkgray-20: hsla(0, 0%, 20%, .3);
   --color-dkgray-50: hsla(0, 0%, 20%, .50);
   --color-dkgray-75: hsla(0, 0%, 20%, .75);
 	--color-dkgreen: hsl(148, 100%, 29%);
+  --color-gray: hsl(0, 0%, 70%);
+  --color-gray-25: hsla(0, 0%, 70%, .25);
+  --color-gray-75: hsla(0, 0%, 70%, .75);
 	--color-ltgreen: hsl(85, 54%, 51%);
   --color-ltgreen-25: hsla(85, 54%, 51%, .25);
   --color-red: hsl(3, 67%, 52%);
@@ -22,7 +22,6 @@
   --color-white-75: hsla(0, 0%, 100%, .75);
   --color-yellow: hsl(51, 100%, 50%);
   --color-yellow-50: hsla(51, 100%, 50%, .50);
-
 
   /* fonts */
   --sans-serif: "Lato", sans-serif;
@@ -38,6 +37,8 @@
   --h4: calc(var(--h5) * var(--scale));
   --h5: calc(var(--h6) * var(--scale));
   --h6: var(--base-size);
+  --10px: 0.625rem;
+  --11px: 0.688rem;
   --12px: 0.75rem;
 	--14px: 0.875rem;
 	--15px: 0.9375rem;

@@ -1,46 +1,35 @@
-import { createEffect, createSignal, For, Match, Switch } from "solid-js";
+import { createSignal, For, Show } from "solid-js";
 import "./ToolBar.css";
-import { tips } from '/src/data/tipData.json';
-import { Tip } from "./chat/types";
+import { School, Tip } from "../../common/types/types";
+import { useChatContext } from "/src/context/ChatContext";
+import { randomNumber } from "../../common/utils/utils";
 
 export default function ToolPanel(props:any) {
+  const {schools, tips} = useChatContext();
   const [isExpanded, setIsExpanded] = createSignal(false);
   const [isHovering, setIsHovering] = createSignal(false);
   const [isMenuOpen, setIsMenuOpen] = createSignal(false);
-  const [filteredCases, setFilteredCases] = createSignal<Tip[]>(
-    tips.filter((t:Tip) => t.assignedTo === "mine"
-    ));
-   
-  const pulsingTips = ["TIP-002"];
 
-  createEffect(() => {
-    if (props.tipId === null) {
-      props.setActiveTipId(filteredCases()[0].tipId)
-    }
-  });
-
-  createEffect(() => {
-    props.setActiveCase(filteredCases().find(({tipId}) => tipId === props.tipId) || null);
-  });
+  const pulsingTips = ["TIP-6832"];
 
   const groupedTips = [
     {
       label: "Mine",
       value: "mine",
       icon: "user",
-      tips: tips.filter((t:Tip) => t.assignedTo === "mine" && t.status !== "resolved")
+      tips: tips.filter((t:Tip) => t.assignedTo === props.activeCounselor.id)
     },
     {
       label: "Team",
       value: "team",
       icon: "users",
-      tips: tips.filter((t:Tip) => t.assignedTo === "team" && t.status !== "resolved")
+      tips: tips.filter((t:Tip) => t.assignedTo !== props.activeCounselor.id && t.assignedTo !== null)
     },
     {
-      label: "New",
-      value: "new",
+      label: "Unassigned",
+      value: "unassigned",
       icon: "layer-group",
-      tips: tips.filter((t:Tip) => t.assignedTo === "")
+      tips: tips.filter((t:Tip) => t.assignedTo === null)
     }
   ];
   const [tipGroup, setTipGroup] = createSignal(groupedTips.filter(({value}) => value === 'mine')[0]);
@@ -110,17 +99,29 @@ export default function ToolPanel(props:any) {
       <div class="toolbar-list">
         <For each={tipGroup().tips}>
           {(tip, index) => (
-            <div class="toolbar-list-card-wrapper">
+            <div class={`
+              toolbar-list-card-wrapper 
+              ${tip.lifeSafety ? 'tip-card-life-safety' : ''}
+              ${props.tipId === tip.tipId ? 'list-card-active' : ''}
+            `}>
               <button
-                class={`toolbar-list-card ${props.tipId === tip.tipId ? 'list-card-active' : ''} ${pulsingTips.includes(tip.tipId) ? 'tip-pulse' : ''}`}
-                onClick={() => props.setActiveTipId(tip.tipId)}
+                class={`
+                  toolbar-list-card 
+                  ${pulsingTips.includes(tip.tipId) ? 'tip-pulse' : ''}
+                `}
+                onClick={() => props.handleTipUpdate(tip.tipId)}
               >
                 <div class={`${pulsingTips.includes(tip.tipId) ? 'tip-id-pulse' : ''}`}>{tip.tipId}</div> 
-                <div></div>
-                <div class="tip-type">
-                  {tip.lifeSafety && <img class="danger-icon" src={`/src/assets/icons/life-safety.svg`} alt="Life Safety Icon" />}
+                <div class="tip-message-count">{randomNumber(5)}</div>
+                <div class={`tip-type ${isExpanded() ? 'tip-type-expanded' : ''}`}>
+                  {/* {tip.lifeSafety && <img class="danger-icon" src={`/src/assets/icons/life-safety.svg`} alt="Life Safety Icon" />} */}
                   {tip.tipType}
+                </div>
+                <Show when={isExpanded()}>
+                  <div class="tip-timezone">
+                    {schools.find((school:School) => school.id === tip.schoolId)?.timezone}
                   </div>
+                </Show>
               </button>
             </div>
           )}

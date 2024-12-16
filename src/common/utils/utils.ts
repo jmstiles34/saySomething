@@ -1,4 +1,4 @@
-import { format, toZonedTime } from 'date-fns-tz'
+import { format, toZonedTime } from "date-fns-tz";
 
 export const convertToMinutesAndSeconds = (totalSeconds: number) => {
   // Handle negative numbers and non-numeric inputs
@@ -32,11 +32,11 @@ export const formatCallDuration = (totalSeconds: number) => {
   return `${minutesAndSeconds.minutes}min ${minutesAndSeconds.seconds}sec`;
 };
 
-export const formatCamelCase =(str:string) => {
+export const formatCamelCase = (str: string) => {
   return str
-      .replace(/([A-Z])/g, ' $1')  // Insert space before capital letters
-      .replace(/^./, char => char.toUpperCase());  // Capitalize first letter
-}
+    .replace(/([A-Z])/g, " $1") // Insert space before capital letters
+    .replace(/^./, (char) => char.toUpperCase()); // Capitalize first letter
+};
 
 export const formatPhoneNumber = (value: string) => {
   if (!value) return value;
@@ -63,37 +63,42 @@ export const formatPhoneNumber = (value: string) => {
   }
 };
 
-
-export const getOrdinalSuffix = (n:number) => {
+export const getOrdinalSuffix = (n: number) => {
   const j = n % 10;
   const k = n % 100;
-  if (j === 1 && k !== 11) return 'st';
-  if (j === 2 && k !== 12) return 'nd';
-  if (j === 3 && k !== 13) return 'rd';
-  return 'th';
+  if (j === 1 && k !== 11) return "st";
+  if (j === 2 && k !== 12) return "nd";
+  if (j === 3 && k !== 13) return "rd";
+  return "th";
 };
 
-export const dateInTimezone = (date:Date, timezone:string) => {
+export const dateInTimezone = (date: Date, timezone: string) => {
   // Convert the date to the specified timezone
   const zonedDate = toZonedTime(date, timezone);
-  
+
   // Format the date with timezone information
   return {
     // Full date and time with timezone
-    fullDateTime: format(zonedDate, 'yyyy-MM-dd HH:mm:ss zzz', { timeZone: timezone }),
-    
+    fullDateTime: format(zonedDate, "yyyy-MM-dd HH:mm:ss zzz", {
+      timeZone: timezone,
+    }),
+
     // Date only
-    dateOnly: format(zonedDate, 'PP', { timeZone: timezone }),
-    
+    dateOnly: format(zonedDate, "PP", { timeZone: timezone }),
+
     // AM or PM
-    meridiem: format(zonedDate, 'aa', { timeZone: timezone }),
+    meridiem: format(zonedDate, "aa", { timeZone: timezone }),
 
     // Time only
-    timeOnly: format(zonedDate, 'h:mm', { timeZone: timezone }),
+    timeOnly: format(zonedDate, "h:mm", { timeZone: timezone }),
 
     // Time with locale
-    timeWithLocale: format(zonedDate, 'h:mm aa (zzz)', { timeZone: timezone }),
-  
-    timezone: format(zonedDate, 'zzz', { timeZone: timezone })
+    timeWithLocale: format(zonedDate, "h:mm aa (zzz)", { timeZone: timezone }),
+
+    timezone: format(zonedDate, "zzz", { timeZone: timezone }),
   };
+};
+
+export function randomNumber(max = 2) {
+  return Math.floor(Math.random() * max);
 }

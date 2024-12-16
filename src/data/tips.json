@@ -1,0 +1,345 @@
+{
+  "tips": [
+    {
+      "tipId": "TIP-1548",
+      "status": "in-progress",
+      "lifeSafety": true,
+      "submittedAt": "2024-12-10T00:52:26.645749",
+      "tipType": "Vandalism",
+      "assignedTo": "8a0b4d51-f3bf-4d51-bb66-4056821ba8b6",
+      "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
+      "stakeholders": [
+        "bd640dae-2ca0-423c-ab7d-14eba2fd947c",
+        "b328ec09-a4fe-4871-8d0b-4296ed3619ed"
+      ],
+      "tags": [
+        "Vandalism",
+        "Gang Activity",
+        "Sexual Harassment"
+      ]
+    },
+    {
+      "tipId": "TIP-6832", 
+      "status": "in-progress",
+      "lifeSafety": true,
+      "submittedAt": "2024-12-14T00:52:26.645545",
+      "tipType": "Bullying",
+      "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+      "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+      "stakeholders": [
+        "4d89615b-5e3e-49c3-825b-43513ff05687",
+        "5c5ac272-b7dc-468b-9fca-a1f53d799cff",
+        "3eed15e7-2ae4-4b3b-9b0a-47dbb830337b",
+        "87f54a5d-e877-41b3-a39d-22065c8d0e23"
+      ],
+      "tags": [
+        "Bullying", "Threat of Violence", "Weapons Possession"
+      ]
+    },
+    {
+      "tipId": "TIP-3725",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-11-23T00:52:26.646126",
+      "tipType": "Self-Harm",
+      "assignedTo": "9ce972f0-3532-40f6-bf3b-14e072e7cfb2",
+      "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+      "stakeholders": [
+        "b8c20d2c-3db1-42d0-9c39-63d05a8c653e",
+        "6f2e4f47-84c5-47d5-922d-a1a7ac99ce4e",
+        "4cb4decd-0e55-4273-b6dd-c9c6616c6315"
+      ],
+      "tags": [
+        "Self-Harm",
+        "Revenge",
+        "Discrimination"
+      ]
+    },
+    {
+      "tipId": "TIP-4324",
+      "status": "new",
+      "lifeSafety": false,
+      "submittedAt": "2024-11-20T00:52:26.646053",
+      "tipType": "Cutting",
+      "assignedTo": null,
+      "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+      "stakeholders": [],
+      "tags": [
+        "Cutting",
+        "Gang Activity"
+      ]
+    },
+    {
+      "tipId": "TIP-1142",
+      "status": "in-progress",
+      "lifeSafety": true,
+      "submittedAt": "2024-12-15T00:52:26.645467",
+      "tipType": "Threat of Violence",
+      "assignedTo": "32e2a05e-604b-4528-8692-f05f50f45f46",
+      "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+      "stakeholders": [
+        "a1db7f8f-c17e-4ba5-82b4-c593ccdcfd24",
+        "f31a2e31-8746-43d5-a83d-435f71d461ce",
+        "3eed15e7-2ae4-4b3b-9b0a-47dbb830337b",
+        "5c5ac272-b7dc-468b-9fca-a1f53d799cff"
+      ],
+      "tags": [
+        "Threat of Violence",
+        "Depression",
+        "Hate Speech"
+      ]
+    },
+    {
+      "tipId": "TIP-8860",
+      "status": "in-progress",
+      "lifeSafety": true,
+      "submittedAt": "2024-11-18T00:52:26.645819",
+      "tipType": "Cyberbullying",
+      "assignedTo": "063c0258-cd42-4425-88a4-efafaed2b6bd",
+      "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+      "stakeholders": [
+        "f269d484-f1c6-4f88-81cf-0d7be84782c7",
+        "bba3102d-1f02-4551-a2b9-2fcb1562f0f3",
+        "bd672e9c-9365-4322-9702-d9e7015c5cbe"
+      ],
+      "tags": [
+        "Cyberbullying",
+        "Off Campus"
+      ]
+    },
+    {
+      "tipId": "TIP-3784",
+      "status": "new",
+      "lifeSafety": true,
+      "submittedAt": "2024-12-07T00:52:26.646287",
+      "tipType": "Gang Activity",
+      "assignedTo": null,
+      "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+      "stakeholders": [],
+      "tags": [
+        "Gang Activity",
+        "Suicidal Ideation"
+      ]
+    },
+    {
+      "tipId": "TIP-1460",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-14T00:52:26.645653",
+      "tipType": "Theft",
+      "assignedTo": "aadac12c-266d-47a7-8da7-dbf486343bb9",
+      "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
+      "stakeholders": [
+        "1760753a-939b-43c0-8de1-c3df105b5c9f",
+        "1bd4af69-3a61-4497-8331-c2cc3caa9246",
+        "41aacb05-511c-404a-8901-544806e1a910",
+        "c660545a-2773-482d-9175-627377d369c0"
+      ],
+      "tags": [
+        "Theft",
+        "Missing Person"
+      ]
+    },
+    {
+      "tipId": "TIP-4745",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-12T00:52:26.646353",
+      "tipType": "Drug Dealing",
+      "assignedTo": "8a0b4d51-f3bf-4d51-bb66-4056821ba8b6",
+      "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+      "stakeholders": [
+        "f269d484-f1c6-4f88-81cf-0d7be84782c7",
+        "d8b48f65-c4d8-492a-be04-5f30c2d1f7e4",
+        "3816413d-ec8a-49c3-8f28-373950cdb3d4"
+      ],
+      "tags": [
+        "Drug Dealing",
+        "Theft",
+        "Peer Pressure"
+      ]
+    },
+    {
+      "tipId": "TIP-5362",
+      "status": "new",
+      "lifeSafety": true,
+      "submittedAt": "2024-11-30T00:52:26.645702",
+      "tipType": "Trespassing",
+      "assignedTo": null,
+      "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+      "stakeholders": [],
+      "tags": [
+        "Trespassing",
+        "Mental Health Trigger"
+      ]
+    },
+    {
+      "tipId": "TIP-5600",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-08T00:52:26.646549",
+      "tipType": "Vaping",
+      "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+      "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+      "stakeholders": [
+        "80f82f1b-f8ce-4997-ac33-826fc6cf5c9c",
+        "3b1e6898-f063-4c79-a3dd-b25dc5aeec62"
+      ],
+      "tags": [
+        "Vaping", "Substance Abuse"
+      ]
+    },
+    {
+      "tipId": "TIP-2199",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-10T00:52:26.645859",
+      "tipType": "Hate Speech",
+      "assignedTo": "aadac12c-266d-47a7-8da7-dbf486343bb9",
+      "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+      "stakeholders": [
+        "93328c2f-0b40-4a34-9c70-f88da2032b28",
+        "94cf5ded-465d-4986-ae99-5d28908f6233"
+      ],
+      "tags": [
+        "Hate Speech",
+        "Moderate Risk"
+      ]
+    },
+    {
+      "tipId": "TIP-3816",
+      "status": "new",
+      "lifeSafety": false,
+      "submittedAt": "2024-11-19T00:52:26.646509",
+      "tipType": "Threat of Violence",
+      "assignedTo": null,
+      "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+      "stakeholders": [],
+      "tags": [
+        "Threat of Violence",
+        "Weapons Possession"
+      ]
+    },
+    {
+      "tipId": "TIP-2989",
+      "status": "new",
+      "lifeSafety": true,
+      "submittedAt": "2024-11-21T00:52:26.646205",
+      "tipType": "Social Media Threat",
+      "assignedTo": null,
+      "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
+      "stakeholders": [],
+      "tags": [
+        "Social Media Threat",
+        "Discrimination"
+      ]
+    },
+    {
+      "tipId": "TIP-2315",
+      "status": "in-progress",
+      "lifeSafety": true,
+      "submittedAt": "2024-11-20T00:52:26.645908",
+      "tipType": "Abuse/Neglect",
+      "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+      "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
+      "stakeholders": [
+        "090aaf0b-2ee1-4496-80fe-f44d6423a6a6",
+        "1624c7f9-bd57-4ff8-b006-87da330bd754",
+        "bbbbee6b-e487-4e23-becb-81e0161a094d",
+        "a6cebbae-0d27-43d1-9454-0bd4f646aa7b"
+      ],
+      "tags": [
+        "Bullying",
+        "Abuse/Neglect",
+        "High Risk",
+        "Immediate Action Required"
+      ]
+    },
+    {
+      "tipId": "TIP-5568",
+      "status": "in-progress",
+      "lifeSafety": true,
+      "submittedAt": "2024-12-13T00:52:26.645628",
+      "tipType": "Theft",
+      "assignedTo": "063c0258-cd42-4425-88a4-efafaed2b6bd",
+      "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+      "stakeholders": [
+        "a041bb29-abbb-41f8-8258-a72494229b5d",
+        "94cf5ded-465d-4986-ae99-5d28908f6233"
+      ],
+      "tags": [
+        "Theft",
+        "Substance Abuse",
+        "Online"
+      ]
+    },
+    {
+      "tipId": "TIP-5910",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-14T00:52:26.645339",
+      "tipType": "Missing Person",
+      "assignedTo": "9ce972f0-3532-40f6-bf3b-14e072e7cfb2",
+      "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
+      "stakeholders": [
+        "f9a291d9-5410-4ed9-b72c-8833b3d045f2",
+        "418914ce-de54-4e62-aa31-4d3f215b6015",
+        "00ee9b68-f51b-490b-9eef-9846bd21307c"
+      ],
+      "tags": [
+        "Missing Person",
+        "Abuse/Neglect"
+      ]
+    },
+    {
+      "tipId": "TIP-5762",
+      "status": "new",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-03T00:52:26.646151",
+      "tipType": "Suspicious Activity",
+      "assignedTo": null,
+      "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
+      "stakeholders": [],
+      "tags": [
+        "Suspicious Activity",
+        "Missing Person",
+        "Public Area"
+      ]
+    },
+    {
+      "tipId": "TIP-8999",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-12-14T00:52:26.645772",
+      "tipType": "Hate Speech",
+      "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+      "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
+      "stakeholders": [
+        "b8c20d2c-3db1-42d0-9c39-63d05a8c653e",
+        "4cb4decd-0e55-4273-b6dd-c9c6616c6315"
+      ],
+      "tags": [
+        "Hate Speech",
+        "Low Risk"
+      ]
+    },
+    {
+      "tipId": "TIP-5191",
+      "status": "in-progress",
+      "lifeSafety": false,
+      "submittedAt": "2024-11-20T00:52:26.646329",
+      "tipType": "Theft",
+      "assignedTo": "315d331d-5e58-4900-9453-3537824f8a99",
+      "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
+      "stakeholders": [
+        "f8a8736b-461c-4356-9ca8-953ff7683be8",
+        "d3674047-cafb-4038-bae9-942b00f68fad",
+        "b5c35b29-b5bb-41fe-bc15-229c9d8319ad"
+      ],
+      "tags": [
+        "Theft",
+        "Cutting"
+      ]
+    }
+  ]
+}

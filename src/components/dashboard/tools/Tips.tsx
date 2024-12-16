@@ -1,7 +1,7 @@
 import { createSignal, For, Show } from 'solid-js';
 import { format } from 'date-fns';
 import styles from "./Tips.module.css";
-import { tips } from '/src/data/tipData.json';
+import { tips } from '/src/data/tips.json';
 
 export default function Tips(props:any) {
   const [activeTab, setActiveTab] = createSignal(0);
@@ -10,17 +10,20 @@ export default function Tips(props:any) {
     {
       label: "Mine",
       value: "mine",
-      tips: tips.filter(t => t.assignedTo === "mine" && t.status !== "resolved")
+      icon: "user",
+      tips: tips.filter((t:Tip) => t.assignedTo === props.activeCounselor.id)
     },
     {
       label: "Team",
       value: "team",
-      tips: tips.filter(t => t.assignedTo === "team" && t.status !== "resolved")
+      icon: "users",
+      tips: tips.filter((t:Tip) => t.assignedTo !== props.activeCounselor.id && t.assignedTo !== null)
     },
     {
       label: "Unassigned",
       value: "unassigned",
-      tips: tips.filter(t => t.assignedTo === "")
+      icon: "layer-group",
+      tips: tips.filter((t:Tip) => t.assignedTo === null)
     }
   ];
  

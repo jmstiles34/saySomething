@@ -1,6 +1,6 @@
 {
   "summaries": {
-    "TIP-002": {
+    "TIP-6832": {
       "reporterDialog": [
         {
           "title": "Tipster Report:",
@@ -42,7 +42,7 @@
         }
       ]
     },
-    "TIP-011": {
+    "TIP-5600": {
       "reporterDialog": [
         {
           "title": "Tip Details:",
@@ -91,7 +91,7 @@
         }
       ]
     },
-    "TIP-014": {
+    "TIP-2315": {
       "reporterDialog": [
         {
           "title": "Tip Report Details:",

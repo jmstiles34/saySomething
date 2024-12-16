@@ -5,9 +5,8 @@ import Editor  from "tinymce-solid";
 import "./Chat.css";
 import { format, toZonedTime } from 'date-fns-tz'
 import { isSameDay } from 'date-fns';
-import type { Contact, Message, User } from "./types";
-import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, USERS } from '/src/common/constants/constants'
-import { contacts } from '/src/data/contacts.json'; 
+import type { Contact, Message, Staff } from "../../../common/types/types";
+import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, USERS } from '/src/common/constants/constants';
 import { dateInTimezone, getOrdinalSuffix } from '/src/common/utils/utils';
 import Popover from './Popover';
 import Canned from './popovers/Canned';
@@ -20,23 +19,32 @@ import Summary from "./modals/Summary";
 
 export default function Chat(props:any) {
   const [chatMessage, setChatMessage] = createSignal("");
-  const [filteredContacts, setFilteredContacts] = createSignal<Contact[]>(contacts);
+  const [filteredContacts, setFilteredContacts] = createSignal<Staff[] | null>(null);
   const [modal, setModal] = createSignal<string | null>(null);
   const [popover, setPopover] = createSignal<string | null>(null);
   const [useSchoolTimezone, setUseSchoolTimezone] = createSignal<boolean>(false);
+  const [schoolTimezone, setSchoolTimezone] = createSignal<string>("");
+  const [defaultTimezone, setDefaultTimezone] = createSignal<string>(props.activeCounselor?.timezone);
 
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
   let editorRef!: TinyEditor;
   const useRichEditor:boolean = false;
 
-  const defaultTimezone:string = "EST";
-  const schoolTimezone:string = "PST";
-  const [timezone, setTimezone] = createSignal<string>(defaultTimezone);
+  const [timezone, setTimezone] = createSignal<string>(defaultTimezone());
 
   createEffect(() => {
     if (props.messages.length) {
       scrollToBottom()
+    }
+  });
+  createEffect(() => {
+    if (props.tipId) {
+      setChatMessage("");
+      /* setModal(null);
+      setPopover(null); */
+      setSchoolTimezone(props.case.school.timezone);
+      setFilteredContacts(props.case.school.staff)
     }
   });
 
@@ -47,16 +55,20 @@ export default function Chat(props:any) {
   };
 
   const addCallMessage = (message:string) => {
-    const newMessage = createMessage(USERS.counselor, message, MESSAGE_TYPE.CALL)
+    const newMessage = createMessage(message, MESSAGE_TYPE.CALL)
     sendMessage(newMessage);
   }
 
-  const createMessage = (user: User, text: string, type = MESSAGE_TYPE.CHAT) => {
+  const createMessage = (text: string, type = MESSAGE_TYPE.CHAT) => {
     return {
       id: crypto.randomUUID(),
       type,
       text: replaceVariables(text),
-      user,
+      sender: {
+        id: props.activeCounselor.id,
+        displayName: props.activeCounselor.displayName,
+        role: props.activeCounselor.role,
+      },
       timestamp: new Date()
     }
   };
@@ -66,7 +78,7 @@ export default function Chat(props:any) {
       msg = msg.replace("[TIPID]", props.tipId);
     }
 
-    const {fullDateTime, dateOnly, timeOnly, timeWithLocale, timezone} = dateInTimezone(new Date, schoolTimezone);
+    const {fullDateTime, dateOnly, timeOnly, timeWithLocale, timezone} = dateInTimezone(new Date, schoolTimezone());
 
     if(msg.includes("[DATE]")){
       msg = msg.replaceAll("[DATE]", dateOnly);
@@ -129,11 +141,20 @@ export default function Chat(props:any) {
       if (mentionMatch) {
         setPopover(POPOVER.CONTACTS);
         const searchTerm = mentionMatch[1].toLowerCase();
-        setFilteredContacts(contacts.sort((a:Contact, b:Contact) => a.name.localeCompare(b.name)).filter((contact:Contact) =>
-          contact.name.toLowerCase().includes(searchTerm)
+        setFilteredContacts(props.case.school.staff
+          .sort((a:Staff, b:Staff) => {
+            const aName = `${a.firstName} ${a.lastName}`;
+            const bName = `${b.firstName} ${b.lastName}`;
+            
+            return aName.localeCompare(bName)
+          })
+          .filter((contact:Staff) => {
+            const name = `${contact.firstName} ${contact.lastName}`;
+            return name.toLowerCase().includes(searchTerm)
+          }
         ));
 
-        if(filteredContacts().length === 0) setPopover(null);
+        if(filteredContacts()?.length === 0) setPopover(null);
       } else {
         setPopover(null);
       }
@@ -149,10 +170,19 @@ export default function Chat(props:any) {
       const mentionMatch = rawContent.match(/@([^@\s]*)$/);
       if (mentionMatch) {
         const searchTerm = mentionMatch[1].toLowerCase();
-        setFilteredContacts(contacts.sort((a:Contact, b:Contact) => a.name.localeCompare(b.name)).filter((contact:Contact) =>
-          contact.name.toLowerCase().includes(searchTerm)
+        setFilteredContacts(props.case.school.staff
+          .sort((a:Staff, b:Staff) => {
+            const aName = `${a.firstName} ${a.lastName}`;
+            const bName = `${b.firstName} ${b.lastName}`;
+            
+            return aName.localeCompare(bName)
+          })
+          .filter((contact:Staff) => {
+            const name = `${contact.firstName} ${contact.lastName}`;
+            return name.toLowerCase().includes(searchTerm)
+          }
         ));
-        if(filteredContacts().length === 0) setPopover(null);
+        if(filteredContacts()?.length === 0) setPopover(null);
       } else {
         setPopover(null);
       }
@@ -194,12 +224,18 @@ export default function Chat(props:any) {
 
   const manageStakeholders = (action: string, id:string, name:string) => {
     if(action === 'add'){
-      props.setActiveCase({...props.case, stakeholders: [...props.case.stakeholders, id]});
-      const newMessage = createMessage(USERS.counselor, `${name} was added to ${props.target === 'team' ? 'Team Communication' : 'Reporter Dialog'}.`, MESSAGE_TYPE.STAKEHOLDERS)
+      props.setActiveCase({
+        ...props.case, 
+        stakeholders: [...props.case.stakeholders, id]
+      });
+      const newMessage = createMessage(`${name} was added to ${props.target === 'team' ? 'Team Communication' : 'Reporter Dialog'}.`, MESSAGE_TYPE.STAKEHOLDERS)
       sendMessage(newMessage);
     } else if (action === 'remove') {
-      props.setActiveCase({...props.case, stakeholders: [...props.case.stakeholders.filter((v:string) => v !== id)]});
-      const newMessage = createMessage(USERS.counselor, `${name} was removed from ${props.target === 'team' ? 'Team Communication' : 'Reporter Dialog'}.`, MESSAGE_TYPE.STAKEHOLDERS)
+      props.setActiveCase({
+        ...props.case, 
+        stakeholders: [...props.case.stakeholders.filter((v:string) => v !== id)]
+      });
+      const newMessage = createMessage(`${name} was removed from ${props.target === 'team' ? 'Team Communication' : 'Reporter Dialog'}.`, MESSAGE_TYPE.STAKEHOLDERS)
       sendMessage(newMessage);
     }
   }
@@ -208,14 +244,17 @@ export default function Chat(props:any) {
     if(action === 'add'){
       props.setActiveCase({...props.case, tags: [...props.case.tags, id]});
     } else if (action === 'remove') {
-      props.setActiveCase({...props.case, tags: [...props.case.tags.filter((v:string) => v !== id)]});
+      props.setActiveCase({
+        ...props.case, 
+        tags: [...props.case.tags.filter((v:string) => v !== id)]
+      });
     }
   }
 
   const toggleTimezone: JSX.EventHandlerUnion<HTMLInputElement, InputEvent> = (e) => {
     const isChecked = (e.target as HTMLInputElement).checked;
     setUseSchoolTimezone(isChecked);
-    setTimezone(isChecked ? schoolTimezone : defaultTimezone);
+    setTimezone(isChecked ? schoolTimezone() : defaultTimezone());
   };
 
   return (
@@ -270,7 +309,7 @@ export default function Chat(props:any) {
             checked={useSchoolTimezone()} 
             onInput={toggleTimezone}
           />
-          <span>Show local times ({schoolTimezone})</span>
+          <span>Show local times ({schoolTimezone()})</span>
         </label>
         </Show>
       </div>
@@ -291,12 +330,12 @@ export default function Chat(props:any) {
                   {(message) => (
                     <Switch>
                       <Match when={message.type === MESSAGE_TYPE.CHAT}>
-                        <li class={`message-element message-element-${message.user.role}`}>
+                        <li class={`message-element message-element-${message.sender.role}`}>
                           <div class="message-element-avatar">
-                            <img src={`/src/assets/icons/${message.user.role}.svg`} alt={`${message.user.role} icon`} /> 
+                            <img src={`/src/assets/icons/${message.sender.role}.svg`} alt={`${message.sender.role} icon`} /> 
                           </div>
                           <div class="bold-author">
-                            {message.user.displayName}
+                            {message.sender.displayName}
                           </div>
                           <div class="message-element-date">
                             {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
@@ -313,7 +352,7 @@ export default function Chat(props:any) {
                             {/* <img src={`/src/assets/icons/call-outgoing.svg`} alt={`Phone icon`} /> */} 
                           </div>
                           <div class="bold-author">
-                            {message.user.displayName}
+                            {message.sender.displayName}
                           </div>
                           <div class="message-element-date">
                             {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
@@ -329,7 +368,7 @@ export default function Chat(props:any) {
                           <i class="fa-solid fa-right-left fa-xl call-icon"></i>
                           </div>
                           <div class="bold-author">
-                            {message.user.displayName}
+                            {message.sender.displayName}
                           </div>
                           <div class="message-element-date">
                             {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
@@ -435,8 +474,9 @@ export default function Chat(props:any) {
           </Match>
           <Match when={modal() === MODAL.STAKEHOLDERS}>
               <Stakeholders 
-                allContacts={contacts} 
+                allContacts={props.case.school.staff} 
                 contacts={props.case.stakeholders} 
+                school={props.case.school}
                 addCallMessage={addCallMessage}
                 manageStakeholders={manageStakeholders}
               />

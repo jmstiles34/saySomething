@@ -85,18 +85,22 @@
 .toolbar-list-card-wrapper {
   width: 100%;
   border-bottom: 1px solid var(--color-bg);
+  border-left: 4px solid var(--color-white);
+}
+
+.tip-card-life-safety {
+  border-left: 4px solid var(--color-burntorange);
 }
 
 .toolbar-list-card {
   display: grid;
   grid-template-columns: auto 1fr;
-  font-size: .75rem;
   cursor: pointer;
-  padding: 8px 6px;
+  padding: 8px 4px;
   width: 100%;
   align-items: center;
   gap: 4px;
-
+  font-size: var(--11px);
   &:hover {
     background-color: var(--color-yellow);
   }
@@ -105,9 +109,19 @@
 .list-card-active {
   font-weight: bold;
   background-color: var(--color-ltgreen);
+  border-left: 4px solid var(--color-ltgreen);
   &:hover {
     background-color: var(--color-ltgreen);
   }
+}
+
+.tip-message-count {
+  background-color: var(--color-dkgray-75);
+  color: var(--color-white);
+  border-radius: 6px;
+  width: fit-content;
+  padding: 1px 4px;
+  justify-self: end;
 }
 
 .tip-type {
@@ -116,6 +130,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.tip-type-expanded {
+  grid-column: 1/2;
+}
+
+.tip-timezone {
+  justify-self: end;
 }
 
 .danger-icon {

@@ -1,22 +1,125 @@
 {
-  "instructions": {
-    "schoolName": "Bright Future Academy",
-    "generalGuidelines": "Use phone as primary contact during school hours (8:00 AM - 3:30 PM). Use email for non-urgent matters after hours. Escalate high-risk incidents to the principal or vice-principal.",
-    "timeBasedInstructions": [
-      {"schoolHours": "Contact the school counselor for mental health or bullying tips. Notify the SRO for threats, weapons, or substance abuse. For immediate safety risks, call the front office at (XXX) XXX-XXXX and ask for the principal."},
-      {"afterSchoolHours": "Email the after-school coordinator for non-critical issues. For urgent matters, call the emergency hotline at (XXX) XXX-YYYY."},
-      {"eveningsNights": "Escalate emergencies to the district crisis team at (XXX) XXX-ZZZZ. Log non-urgent tips for follow-up during school hours."}
-    ],
-    "dayBasedInstructions": [
-      {"weekday": "Follow time-based instructions."},
-      {"weekendsHolidays": "Use the district emergency contact system for critical incidents. Notify local law enforcement if unavailable and inform the principal via email."}
-    ],
-    "tipTypeInstructions": [
-      {"threats": "Call the principal's direct line at (XXX) XXX-AAAA and the SRO at (XXX) XXX-BBBB. Follow up with a written report to violencetips@brightfutureacademy.edu."},
-      {"selfHarm": "Notify the school counselor or district crisis intervention team if outside school hours."},
-      {"bullying": "Contact the anti-bullying coordinator at antibullying@brightfutureacademy.edu. For urgent cases, escalate to the principal."},
-      {"substanceAbuseVandalism": "Report to the dean of students during school hours. After hours, email the administration team."}
-    ],
-    "additionalNotes": "Document all contact attempts in the tip management system, including time, method, and recipient. For conflicting priorities, escalate to the district superintendent at (XXX) XXX-CCCC."
-  }
+  "instructions": [
+    {
+      "schoolId": "102f2c9d-3878-4e44-b946-7cc0fcbc3386",
+      "schoolName": "Springfield High School",
+      "specialContactInstructions": [
+        "Contact the principal by carrier pigeon. Include a written message tied to its leg.",
+        "Messages must only be sent at exactly 7:03 AM on Wednesdays.",
+        "Contact is only allowed after performing 10 jumping jacks.",
+        "Include a recipe for a delicious dessert in every message.",
+        "Messages must be written backward and sent via mirror image.",
+        "Faxes must contain a sketch of a penguin wearing sunglasses.",
+        "All messages must include the sender's favorite knock-knock joke."
+      ]
+    },
+    {
+      "schoolId": "9754b12c-225d-4aa8-96bd-cb8f7f4b972f",
+      "schoolName": "Riverview Middle School",
+      "specialContactInstructions": [
+        "All communications must be sent via smoke signals. Ensure the message is clear and concise.",
+        "Contact must occur during a full moon, preferably while howling.",
+        "Letters should be sealed with blue wax for authenticity.",
+        "Messages sent via text must include an emoji of a unicorn.",
+        "Communications must be conducted while wearing a clown hat."
+      ]
+    },
+    {
+      "schoolId": "434647a4-d5e5-4cf9-a112-91f5c3959816",
+      "schoolName": "Oakwood Academy",
+      "specialContactInstructions": [
+        "Call the school's work phone and speak exclusively in rhyming couplets.",
+        "Only send messages on odd-numbered days of the month.",
+        "Letters should be sealed with blue wax for authenticity.",
+        "All emails should include a limerick summarizing the issue.",
+        "Communications must be accompanied by a recording of your best opera performance.",
+        "Faxes must contain a sketch of a penguin wearing sunglasses."
+      ]
+    },
+    {
+      "schoolId": "f951f558-0ab2-45e6-af4b-afc800295114",
+      "schoolName": "Pinecrest Elementary",
+      "specialContactInstructions": [
+        "Only communicate through interpretive dance delivered via a live video call.",
+        "Call between 1:15 PM and 1:17 PM for guaranteed response.",
+        "Communications must be conducted while wearing a clown hat.",
+        "Include a hand-drawn picture of a dragon in all correspondence.",
+        "Only send emails at exactly 11:11 AM or PM for good luck.",
+        "Messages sent via text must include an emoji of a unicorn.",
+        "All emails should include a limerick summarizing the issue."
+      ]
+    },
+    {
+      "schoolId": "2fbebe4b-de71-4b9d-af28-424e20e0cd15",
+      "schoolName": "Lakeside Charter School",
+      "specialContactInstructions": [
+        "Send an email with all sentences ending in exclamation marks for urgency.",
+        "Communications must occur during leap years on the last day of February.",
+        "Include a recipe for a delicious dessert in every message.",
+        "Communications must be conducted while wearing a clown hat.",
+        "Include a hand-drawn picture of a dragon in all correspondence."
+      ]
+    },
+    {
+      "schoolId": "a19ca7d1-f3bb-4f60-bc89-e6c1a73c184a",
+      "schoolName": "Mountainview High",
+      "specialContactInstructions": ["Write a formal letter and deliver it using a trained squirrel courier.",
+      "Emails must include a subject line written in Pig Latin.",
+      "Letters should be sealed with blue wax for authenticity.",
+      "Contact is only allowed after performing 10 jumping jacks.",
+      "Calls must include the phrase 'The cat dances at midnight.'"
+    ]
+    },
+    {
+      "schoolId": "e96da919-db8b-4040-8200-61e8e24e8a44",
+      "schoolName": "Sunset Valley Middle",
+      "specialContactInstructions": [
+        "Contact the team lead through a series of Morse code beeps over the phone.",
+        "Contact is only permitted on rainy days; sunny days are strictly off-limits.",
+        "Communication on Fridays must be done in the form of haikus.",
+        "Include a recipe for a delicious dessert in every message.",
+        "All emails should include a limerick summarizing the issue.",
+        "Phone calls must start with a riddle and end with a tongue twister.",
+        "Communications must be accompanied by a recording of your best opera performance."
+      ]
+    },
+    {
+      "schoolId": "66f5737e-5401-403b-8543-b526050cc3dc",
+      "schoolName": "Greenfield Elementary",
+      "specialContactInstructions": [
+        "All messages must be sent by fax with doodles of happy faces on the cover page.",
+        "Additionally: Messages must be delivered between 2:00 AM and 3:00 AM for priority handling.",
+        "Further instructions: All emails should include a limerick summarizing the issue.",
+        "Messages must be written backward and sent via mirror image.",
+        "All messages must include the sender's favorite knock-knock joke.",
+        "Communications must be conducted while wearing a clown hat.",
+        "Faxes must contain a sketch of a penguin wearing sunglasses."
+      ]
+    },
+    {
+      "schoolId": "c911a57f-8fd8-4b07-9237-c379c85025c0",
+      "schoolName": "Cedar Ridge Academy",
+      "specialContactInstructions": [
+        "Use a hologram projection for all communications and ensure it\u2019s visible in the main office.",
+        "Ensure any fax is sent with a doodle of a llama on the header.",
+        "All emails should include a limerick summarizing the issue.",
+        "Messages sent via text must include an emoji of a unicorn.",
+        "Contact is only allowed after performing 10 jumping jacks.",
+        "Phone calls must start with a riddle and end with a tongue twister."
+      ]
+    },
+    {
+      "schoolId": "9a9ac732-a7bc-4913-84df-c8ca15c769f9",
+      "schoolName": "Maple Grove School",
+      "specialContactInstructions": [
+        "Send a text message but include a photo of your favorite breakfast item as a signature.",
+        "Contact must be made on national holidays, accompanied by a celebratory meme.",
+        "Communications must be accompanied by a recording of your best opera performance.",
+        "Include a recipe for a delicious dessert in every message.", 
+        "Messages sent via text must include an emoji of a unicorn.",
+        "Phone calls must start with a riddle and end with a tongue twister.",
+        "Contact is only allowed after performing 10 jumping jacks."
+      ]
+    }
+  ]
 }
