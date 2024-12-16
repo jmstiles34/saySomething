@@ -1,11 +1,10 @@
 import { createEffect, createSignal, onMount } from "solid-js";
 import type { Signal } from "solid-js";
-import { useChatContext } from "/src/context/ChatContext";
-import { messages } from '/src/data/messages.json';
-import type { Message } from "./types";
+import { useChatContext } from "../context/ChatContext";
+import { messages } from '../data/messages.json';
 import "./Dashboard.css";
 import ToolBar from "./dashboard/ToolBar";
-import { Case, Counselor, School, Tip } from '../common/types/types';
+import { Case, Counselor, Message, School, Tip } from '../common/types/types';
 import Chat from "./dashboard/chat/Chat";
 
 export default function Dashboard(props:any) {

@@ -1,0 +1,138 @@
+.attach-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  height: 400px;
+  width: 100%;
+  max-width: 550px;
+  min-width: 300px;
+}
+
+.file-label {
+  padding: 10px 20px;
+  background-color: var(--color-dkgray-75);
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+  justify-self: center;
+  align-self: center;
+
+  &:hover {
+    background-color: var(--color-dkgray-50);
+  }
+}
+
+#file-hidden {
+  display: none;
+}
+
+.thumbnails-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.thumbnail-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-bottom: 1px solid var(--color-bg);
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.radio-option input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-gray-75);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-option input[type="radio"]:checked {
+  border-color: var(--color-dkgray-75);
+}
+
+.radio-option input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-dkgray-75);
+  border-radius: 50%;
+}
+
+/* .safe-label {
+  color: var(--color-dkgreen);
+  font-weight: bold;
+}
+
+.inappropriate-label {
+  color: var(--color-yellow);
+  font-weight: bold;
+}
+
+.illegal-label {
+  color: var(--color-red);
+  font-weight: bold;
+} */
+
+
+.attach-actions {
+  display: flex;
+  padding: 12px;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.attach-cancel {
+  padding: 4px 8px;
+  border: 1px solid var(--color-bg);
+  border-radius: 4px;
+
+  &:hover {
+    background-color: var(--color-gray-25);
+  }
+}
+
+.attach-submit {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--color-ltgreen);
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 50%;
+  &:hover {
+    background-color: var(--color-dkgreen);
+  }
+  &:disabled {
+    background-color: var(--color-gray);
+    cursor: not-allowed;
+  }
+}
+
+.file-input {
+  width: 100%;
+  margin-bottom: 16px;
+}

@@ -16,7 +16,23 @@ export const DIALOG_TYPE = {
   },
 };
 
+export const FAKE_ATTACHMENTS = [
+  {
+    file: "cat01.jpg",
+    flagged: "safe"
+  },
+  {
+    file: "cat02.jpg",
+    flagged: "inappropiate"
+  },
+  {
+    file: "cat03.jpg",
+    flagged: "illegal"
+  }
+]
+
 export const MESSAGE_TYPE = {
+  ATTACH: "attach",
   CALL: "call",
   CHAT: "chat",
   STAKEHOLDERS: "stakeholders",
@@ -30,6 +46,7 @@ export const MODAL = {
 };
 
 export const POPOVER = {
+  ATTACH: "attach",
   CANNED: "canned",
   CONTACTS: "contacts"
 };

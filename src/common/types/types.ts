@@ -70,6 +70,7 @@ export type Message = {
     title?: string;
   };
   timestamp: Date;
+  attachments?: Attachment[] | FakeAttachment[]
 }
 
 export type Tip = {
@@ -86,4 +87,14 @@ export type Tip = {
 
 export interface Case extends Tip {
   school: School | undefined
+}
+
+export type Attachment = {
+  file: File,
+  flagged: string;
+}
+
+export type FakeAttachment = {
+  file: string,
+  flagged: string;
 }

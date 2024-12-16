@@ -109,7 +109,7 @@
     {
         "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
         "type": "stakeholders",
-        "text": "Maria Gonzalez was added to Reporter Dialog.",
+        "text": "Jordan Garcia was added to Reporter Dialog.",
         "sender": {
             "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -414,7 +414,7 @@
         {
             "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
             "type": "stakeholders",
-            "text": "Maria Gonzalez was added to Reporter Dialog.",
+            "text": "Chris Lopez was added to Reporter Dialog.",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -558,11 +558,11 @@
     "teamComm": [
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "Hey Chris, I’ve got a tipster reporting students vaping in the bathrooms at Jefferson High School. It’s happening mostly in the upstairs bathrooms near the science wing, during lunch and between classes. Sounds like a recurring issue.",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
+                "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
                 "title": "SHP Counselor"
@@ -689,7 +689,7 @@
         {
             "id": "12345",
         "type": "chat",
-            "text": "Will do. Thanks, Maria! I’ll update you shortly. 😊",
+            "text": "Will do. Thanks, Chris! I’ll update you shortly. 😊",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -810,7 +810,7 @@
         {
             "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
             "type": "stakeholders",
-            "text": "Maria Gonzalez was added to Reporter Dialog.",
+            "text": "Robin Martinez was added to Reporter Dialog.",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -876,7 +876,7 @@
     "teamComm": [
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "<p>Hey, I&rsquo;ve got a tip from an anonymous student. It&rsquo;s about a classmate who&rsquo;s abusive toward his girlfriend and threatening others who might report him. It&rsquo;s escalating, and I think we need to take immediate steps.</p>",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
@@ -889,7 +889,7 @@
         },
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "Got it. What details do we have so far?",
             "sender": {
                 "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
@@ -902,7 +902,7 @@
         },
         {
             "id": "12345",
-        "type": "chat",
+            "type": "chat",
             "text": "<p>The tipster says the abusive behavior has been happening for months, but the threats are getting more intense. He&rsquo;s explicitly said things like, &ldquo;If you talk, I&rsquo;ll kill you.&rdquo; No direct signs of a weapon or immediate plans for violence yet, but the fear is widespread.</p>",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
@@ -938,6 +938,33 @@
                 "title": "SHP Counselor"
             },
             "timestamp": "2024-12-04T19:04:08.413Z"
+        },
+        {
+            "id": "12345",
+            "type": "attach",
+            "text": "",
+            "sender": {
+                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                "displayName": "Ellie Johnson",
+                "role": "counselor",
+                "status": 1,
+                "title": "SHP Counselor"
+            },
+            "timestamp": "2024-12-04T19:04:08.413Z",
+            "attachments": [
+                {
+                  "file": "cat01.jpg",
+                  "flagged": "safe"
+                },
+                {
+                  "file": "cat02.jpg",
+                  "flagged": "inappropriate"
+                },
+                {
+                  "file": "cat03.jpg",
+                  "flagged": "illegal"
+                }
+              ]
         },
         {
             "id": "12345",

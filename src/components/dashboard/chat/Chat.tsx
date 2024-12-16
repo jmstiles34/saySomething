@@ -5,10 +5,11 @@ import Editor  from "tinymce-solid";
 import "./Chat.css";
 import { format, toZonedTime } from 'date-fns-tz'
 import { isSameDay } from 'date-fns';
-import type { Contact, Message, Staff } from "../../../common/types/types";
-import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, USERS } from '/src/common/constants/constants';
-import { dateInTimezone, getOrdinalSuffix } from '/src/common/utils/utils';
+import type { Message, Staff } from "../../../common/types/types";
+import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, USERS } from '../../../common/constants/constants';
+import { dateInTimezone, getOrdinalSuffix } from '../../../common/utils/utils';
 import Popover from './Popover';
+import Attach from './popovers/Attach';
 import Canned from './popovers/Canned';
 import Contacts from './popovers/Contacts';
 import Modal from './Modal';
@@ -338,11 +339,40 @@ export default function Chat(props:any) {
                             {message.sender.displayName}
                           </div>
                           <div class="message-element-date">
-                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone() as keyof typeof TIME_ZONES]), 'h:mm aa', { timeZone: TIME_ZONES[timezone() as keyof typeof TIME_ZONES] })}
                             </div>
                           
                           <div innerHTML={message.text} class="message-element-text"/>
                           {/* <div class="message-element-text">{message.text}</div> */}
+                        </li>
+                      </Match>
+                      <Match when={message.type === MESSAGE_TYPE.ATTACH}>
+                        <li class={`message-element message-element-${message.sender.role}`}>
+                          <div class="message-element-avatar">
+                            <img src={`/src/assets/icons/${message.sender.role}.svg`} alt={`${message.sender.role} icon`} /> 
+                          </div>
+                          <div class="bold-author">
+                            {message.sender.displayName}
+                          </div>
+                          <div class="message-element-date">
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone() as keyof typeof TIME_ZONES]), 'h:mm aa', { timeZone: TIME_ZONES[timezone() as keyof typeof TIME_ZONES] })}
+                            </div>
+                          
+                          <div class="message-element-attachments">
+                            <For each={message.attachments}>
+                              {(att) => (
+                                <div class="attachment-thumb-wrapper">
+                                  <img class={`
+                                    ${att.flagged === "inappropriate" ? 'blurred-image-lt' : ''}
+                                    ${att.flagged === "illegal" ? 'blurred-image-hvy' : ''}
+                                    `} src={`/src/assets/uploads/${att.file}`} alt={`Upload file thumbnail`} />
+                                    <Show when={att.flagged === "illegal"}>
+                                      <i class="fa-solid fa-lock fa-2xl attach-lock"></i>
+                                    </Show>
+                                </div>
+                              )}
+                            </For>
+                          </div> 
                         </li>
                       </Match>
                       <Match when={message.type === MESSAGE_TYPE.CALL}>
@@ -355,7 +385,7 @@ export default function Chat(props:any) {
                             {message.sender.displayName}
                           </div>
                           <div class="message-element-date">
-                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone() as keyof typeof TIME_ZONES]), 'h:mm aa', { timeZone: TIME_ZONES[timezone() as keyof typeof TIME_ZONES] })}
                           </div>
                           
                           <div innerHTML={message.text} class="message-element-text"/>
@@ -371,7 +401,7 @@ export default function Chat(props:any) {
                             {message.sender.displayName}
                           </div>
                           <div class="message-element-date">
-                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone()]), 'h:mm aa', { timeZone: TIME_ZONES[timezone()] })}
+                            {format(toZonedTime(message.timestamp, TIME_ZONES[timezone() as keyof typeof TIME_ZONES]), 'h:mm aa', { timeZone: TIME_ZONES[timezone() as keyof typeof TIME_ZONES] })}
                           </div>
                           
                           <div innerHTML={message.text} class="message-element-text"/>
@@ -395,6 +425,12 @@ export default function Chat(props:any) {
           <Show when={popover()}>
             <Popover>
               <Switch>
+                <Match when={popover() === POPOVER.ATTACH}>
+                  <Attach 
+                    cancelClick={() => setPopover(null)} 
+                    handleAttachPopoverClick={handleContactsPopoverClick} 
+                  />
+                </Match>
                 <Match when={popover() === POPOVER.CONTACTS}>
                   <Contacts 
                     filteredContacts={filteredContacts()}
@@ -455,7 +491,7 @@ export default function Chat(props:any) {
           </div>
 
           <div class="input-icon-wrapper">
-            <button class="icon" onClick={() => {}}>
+            <button class="icon" onClick={() => setPopover( popover() === POPOVER.ATTACH ? null : POPOVER.ATTACH)}>
               <i class="fa fa-paperclip fa-lg"></i>
             </button>
             <button class="icon" onClick={() => setPopover( popover() === POPOVER.CANNED ? null : POPOVER.CANNED)}>
