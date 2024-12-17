@@ -2,12 +2,12 @@ import type { Component } from 'solid-js';
 import "./App.css"
 import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
-import { ChatProvider } from "/src/context/ChatContext";
+import { ChatProvider } from "../src/context/ChatContext";
 
 const App: Component = () => {
   return (
     <ChatProvider>
-      <div class="app">
+      <div id="app">
         <Header />
         <Dashboard />
       </div>

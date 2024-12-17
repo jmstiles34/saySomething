@@ -23,6 +23,8 @@
   --color-yellow: hsl(51, 100%, 50%);
   --color-yellow-50: hsla(51, 100%, 50%, .50);
 
+  --color-icon: #624508;
+
   /* fonts */
   --sans-serif: "Lato", sans-serif;
   --primary-font: "Roboto", serif;

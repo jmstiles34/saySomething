@@ -8,8 +8,9 @@ import { Case, Counselor, Message, School, Tip } from '../common/types/types';
 import Chat from "./dashboard/chat/Chat";
 
 export default function Dashboard(props:any) {
-  const {counselors, schools, tips, reporterChat, teamChat} = 
+  const {activeCounselor, counselors, schools, tips, reporterChat, teamChat} = 
     useChatContext() as {
+      activeCounselor:Signal<Counselor>,
       counselors:Counselor[], 
       schools:School[], 
       tips:Tip[], 
@@ -20,9 +21,7 @@ export default function Dashboard(props:any) {
   const [teamMessages, setTeamMessages] = teamChat;
   const [activeTipId, setActiveTipId] = createSignal<string | null>(null);
   const [activeCase, setActiveCase] = createSignal<Case | null>(null);
-  const [activeCounselor, setActiveCounselor] = createSignal<Counselor | undefined>(
-    counselors.find(c => c.id === "2d57065b-3230-4f0f-b2ba-c8814d4d4c50")
-  );
+  const [counselor, setCounselor] = activeCounselor;
 
   onMount(() => {
     setActiveTipId('TIP-5600');
@@ -44,7 +43,7 @@ export default function Dashboard(props:any) {
       setTeamMessages(messages[activeTipId()]?.teamComm || [])
     }
   });
-
+  
   const handleTipUpdate = (tipId:string) => {
     const newCase = tips.find((tip) => tip.tipId === tipId) || null;
     setActiveTipId(tipId);
@@ -63,7 +62,7 @@ export default function Dashboard(props:any) {
       <ToolBar 
         tipId={activeTipId()}
         handleTipUpdate={handleTipUpdate}
-        activeCounselor={activeCounselor()}
+        counselorId={counselor().id}
       />
 
       <div class="tip-dash-chat">
@@ -74,7 +73,7 @@ export default function Dashboard(props:any) {
           messages={reporterMessages()}
           setMessages={setReporterMessages}
           setActiveCase={setActiveCase}
-          activeCounselor={activeCounselor()}
+          activeCounselor={counselor()}
         />
         <Chat 
           target="team" 
@@ -83,7 +82,7 @@ export default function Dashboard(props:any) {
           messages={teamMessages()}
           setMessages={setTeamMessages}
           setActiveCase={setActiveCase}
-          activeCounselor={activeCounselor()}
+          activeCounselor={counselor()}
         />
       </div>
     </main>

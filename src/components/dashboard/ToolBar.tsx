@@ -1,38 +1,58 @@
-import { createSignal, For, Show } from "solid-js";
+import { createEffect, createSignal, For, Show } from "solid-js";
 import "./ToolBar.css";
 import { School, Tip } from "../../common/types/types";
 import { useChatContext } from "/src/context/ChatContext";
 import { randomNumber } from "../../common/utils/utils";
 
-export default function ToolPanel(props:any) {
+type GroupTip = {
+  label: string,
+  value: string,
+  icon: string,
+  tips: Tip[]
+}
+
+export default function ToolBar(props:any) {
   const {schools, tips} = useChatContext();
   const [isExpanded, setIsExpanded] = createSignal(false);
   const [isHovering, setIsHovering] = createSignal(false);
   const [isMenuOpen, setIsMenuOpen] = createSignal(false);
+  
+  createEffect(() => {
+    if(props.counselorId){
+      setGroupedTips(
+        buildGroupedTips(props.counselorId)
+      )
+      setTipGroup(groupedTips().filter(({value}) => value === 'mine')[0]);
+    }
+  });
+
+  const buildGroupedTips = (id:string) => {
+    return [
+      {
+        label: "Mine",
+        value: "mine",
+        icon: "user",
+        tips: tips.filter((t:Tip) => t.assignedTo === id)
+      },
+      {
+        label: "Team",
+        value: "team",
+        icon: "users",
+        tips: tips.filter((t:Tip) => t.assignedTo !== id && t.assignedTo !== null)
+      },
+      {
+        label: "Unassigned",
+        value: "unassigned",
+        icon: "layer-group",
+        tips: tips.filter((t:Tip) => t.assignedTo === null)
+      }
+    ]
+  }
+  const [groupedTips, setGroupedTips] = createSignal<GroupTip[]>(buildGroupedTips(props.counselorId));
 
   const pulsingTips = ["TIP-6832"];
 
-  const groupedTips = [
-    {
-      label: "Mine",
-      value: "mine",
-      icon: "user",
-      tips: tips.filter((t:Tip) => t.assignedTo === props.activeCounselor.id)
-    },
-    {
-      label: "Team",
-      value: "team",
-      icon: "users",
-      tips: tips.filter((t:Tip) => t.assignedTo !== props.activeCounselor.id && t.assignedTo !== null)
-    },
-    {
-      label: "Unassigned",
-      value: "unassigned",
-      icon: "layer-group",
-      tips: tips.filter((t:Tip) => t.assignedTo === null)
-    }
-  ];
-  const [tipGroup, setTipGroup] = createSignal(groupedTips.filter(({value}) => value === 'mine')[0]);
+  const [tipGroup, setTipGroup] = createSignal(groupedTips().filter(({value}) => value === 'mine')[0]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen());
@@ -62,7 +82,7 @@ export default function ToolPanel(props:any) {
   };
 
   const handleMenuClick = (item:string) => {
-    setTipGroup(groupedTips.filter(({value}) => value === item)[0]);
+    setTipGroup(groupedTips().filter(({value}) => value === item)[0]);
     handleSubmenuLeave();
   }
 
@@ -71,7 +91,7 @@ export default function ToolPanel(props:any) {
       <div class="toolbar-header">
           <button class="burger-button icon" onClick={toggleMenu} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <i class={`fa fa-bars`}></i>
-          </button>
+          </button> 
 
           {isMenuOpen() && (
             <menu 
@@ -80,7 +100,7 @@ export default function ToolPanel(props:any) {
               onMouseLeave={handleSubmenuLeave}
             >
               <ul class="items">
-                <For each={groupedTips}>
+                <For each={groupedTips()}>
                   {(group) => (
                     <li class={`tip-menu-item ${group.value === tipGroup().value ? 'list-card-active' : ''}`} onClick={() => handleMenuClick(group.value)}>
                         <div><i class={`fa-solid fa-${group.icon} fa-sm`} aria-hidden="true"></i></div>

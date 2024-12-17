@@ -102,7 +102,7 @@ export default function Chat(props:any) {
 
   const handleMessageSubmit = (e: Event): void => {
     e.preventDefault();
-    const newMessage = createMessage(USERS.counselor, chatMessage())
+    const newMessage = createMessage(chatMessage())
     sendMessage(newMessage);
     setChatMessage("");
   };

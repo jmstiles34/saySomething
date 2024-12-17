@@ -1,16 +1,16 @@
-import "./Header.css";
+import Notifications from "./icons/Notifications";
+import Profile from "./icons/Profile";
 
 export default function Header() {
   return (
-    <header class="header">
+    <header> 
       <img 
         src="/src/assets/images/SHP_Logo.svg"  
-        alt="Sandy Hook Promise Logo" />
+        alt="The shape of a tree where an arm and hand represent the truck and hand-prints represent the leafs." />
       
-      <div class="header-icons">
-        <div class="notification-icon">
-          <i class="fa-solid fa-bell fa-xl"></i>
-        </div>
+      <div>
+        <Notifications />
+        <Profile />
       </div>
     </header>
   );

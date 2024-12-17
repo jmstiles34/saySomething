@@ -9,7 +9,7 @@
       "phone": "210-708-3098",
       "email": "chris.williams@example.com",
       "role": "counselor",
-      "colors": ["#3E2723", "#5a1ead"],
+      "colors": ["#3E2723", "#8D3FC6"], 
       "status": "active",
       "timezone": "EST"
     },
@@ -22,7 +22,7 @@
       "phone": "364-955-6387",
       "email": "taylor.garcia@example.com",
       "role": "counselor",
-      "colors": ["#5C4033", "#5d1fb2"],
+      "colors": ["#5C4033", "#C63F8D"],
       "status": "active",
       "timezone": "EST"
     },
@@ -35,7 +35,7 @@
       "phone": "969-581-4024",
       "email": "emily.smith@example.com",
       "role": "counselor",
-      "colors": ["#6D4C41", "#742bd9"],
+      "colors": ["#6D4C41", "#3F8DC6"],
       "status": "active",
       "timezone": "EST"
     },
@@ -48,7 +48,7 @@
       "phone": "497-818-3537",
       "email": "pat.rodriguez@example.com",
       "role": "counselor",
-      "colors": ["#A66A45", "#18af67"],
+      "colors": ["#A66A45", "#C65F3F"],
       "status": "active",
       "timezone": "EST"
     },
@@ -61,7 +61,7 @@
       "phone": "461-268-8697",
       "email": "ellie.johnson@example.com",
       "role": "counselor",
-      "colors": ["#8D5524", "#8341dd"],
+      "colors": ["#D8A57B", "#7BC63F"],
       "status": "active",
       "timezone": "EST"
     },
@@ -74,7 +74,7 @@
       "phone": "444-198-4813",
       "email": "casey.martinez@example.com",
       "role": "counselor",
-      "colors": ["#C68642", "#9156e1"],
+      "colors": ["#C68642", "#3FC6A1"],
       "status": "active",
       "timezone": "EST"
     },
@@ -87,7 +87,7 @@
       "phone": "907-519-5023",
       "email": "alex.jones@example.com",
       "role": "counselor",
-      "colors": ["#D6A57C", "#f04e89"],
+      "colors": ["#D6A57C", "#C68D3F"],
       "status": "active",
       "timezone": "EST"
     },
@@ -100,7 +100,7 @@
       "phone": "755-888-3488",
       "email": "jane.davis@example.com",
       "role": "counselor",
-      "colors": ["#E1B899", "#ad82e8"],
+      "colors": ["#E1B899", "#6A3FC6"],
       "status": "active",
       "timezone": "EST"
     },
@@ -113,7 +113,7 @@
       "phone": "887-839-3159",
       "email": "morgan.brown@example.com",
       "role": "counselor",
-      "colors": ["#F0D5BE", "#b88ff2"],
+      "colors": ["#F0D5BE", "#C63F3F"],
       "status": "active",
       "timezone": "EST"
     },
@@ -126,7 +126,7 @@
       "phone": "707-559-7398",
       "email": "jordan.johnson@example.com",
       "role": "counselor",
-      "colors": ["#FFDFC4", "#c49bfc"],
+      "colors": ["#FFDFC4", "#3F46C6"],
       "status": "active",
       "timezone": "EST"
     }

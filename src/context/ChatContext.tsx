@@ -1,18 +1,22 @@
 import { createContext, createSignal, useContext } from "solid-js";
-import type { Message } from "/src/common/types/types";
-import { tips } from '/src/data/tips.json';
-import { schools } from '/src/data/schools.json';
-import { counselors } from '/src/data/counselors.json';
+import type { Counselor, Message } from "../common/types/types";
+import { tips } from '../data/tips.json';
+import { schools } from '../data/schools.json';
+import { counselors } from '../data/counselors.json';
 
 const ChatContext = createContext();
 
 export function ChatProvider(props:any) {
   const [reporterMessages, setReporterMessages] = createSignal<Message[]>([]);
   const [teamMessages, setTeamMessages] = createSignal<Message[]>([]);
+  const [activeCounselor, setActiveCounselor] = createSignal<Counselor | undefined>(
+    counselors.find((c:Counselor) => c.id === "2d57065b-3230-4f0f-b2ba-c8814d4d4c50")
+  );
 
   return (
     <ChatContext.Provider
       value={{
+        activeCounselor: [activeCounselor, setActiveCounselor],
         reporterChat: [reporterMessages, setReporterMessages],
         teamChat: [teamMessages, setTeamMessages],
         tips,
