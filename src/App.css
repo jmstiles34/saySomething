@@ -26,6 +26,17 @@ header > div:last-child {
   justify-content: end;
 }
 
+.icon {
+  justify-self: center;
+  padding: 4px;
+  color: var(--color-icon);
+  cursor: pointer;
+
+  &:hover{
+    color: var(--color-ltgreen)
+  }
+}
+
 .icon-background {
   display: flex;
   justify-content: center;

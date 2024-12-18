@@ -6,35 +6,24 @@
   width: 90px;
   background-color: var(--color-white);
   box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 .expanded {
   width: 150px;
 }
 
-.toolbar-header {
+.toolbar > div:first-of-type {
   display: flex;
   justify-content: space-between;
   padding: 4px;
-}
-
-.toolbar-header .icon {
-  justify-self: center;
-  padding: 4px;
-  color: var(--color-dkgray-75);
-  cursor: pointer;
-
-  &:hover{
-    color: var(--color-ltgreen)
-  }
 }
 
 .burger-button {
   anchor-name: --filterButton;
 }
 
-.burger-menu {
+.toolbar div menu {
   position: fixed;
   position-anchor: --filterButton;
   top: anchor(end);
@@ -42,31 +31,30 @@
   border: 1px solid var(--color-gray);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 100;
+}
 
-  .items {
+.toolbar div menu ul {
     list-style:none;
     padding: 0;
+    margin: 0;
+}
 
-    .tip-menu-item {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 4px;
-      align-items: center;
-      transition: all .3s;
-      cursor: pointer;
-      padding: 4px;
-            
-      &:hover {
-        background-color: var(--color-yellow);
-      }
-    }
+.toolbar div menu ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  align-items: center;
+  transition: all .3s;
+  cursor: pointer;
+  padding: 4px;
+        
+  &:hover {
+    background-color: var(--color-yellow);
   }
+}
 
-  .tip-menu-item > div:first-of-type {
-    display: flex;
-    width: 20px;
-    justify-content: center;
-  }
+.menu-item-active {
+  background-color: var(--color-ltgreen);
 }
 
 .toolbar-list {
@@ -86,10 +74,10 @@
   width: 100%;
   border-bottom: 1px solid var(--color-bg);
   border-left: 4px solid var(--color-white);
-}
 
-.tip-card-life-safety {
-  border-left: 4px solid var(--color-burntorange);
+  &:hover {
+    border-left: 4px solid var(--color-yellow);
+  }
 }
 
 .toolbar-list-card {
@@ -104,6 +92,7 @@
   &:hover {
     background-color: var(--color-yellow);
   }
+  transition: none;
 }
 
 .list-card-active {
@@ -115,8 +104,15 @@
   }
 }
 
+.tip-card-life-safety {
+  border-left: 4px solid var(--color-burntorange);
+  &:hover {
+    border-left: 4px solid var(--color-burntorange);
+  }
+}
+
 .tip-message-count {
-  background-color: var(--color-dkgray-75);
+  background-color: var(--color-icon);
   color: var(--color-white);
   border-radius: 6px;
   width: fit-content;
@@ -140,44 +136,8 @@
   justify-self: end;
 }
 
-.danger-icon {
-  height: 13px;
-  width: 13px;
-  display: inline-block;
-  margin-right: 3px;
-  margin-bottom: -2px;
-}
-
-.tip-pulse {
-  /* animation: shake 2s ease-in-out infinite; */
-  /* animation: subtle-bounce-right 3s ease-in-out infinite; */
-}
-
 .tip-id-pulse {
   animation: text-pulse 3s ease-in-out infinite;
-}
-
-@keyframes pulse-colors {
-  0% {
-    background-color: var(--color-white);
-  }
-  50% {
-    background-color: var(--color-burntorange-50);
-  }
-  100% {
-    background-color: var(--color-white);
-  }
-}
-
-@keyframes subtle-bounce-right {
-  0%, 50%, 100% { 
-      transform: translateX(0);
-      color: inherit;
-  }
-  25% { 
-      transform: translateX(3px);
-      color: var(--color-red);
-  }
 }
 
 @keyframes text-pulse {

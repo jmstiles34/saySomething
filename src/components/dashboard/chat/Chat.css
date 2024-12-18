@@ -156,6 +156,10 @@
   background-color: var(--color-gray-25);
 }
 
+.avatar-span {
+  grid-row: span 2;
+}
+
 .message-element-avatar {
   grid-row: span 2;
   width: 40px;

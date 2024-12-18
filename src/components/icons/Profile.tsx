@@ -1,10 +1,10 @@
 import { createSignal, For, Show } from "solid-js";
 import type { Signal } from "solid-js";
 import "./Profile.css"
-import Icon from "./Icon";
-import Counselor from "../../assets/icons/Counselor"
+import Counselor from "./Counselor"
 import type { Counselor as CounselorType } from '../../common/types/types';
 import { useChatContext } from "../../context/ChatContext";
+import Avatar from "../dashboard/Avatar";
 
 export default function Profile() {
   const [isMenuOpen, setIsMenuOpen] = createSignal(false);
@@ -23,18 +23,23 @@ export default function Profile() {
   return (      
     <div>
       <button class="profile-button" onClick={() => setIsMenuOpen(!isMenuOpen())}>
-        <Icon>
+        <Avatar>
           <Counselor body={counselor().colors[1]} head={counselor().colors[0]} />
-        </Icon>
+        </Avatar>
       </button>
       
 
       <Show when={isMenuOpen()}>
         <menu>
           <ul class="profile-list">
-            <For each={counselors}>
+            <For each={counselors.sort((a, b) => {            
+              return a.displayName.localeCompare(b.displayName)
+            })}>
               {(c) => (
-                <li class={`profile-item`} onClick={() => handleCounselorClick(c)}>
+                <li class="profile-item" onClick={() => handleCounselorClick(c)}>
+                    <Avatar size="sm">
+                      <Counselor body={c.colors[1]} head={c.colors[0]} />
+                    </Avatar>
                     <div>{c.displayName}</div>
                 </li>
               )}

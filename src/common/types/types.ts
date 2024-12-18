@@ -68,6 +68,7 @@ export type Message = {
     role: string;
     status?: number;
     title?: string;
+    colors?: string[];
   };
   timestamp: Date;
   attachments?: Attachment[] | FakeAttachment[]

@@ -16,7 +16,7 @@
 
 .profile-list li {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto 1fr;
   gap: 4px;
   align-items: center;
   transition: all .3s;

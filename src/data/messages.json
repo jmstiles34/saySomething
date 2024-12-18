@@ -24,7 +24,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T21:40:37.716Z"
     },
@@ -50,7 +51,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T21:40:54.918Z"
     },
@@ -76,7 +78,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T21:41:19.810Z"
     },
@@ -102,7 +105,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T21:42:20.715Z"
     },
@@ -115,7 +119,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T21:42:27.343Z"
     },
@@ -143,7 +148,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:00:17.092Z"
     },
@@ -169,7 +175,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:00:41.496Z"
     },
@@ -195,7 +202,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:01:36.575Z"
     },
@@ -221,7 +229,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:01:55.177Z"
     },
@@ -247,7 +256,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:02:24.311Z"
     },
@@ -273,7 +283,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:02:39.410Z"
     },
@@ -299,7 +310,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:02:58.696Z"
     },
@@ -325,7 +337,8 @@
             "displayName": "Ellie Johnson",
             "role": "counselor",
             "status": 1,
-            "title": "SHP Counselor"
+            "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
         },
         "timestamp": "2024-12-03T22:03:51.827Z"
     }
@@ -355,7 +368,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-02T21:47:55.303Z"
         },
@@ -381,7 +395,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-02T21:48:26.562Z"
         },
@@ -407,7 +422,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:48:43.339Z"
         },
@@ -420,7 +436,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:48:07.132Z"
         },
@@ -472,7 +489,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:49:53.320Z"
         },
@@ -498,7 +516,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:50:18.270Z"
         },
@@ -550,7 +569,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:51:00.926Z"
         }
@@ -565,7 +585,8 @@
                 "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:54:16.307Z"
         },
@@ -591,7 +612,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:54:44.599Z"
         },
@@ -617,7 +639,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:55:02.918Z"
         },
@@ -643,7 +666,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:55:22.104Z"
         },
@@ -669,7 +693,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:55:45.750Z"
         },
@@ -695,7 +720,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-03T21:56:17.035Z"
         }
@@ -725,7 +751,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T18:57:39.720Z"
         },
@@ -751,7 +778,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T18:57:56.791Z"
         },
@@ -777,7 +805,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T18:58:15.554Z"
         },
@@ -803,7 +832,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T18:58:57.510Z"
         },
@@ -816,7 +846,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T18:58:59.966Z"
         },
@@ -883,7 +914,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T19:02:06.991Z"
         },
@@ -909,7 +941,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T19:02:39.944Z"
         },
@@ -935,7 +968,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T19:04:08.413Z"
         },
@@ -948,7 +982,8 @@
                 "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T19:04:08.413Z",
             "attachments": [
@@ -988,7 +1023,8 @@
             "displayName": "Ellie Johnson",
                 "role": "counselor",
                 "status": 1,
-                "title": "SHP Counselor"
+                "title": "SHP Counselor",
+                "colors": ["#D8A57B", "#7BC63F"]
             },
             "timestamp": "2024-12-04T19:04:33.211Z"
         }

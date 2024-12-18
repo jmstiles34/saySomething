@@ -1,5 +1,5 @@
 import Icon from "./Icon";
-import Bell from "../../assets/icons/Bell"
+import Bell from "./Bell"
 
 export default function Notifications() {
   return (      

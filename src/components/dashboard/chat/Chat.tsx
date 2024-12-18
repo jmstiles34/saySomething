@@ -6,7 +6,7 @@ import "./Chat.css";
 import { format, toZonedTime } from 'date-fns-tz'
 import { isSameDay } from 'date-fns';
 import type { Message, Staff } from "../../../common/types/types";
-import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, USERS } from '../../../common/constants/constants';
+import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES } from '../../../common/constants/constants';
 import { dateInTimezone, getOrdinalSuffix } from '../../../common/utils/utils';
 import Popover from './Popover';
 import Attach from './popovers/Attach';
@@ -17,6 +17,10 @@ import Instructions from './modals/Instructions';
 import Stakeholders from "./modals/Stakeholders";
 import Tags from "./modals/Tags";
 import Summary from "./modals/Summary";
+import Counselor from "../../icons/Counselor";
+import Avatar from "../Avatar";
+import Reporter from "../../icons/Reporter";
+import Team from "../../icons/Team";
 
 export default function Chat(props:any) {
   const [chatMessage, setChatMessage] = createSignal("");
@@ -30,7 +34,7 @@ export default function Chat(props:any) {
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
   let editorRef!: TinyEditor;
-  const useRichEditor:boolean = false;
+  const useRichEditor:boolean = true;
 
   const [timezone, setTimezone] = createSignal<string>(defaultTimezone());
 
@@ -69,6 +73,7 @@ export default function Chat(props:any) {
         id: props.activeCounselor.id,
         displayName: props.activeCounselor.displayName,
         role: props.activeCounselor.role,
+        colors: props.activeCounselor.colors,
       },
       timestamp: new Date()
     }
@@ -332,8 +337,20 @@ export default function Chat(props:any) {
                     <Switch>
                       <Match when={message.type === MESSAGE_TYPE.CHAT}>
                         <li class={`message-element message-element-${message.sender.role}`}>
-                          <div class="message-element-avatar">
-                            <img src={`/src/assets/icons/${message.sender.role}.svg`} alt={`${message.sender.role} icon`} /> 
+                          <div class="avatar-span">
+                            <Avatar>
+                              <Switch>
+                                <Match when={message.sender.role === 'counselor'}>
+                                  <Counselor body={message.sender.colors[1]} head={message.sender.colors[0]} />
+                                </Match>
+                                <Match when={message.sender.role === 'reporter'}>
+                                  <Reporter />
+                                </Match>
+                                <Match when={message.sender.role === 'collaborator'}>
+                                  <Team />
+                                </Match>
+                              </Switch>
+                            </Avatar>
                           </div>
                           <div class="bold-author">
                             {message.sender.displayName}
@@ -348,8 +365,20 @@ export default function Chat(props:any) {
                       </Match>
                       <Match when={message.type === MESSAGE_TYPE.ATTACH}>
                         <li class={`message-element message-element-${message.sender.role}`}>
-                          <div class="message-element-avatar">
-                            <img src={`/src/assets/icons/${message.sender.role}.svg`} alt={`${message.sender.role} icon`} /> 
+                        <div class="avatar-span">
+                            <Avatar>
+                              <Switch>
+                                <Match when={message.sender.role === 'counselor'}>
+                                  <Counselor body={message.sender.colors[1]} head={message.sender.colors[0]} />
+                                </Match>
+                                <Match when={message.sender.role === 'reporter'}>
+                                  <Reporter />
+                                </Match>
+                                <Match when={message.sender.role === 'collaborator'}>
+                                  <Team />
+                                </Match>
+                              </Switch>
+                            </Avatar>
                           </div>
                           <div class="bold-author">
                             {message.sender.displayName}
@@ -377,9 +406,10 @@ export default function Chat(props:any) {
                       </Match>
                       <Match when={message.type === MESSAGE_TYPE.CALL}>
                         <li class={`message-element message-element-call`}>
-                          <div class="message-element-avatar">
-                            <i class="fa-solid fa-phone fa-xl call-icon"></i>
-                            {/* <img src={`/src/assets/icons/call-outgoing.svg`} alt={`Phone icon`} /> */} 
+                          <div class="avatar-span">
+                            <Avatar>
+                              <i class="fa-solid fa-phone fa-xl call-icon"></i>
+                            </Avatar>
                           </div>
                           <div class="bold-author">
                             {message.sender.displayName}
@@ -394,8 +424,10 @@ export default function Chat(props:any) {
                       </Match>
                       <Match when={message.type === MESSAGE_TYPE.STAKEHOLDERS}>
                         <li class={`message-element message-element-call`}>
-                          <div class="message-element-avatar">
-                          <i class="fa-solid fa-right-left fa-xl call-icon"></i>
+                          <div class="avatar-span">
+                            <Avatar>
+                              <i class="fa-solid fa-right-left fa-xl call-icon"></i>
+                            </Avatar>
                           </div>
                           <div class="bold-author">
                             {message.sender.displayName}
@@ -420,7 +452,7 @@ export default function Chat(props:any) {
 
       {/* chap input */}
       <div class={`chat-input-wrapper ${display.style}`}>
-        <div class={`chat-input`}>
+        <div class={`chat-input`}> 
           
           <Show when={popover()}>
             <Popover>

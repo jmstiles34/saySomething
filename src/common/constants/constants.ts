@@ -102,13 +102,6 @@ export const USERS = {
     status: 1,
     title: "",
   },
-  counselor: {
-    id: 1,
-    displayName: "Ellie Johnson",
-    role: "counselor",
-    status: 1,
-    title: "SHP Counselor",
-  },
   collaborator: {
     id: 1,
     displayName: "Maria Gonzalez",
