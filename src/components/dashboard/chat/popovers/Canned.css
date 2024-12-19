@@ -15,9 +15,6 @@
 }
 
 .canned-category {
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  align-items: center;
   gap: 8px;
   padding: 8px 12px;
   cursor: pointer;
@@ -28,12 +25,22 @@
   }
 }
 
+.canned-message span,
+.canned-category span {
+  font-size: small;
+  color: var(--color-gray);
+}
+
 .canned-category-selected {
   background-color: var(--color-ltgreen);
   font-weight: bold;
   &:hover {
     background-color: var(--color-ltgreen);
   }
+}
+
+.canned-category-selected span {
+  color: var(--color-text);
 }
 
 .canned-message-list {

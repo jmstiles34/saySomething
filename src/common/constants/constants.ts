@@ -51,6 +51,57 @@ export const POPOVER = {
   CONTACTS: "contacts"
 };
 
+export const TIP_CATEGORY = {
+  critical: {
+    name: "Critical Threats",
+    icon: '🚨',
+    description: "Tips involving immediate danger or high-risk situations requiring urgent intervention.",
+    examples: "Weapons, bomb threats, physical assault, self-harm, suicide threats"
+  },
+  bullying: {
+    name: "Bullying and Harassment",
+    icon: '💬',
+    description: "Tips about repeated harmful behavior or personal attacks targeting individuals or groups.",
+    examples: "Bullying, cyberbullying, harassment, discrimination"
+  },
+  substance: {
+    name: "Substance Use",
+    icon: '🚬',
+    description: "Tips related to the use or distribution of substances on school premises.",
+    examples: "Vaping, drug use, alcohol consumption"
+  },
+  property: {
+    name: "Property-Related Incidents",
+    icon: '🔒',
+    description: "Tips about actions impacting personal or school property.",
+    examples: "Theft, vandalism, damage to property."
+  },
+  wellness: {
+    name: "Wellness Concerns",
+    icon: '💙',
+    description: "Tips involving emotional, mental, or physical well-being that don’t pose an immediate threat.",
+    examples: "Anxiety, depression, family problems, eating disorders."
+  },
+  safety: {
+    name: "General Safety Concerns",
+    icon: '🧯',
+    description: "Tips about environmental or situational hazards that may lead to harm.",
+    examples: "Hazardous conditions, unsafe equipment, environmental threats."
+  },
+  misconduct: {
+    name: "Misconduct",
+    icon: '⚖️',
+    description: "Tips about violations of school rules or inappropriate behavior not posing immediate risk.",
+    examples: "Cheating, inappropriate language, dress code violations."
+  },
+  misc: {
+    name: "Miscellaneous/Other",
+    icon: '❓',
+    description: "Tips that don’t clearly fit into predefined categories or require further clarification.",
+    examples: "Anonymous grievances, unclear or unclassified issues."
+  }
+}
+
 export const TOOLS = [
   {
     label: "Tips",

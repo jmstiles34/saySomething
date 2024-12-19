@@ -84,6 +84,7 @@ export type Tip = {
   schoolId: string;
   stakeholders: string[];
   tags?: string[];
+  unread?: number
 }
 
 export interface Case extends Tip {

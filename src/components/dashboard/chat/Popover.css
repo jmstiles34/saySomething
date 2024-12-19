@@ -7,7 +7,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
   width: fit-content;
-  max-width: calc(anchor-size(width) * .75);
+  max-width: calc(anchor-size(width) * .8);
   z-index: 1000;
   /* bottom: calc(anchor(start) - 51px); */
   bottom: calc(anchor(start));

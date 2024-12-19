@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto minmax(0, 1fr);
-  gap: 8px;
   width: 90px;
   background-color: var(--color-white);
   box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.1);
@@ -13,48 +12,10 @@
   width: 150px;
 }
 
-.toolbar > div:first-of-type {
-  display: flex;
-  justify-content: space-between;
-  padding: 4px;
-}
-
-.burger-button {
-  anchor-name: --filterButton;
-}
-
-.toolbar div menu {
-  position: fixed;
-  position-anchor: --filterButton;
-  top: anchor(end);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-gray);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  z-index: 100;
-}
-
-.toolbar div menu ul {
-    list-style:none;
-    padding: 0;
-    margin: 0;
-}
-
-.toolbar div menu ul li {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px;
-  align-items: center;
-  transition: all .3s;
-  cursor: pointer;
-  padding: 4px;
-        
-  &:hover {
-    background-color: var(--color-yellow);
-  }
-}
-
-.menu-item-active {
-  background-color: var(--color-ltgreen);
+.toolbar > button:first-of-type {
+  justify-self: end;
+  padding-right: 6px;
+  padding-top: 6px;
 }
 
 .toolbar-list {
@@ -64,31 +25,51 @@
   flex-grow: 1;
   overflow-y: auto;
   overflow-x: hidden;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.toolbar-list > div:first-of-type {
-  border-top: 1px solid var(--color-bg);
+.toolbar-list-group {
+  margin-bottom: 1rem;
+  
+  li {
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.toolbar-list-card-wrapper {
+.tip-group-title {
+  display: flex;
   width: 100%;
-  border-bottom: 1px solid var(--color-bg);
-  border-left: 4px solid var(--color-white);
+  gap: 4px;
+  padding: 4px;
+}
 
-  &:hover {
-    border-left: 4px solid var(--color-yellow);
+.group-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  span {
+    font-size: var(--12px);
   }
 }
 
 .toolbar-list-card {
   display: grid;
-  grid-template-columns: auto 1fr;
-  cursor: pointer;
-  padding: 8px 4px;
+  grid-template-columns: auto auto 1fr;
+  border-bottom: 1px solid var(--color-gray-25);
+  padding: 6px;
   width: 100%;
   align-items: center;
-  gap: 4px;
-  font-size: var(--11px);
+  gap: 5px;
+  font-size: var(--12px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   &:hover {
     background-color: var(--color-yellow);
   }
@@ -98,17 +79,13 @@
 .list-card-active {
   font-weight: bold;
   background-color: var(--color-ltgreen);
-  border-left: 4px solid var(--color-ltgreen);
   &:hover {
     background-color: var(--color-ltgreen);
   }
 }
 
-.tip-card-life-safety {
-  border-left: 4px solid var(--color-burntorange);
-  &:hover {
-    border-left: 4px solid var(--color-burntorange);
-  }
+.list-card-tipid {
+  padding: 1px 2px;
 }
 
 .tip-message-count {
@@ -117,22 +94,6 @@
   border-radius: 6px;
   width: fit-content;
   padding: 1px 4px;
-  justify-self: end;
-}
-
-.tip-type {
-  grid-row: 2/3;
-  grid-column: 1/3;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.tip-type-expanded {
-  grid-column: 1/2;
-}
-
-.tip-timezone {
   justify-self: end;
 }
 

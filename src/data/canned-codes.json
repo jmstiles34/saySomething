@@ -1,0 +1,211 @@
+{
+  "reporter": {
+    "AcknowledgmentOfTip": {
+      "key": "ack",
+      "messages": [
+        {
+          "message": "Thank you for reaching out and sharing this information. Your tip is important to us.",
+          "type": "AcknowledgingSubmission",
+          "key": "sub"
+        },
+        {
+          "message": "We appreciate you taking the time to report this. Your safety and privacy are our top priorities.",
+          "type": "AppreciatingInput",
+          "key": "app"
+        }
+      ]
+    },
+    "RequestingClarification": {
+      "key": "req",
+      "messages": [
+        {
+          "message": "Could you provide more details about this situation? This will help us better understand the situation.",
+          "type": "GeneralClarification",
+          "key": "gen"
+        },
+        {
+          "message": "You mentioned this specific incident. Can you clarify what you saw or experienced?",
+          "type": "SpecificFollowUp",
+          "key": "spe"
+        }
+      ]
+    },
+    "Reassurance": {
+      "key": "rea",
+      "messages": [
+        {
+          "message": "We are here to help and take every report seriously. Your privacy is completely protected.",
+          "type": "SupportAssurance",
+          "key": "sup"
+        },
+        {
+          "message": "You're doing the right thing by reporting this. Let us know if there's anything else we should know.",
+          "type": "Encouragement",
+          "key": "enc"
+        }
+      ]
+    },
+    "NextSteps": {
+      "key": "next",
+      "messages": [
+        {
+          "message": "We're reviewing the information you've provided and will take the appropriate steps to address the issue.",
+          "type": "ActionBeingTaken",
+          "key": "act"
+        },
+        {
+          "message": "If we need additional details, is it okay to message you here? Your identity will remain anonymous.",
+          "type": "FollowingUp",
+          "key": "fol"
+        }
+      ]
+    },
+    "SafetyChecks": {
+      "key": "safe",
+      "messages": [
+        {
+          "message": "Are you safe right now? If you need immediate assistance, please let us know so we can help.",
+          "type": "CheckingOnTipster",
+          "key": "check"
+        },
+        {
+          "message": "If you feel unsafe, consider reaching out to someone you trust or local authorities for immediate help.",
+          "type": "EncouragingSupport",
+          "key": "enc"
+        }
+      ]
+    },
+    "Closure": {
+      "key": "clo",
+      "messages": [
+        {
+          "message": "Thank you again for sharing this with us. If you think of anything else, feel free to reach out anytime.",
+          "type": "ThankingTipster",
+          "key": "tha"
+        },
+        {
+          "message": "We've noted everything you've shared. Thank you for trusting us with this information.",
+          "type": "EndingConversation",
+          "key": "end"
+        }
+      ]
+    },
+    "EncouragementToStayInContact": {
+      "key": "enc",
+      "messages": [
+        {
+          "message": "If there's any new information or anything else you'd like to share, please don't hesitate to message us again.",
+          "type": "InvitationToUpdate",
+          "key": "inv"
+        },
+        {
+          "message": "Your messages will remain confidential, and you can reach out anytime if you need help.",
+          "type": "ReassuranceOfPrivacy",
+          "key": "rea"
+        }
+      ]
+    }
+  },
+  "team": {
+      "LifeSafetyEscalation": {
+      "key": "life",
+      "messages": [
+        {
+          "message": "We've received information at [TIME] regarding a critical safety concern. Please review the details immediately and advise on next steps.",
+          "type": "ImmediateActionRequired",
+          "key": "imm"
+        },
+        {
+          "message": "This situation involves a potential life safety issue. Can you confirm who is best to contact for immediate action?",
+          "type": "RequestForEmergencyContact",
+          "key": "contact"
+        },
+        {
+          "message": "Following up on the urgent matter shared earlier. Please confirm any actions taken or if further assistance is needed.",
+          "type": "FollowUpOnEscalation",
+          "key": "esc"
+        }
+      ]
+    },
+    "RequestForInformationOrAssistance": {
+      "key": "req",
+      "messages": [
+        {
+          "message": "Can you confirm details about the student's whereabouts to ensure appropriate handling of this tip?",
+          "type": "ClarificationNeeded",
+          "key": "cla"
+        },
+        {
+          "message": "To proceed effectively, we need additional context about this incident. Could you provide that information?",
+          "type": "RequestForContext",
+        "key": "req"
+        },
+        {
+          "message": "We are validating this tip and need confirmation about the student referenced. Your input is appreciated.",
+          "type": "VerificationOfInformation",
+          "key": "ver"
+        }
+      ]
+    },
+    "StatusUpdates": {
+      "key": "stat",
+      "messages": [
+        {
+          "message": "We're actively reviewing the information provided. Let us know if there are additional details from your side.",
+          "type": "TipUnderReview",
+          "key": "tip"
+        },
+        {
+          "message": "We are working through the details and will notify you once we have further developments or recommendations.",
+          "type": "ProgressUpdate",
+          "key": "pro"
+        },
+        {
+          "message": "The tip is still under investigation. If you have updates or insights, please share them to expedite the process.",
+          "type": "InvestigationOngoing",
+          "key": "inv"
+        }
+      ]
+    },
+    "ResolutionOrNextSteps": {
+      "key": "res",
+      "messages": [
+        {
+          "message": "Tip [TIPID] has been reviewed, and actions have been taken to address the concern. Let us know if further follow-up is required.",
+          "type": "ResolutionCommunicated",
+          "key": "com"
+        },
+        {
+          "message": "After thorough review, this matter has been resolved. No further action is necessary at this time.",
+          "type": "NoFurtherActionNeeded",
+          "key": "nof"
+        },
+        {
+          "message": "While no immediate action is required, we recommend monitoring this situation for any changes.",
+          "type": "AdditionalMonitoringRequired",
+          "key": "mon"
+        }
+      ]
+    },
+    "GeneralCollaboration": {
+      "key": "gen",
+      "messages": [
+        {
+          "message": "Thank you for your assistance with [TIPID]. Please confirm receipt of this update on [DATE] at [TIME] and let us know if further action is required.",
+          "type": "ConfirmationOfReceipt",
+          "key": "con"
+        },
+        {
+          "message": "We'd like to coordinate with your team to ensure the most effective response. Please share your availability for discussion.",
+          "type": "CollaborativeInputRequested",
+          "key": "col"
+        },
+        {
+          "message": "Thank you for your collaboration. Your prompt response is critical in ensuring a positive outcome.",
+          "type": "AcknowledgingSupport",
+          "key": "ack"
+        }
+      ]
+    }
+  }
+}

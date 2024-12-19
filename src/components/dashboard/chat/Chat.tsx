@@ -6,7 +6,7 @@ import "./Chat.css";
 import { format, toZonedTime } from 'date-fns-tz'
 import { isSameDay } from 'date-fns';
 import type { Message, Staff } from "../../../common/types/types";
-import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES } from '../../../common/constants/constants';
+import { DIALOG_TYPE, MESSAGE_TYPE, MODAL, POPOVER, TIME_ZONES, TIP_CATEGORY } from '../../../common/constants/constants';
 import { dateInTimezone, getOrdinalSuffix } from '../../../common/utils/utils';
 import Popover from './Popover';
 import Attach from './popovers/Attach';
@@ -30,6 +30,8 @@ export default function Chat(props:any) {
   const [useSchoolTimezone, setUseSchoolTimezone] = createSignal<boolean>(false);
   const [schoolTimezone, setSchoolTimezone] = createSignal<string>("");
   const [defaultTimezone, setDefaultTimezone] = createSignal<string>(props.activeCounselor?.timezone);
+  const [cannedFilter, setCannedFilter] = createSignal<string | null>(null);
+  const [cannedMessage, setCannedMessage] = createSignal<string | null>(null);
 
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
@@ -140,8 +142,11 @@ export default function Chat(props:any) {
       setPopover(POPOVER.CONTACTS);
     } else if (lastChar === '/') {
       setPopover(POPOVER.CANNED);
-    } else if (text.includes("/") && popover() === POPOVER.CANNED) {
+    } else if (lastChar === ' ' && popover() === POPOVER.CANNED) {
       setPopover(null);
+    } else if (text.includes("/") && popover() === POPOVER.CANNED) {
+      const slashIdx = text.lastIndexOf("/")+1;
+      setCannedFilter(text.substring(slashIdx));
     } else {
       const mentionMatch = text.match(/@([^@\s]*)$/);
       if (mentionMatch) {
@@ -172,6 +177,11 @@ export default function Chat(props:any) {
       setPopover(POPOVER.CONTACTS);
     } else if (key === '/') {
       setPopover(POPOVER.CANNED);
+    } else if (key === ' ' && popover() === POPOVER.CANNED) {
+      setPopover(null);
+    } else if (rawContent.includes('/') && popover() === POPOVER.CANNED) {
+      const slashIdx = rawContent.lastIndexOf("/")+1;
+      setCannedFilter(rawContent.substring(slashIdx));
     } else {
       const mentionMatch = rawContent.match(/@([^@\s]*)$/);
       if (mentionMatch) {
@@ -213,19 +223,40 @@ export default function Chat(props:any) {
     const rawContent = useRichEditor ? stripHtmlTags(chatMessage()) : chatMessage();
     const lastChar = rawContent[rawContent.length - 1];
     const replacedText = replaceVariables(text);
-
-    if(rawContent === "/"){
+    if(rawContent === "/" || rawContent === `/${cannedFilter()}`){
       setChatMessage(replacedText);
     } else {
       if( useRichEditor){
-        setChatMessage(lastChar === "/" ? `${chatMessage().replace('/</p>', '')} ${replacedText}</p>` : `${chatMessage().slice(0, -4)} ${replacedText}</p>`);
+        if(!cannedFilter()){
+          setChatMessage(lastChar === "/" 
+            ? `${chatMessage().replace('/</p>', '')} ${replacedText}</p>` 
+            : `${chatMessage().slice(0, -4)} ${replacedText}</p>`);
+        } else {
+          setCannedMessage(replacedText);
+        }
       } else {
-        setChatMessage(lastChar === "/" ? `${chatMessage().slice(0, -1)} ${replacedText}` : `${chatMessage()} ${replacedText}`);
+        if(cannedFilter()){
+          setChatMessage(chatMessage().replace(`/${cannedFilter()}`, ` ${replacedText} `))
+        } else {
+          setChatMessage(lastChar === "/" 
+            ? `${chatMessage().slice(0, -1)} ${replacedText} ` 
+            : `${chatMessage()} ${replacedText} `);
+        }
       }
     }
     
+    if(!useRichEditor && !cannedFilter()){
+      setCannedFilter(null);
+    }
     setPopover(null);
     moveCursorToEnd();
+  }
+
+  const applyCannedMessage = (content:string) => {
+    const charCount = (cannedFilter()?.length || 0)*-1;
+    setChatMessage(`${content.slice(0, charCount-5)} ${cannedMessage()}</p>`);
+    setCannedFilter(null);
+    setCannedMessage(null);
   }
 
   const manageStakeholders = (action: string, id:string, name:string) => {
@@ -297,14 +328,14 @@ export default function Chat(props:any) {
         </Show> 
 
         <button class="icon" onClick={() => openModal(MODAL.SUMMARY)}>
-            <i class={`fa-solid fa-wand-magic-sparkles fa-lg ${modal() === MODAL.SUMMARY ? 'icon-active' : ''}`}></i>
-          </button>       
+          <i class={`fa-solid fa-wand-magic-sparkles fa-lg ${modal() === MODAL.SUMMARY ? 'icon-active' : ''}`}></i>
+        </button>       
       </div>
 
       {/* case details */}
       <div class="case-details">
         <Show when={props.target === 'reporter'}>
-          <div>Case type: {props.case?.tipType}</div>
+          <div>Case type: {props.case && TIP_CATEGORY[props.case?.tipType as keyof typeof TIP_CATEGORY].name}</div>
           <div>|</div>
           <div>Status: {props.case?.status}</div>
         </Show>
@@ -471,7 +502,10 @@ export default function Chat(props:any) {
                   />
                 </Match>
                 <Match when={popover() === POPOVER.CANNED}>
-                  <Canned target={props.target} handleCannedPopoverClick={handleCannedPopoverClick} />
+                  <Canned 
+                    target={props.target}
+                    cannedFilter={cannedFilter()} 
+                    handleCannedPopoverClick={handleCannedPopoverClick} />
                 </Match>
               </Switch>
             </Popover>
@@ -517,6 +551,9 @@ export default function Chat(props:any) {
                 onEditorChange={(content: string, editor: TinyEditor) => {
                   // const newContent = editor.getContent();
                   setChatMessage(replaceVariables(content));
+                  if(cannedMessage()){
+                    applyCannedMessage(content);
+                  }
                 }}
               />
             </Show>

@@ -5,7 +5,7 @@
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-12-10T00:52:26.645749",
-      "tipType": "Vandalism",
+      "tipType": "property",
       "assignedTo": "8a0b4d51-f3bf-4d51-bb66-4056821ba8b6",
       "schoolId": "f25b028a-154f-40b3-8569-d3711a8cc1ad",
       "stakeholders": [
@@ -23,7 +23,7 @@
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-12-14T00:52:26.645545",
-      "tipType": "Bullying",
+      "tipType": "bullying",
       "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
       "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
       "stakeholders": [
@@ -41,7 +41,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-11-23T00:52:26.646126",
-      "tipType": "Self-Harm",
+      "tipType": "wellness",
       "assignedTo": "9ce972f0-3532-40f6-bf3b-14e072e7cfb2",
       "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
       "stakeholders": [
@@ -60,7 +60,7 @@
       "status": "new",
       "lifeSafety": false,
       "submittedAt": "2024-11-20T00:52:26.646053",
-      "tipType": "Cutting",
+      "tipType": "wellness",
       "assignedTo": null,
       "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
       "stakeholders": [],
@@ -74,7 +74,7 @@
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-12-15T00:52:26.645467",
-      "tipType": "Threat of Violence",
+      "tipType": "critical",
       "assignedTo": "32e2a05e-604b-4528-8692-f05f50f45f46",
       "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
       "stakeholders": [
@@ -94,7 +94,7 @@
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-11-18T00:52:26.645819",
-      "tipType": "Cyberbullying",
+      "tipType": "bullying",
       "assignedTo": "063c0258-cd42-4425-88a4-efafaed2b6bd",
       "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
       "stakeholders": [
@@ -110,9 +110,9 @@
     {
       "tipId": "TIP-3784",
       "status": "new",
-      "lifeSafety": true,
+      "lifeSafety": false,
       "submittedAt": "2024-12-07T00:52:26.646287",
-      "tipType": "Gang Activity",
+      "tipType": "misconduct",
       "assignedTo": null,
       "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
       "stakeholders": [],
@@ -126,7 +126,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-12-14T00:52:26.645653",
-      "tipType": "Theft",
+      "tipType": "property",
       "assignedTo": "aadac12c-266d-47a7-8da7-dbf486343bb9",
       "schoolId": "5187e5bf-eb66-4223-bd15-d2328d57df06",
       "stakeholders": [
@@ -145,7 +145,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-12-12T00:52:26.646353",
-      "tipType": "Drug Dealing",
+      "tipType": "substance",
       "assignedTo": "8a0b4d51-f3bf-4d51-bb66-4056821ba8b6",
       "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
       "stakeholders": [
@@ -164,7 +164,7 @@
       "status": "new",
       "lifeSafety": true,
       "submittedAt": "2024-11-30T00:52:26.645702",
-      "tipType": "Trespassing",
+      "tipType": "property",
       "assignedTo": null,
       "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
       "stakeholders": [],
@@ -178,7 +178,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-12-08T00:52:26.646549",
-      "tipType": "Vaping",
+      "tipType": "substance",
       "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
       "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
       "stakeholders": [
@@ -194,7 +194,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-12-10T00:52:26.645859",
-      "tipType": "Hate Speech",
+      "tipType": "bullying",
       "assignedTo": "aadac12c-266d-47a7-8da7-dbf486343bb9",
       "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
       "stakeholders": [
@@ -209,9 +209,9 @@
     {
       "tipId": "TIP-3816",
       "status": "new",
-      "lifeSafety": false,
+      "lifeSafety": true,
       "submittedAt": "2024-11-19T00:52:26.646509",
-      "tipType": "Threat of Violence",
+      "tipType": "critical",
       "assignedTo": null,
       "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
       "stakeholders": [],
@@ -223,9 +223,9 @@
     {
       "tipId": "TIP-2989",
       "status": "new",
-      "lifeSafety": true,
+      "lifeSafety": false,
       "submittedAt": "2024-11-21T00:52:26.646205",
-      "tipType": "Social Media Threat",
+      "tipType": "bullying",
       "assignedTo": null,
       "schoolId": "2305df53-f351-4cd0-98b7-6f2be57010cc",
       "stakeholders": [],
@@ -239,7 +239,7 @@
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-11-20T00:52:26.645908",
-      "tipType": "Abuse/Neglect",
+      "tipType": "critical",
       "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
       "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
       "stakeholders": [
@@ -260,7 +260,7 @@
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-12-13T00:52:26.645628",
-      "tipType": "Theft",
+      "tipType": "property",
       "assignedTo": "063c0258-cd42-4425-88a4-efafaed2b6bd",
       "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
       "stakeholders": [
@@ -278,7 +278,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-12-14T00:52:26.645339",
-      "tipType": "Missing Person",
+      "tipType": "safety",
       "assignedTo": "9ce972f0-3532-40f6-bf3b-14e072e7cfb2",
       "schoolId": "84e74594-95ec-4c8c-a644-90cf8ae71478",
       "stakeholders": [
@@ -296,7 +296,7 @@
       "status": "new",
       "lifeSafety": false,
       "submittedAt": "2024-12-03T00:52:26.646151",
-      "tipType": "Suspicious Activity",
+      "tipType": "misconduct",
       "assignedTo": null,
       "schoolId": "7fefcc12-567e-4a84-9dd1-9331fdf02eb9",
       "stakeholders": [],
@@ -311,7 +311,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-12-14T00:52:26.645772",
-      "tipType": "Hate Speech",
+      "tipType": "bullying",
       "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
       "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
       "stakeholders": [
@@ -328,7 +328,7 @@
       "status": "in-progress",
       "lifeSafety": false,
       "submittedAt": "2024-11-20T00:52:26.646329",
-      "tipType": "Theft",
+      "tipType": "property",
       "assignedTo": "315d331d-5e58-4900-9453-3537824f8a99",
       "schoolId": "cadc4783-6bd8-486d-82e0-574758a39b4c",
       "stakeholders": [
