@@ -28,7 +28,6 @@ export default function Profile() {
         </Avatar>
       </button>
       
-
       <Show when={isMenuOpen()}>
         <menu>
           <ul class="profile-list">

@@ -50,13 +50,21 @@ header > div:last-child {
 }
 
 .primary-button {
-
+  color: var(--color-white);
+  font-weight: bold;
+  text-align: center;
+  background: var(--color-ltgreen);
+  padding: 4px 8px;
+  border-radius: 4px;
+  &:hover {
+    background-color: var(--color-dkgreen);
+  }
 }
 
-.secondary-button {
+/* .secondary-button {
   
 }
 
 .tertiary-button {
 
-}
+} */

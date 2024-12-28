@@ -1,6 +1,9 @@
 .instruction-wrapper {
   margin-left: 1rem;
   padding-bottom: 1rem;
+  ul {
+    margin: 0 4px;
+  }
 }
 
 .instruction-header {
@@ -19,8 +22,12 @@
 .section {
   font-size: var(--h6);
   margin-top: 20px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+}
+
+.border {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .note {

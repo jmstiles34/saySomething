@@ -36,7 +36,7 @@ export default function Chat(props:any) {
   const display = DIALOG_TYPE[props.target as keyof typeof DIALOG_TYPE];
   let chatContainerRef: HTMLDivElement | undefined;
   let editorRef!: TinyEditor;
-  const useRichEditor:boolean = true;
+  const useRichEditor:boolean = false;
 
   const [timezone, setTimezone] = createSignal<string>(defaultTimezone());
 

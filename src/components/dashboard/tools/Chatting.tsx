@@ -1,30 +1,52 @@
 import { createSignal, For, JSX, Show } from 'solid-js';
 import type { Signal } from "solid-js";
-import type { Message, User } from "/src/components/chat/types";
+import type { Case, Message } from "../../../common/types/types";
 import "./Chatting.css";
-import { useChatContext } from "/src/context/ChatContext";
-import { USERS } from '/src/common/constants/constants';
+import { useChatContext } from "../../../context/ChatContext";
+import { USERS } from '../../../common/constants/constants';
+import { MESSAGE_TYPE } from '../../../common/constants/constants';
 
 type RecipientType = 'reporter' | 'team';
 type SenderType = 'reporter' | 'team';
 
 export default function Chatting(props:any) {
-  const {reporterChat, teamChat} = useChatContext() as {reporterChat:Signal<Message[]>, teamChat:Signal<Message[]>};
+  const {selectedCase, reporterChat, teamChat} = useChatContext() as {
+    selectedCase:Signal<Case | null>,
+    reporterChat:Signal<Message[]>, 
+    teamChat:Signal<Message[]>
+  };
   const [reporterMessages, setReporterMessages] = reporterChat;
   const [teamMessages, setTeamMessages] = teamChat;
+  const [activeCase, setActiveCase] = selectedCase;
   
   const [message, setMessage] = createSignal("");
   const [sender, setSender] = createSignal('team');
   const [recipient, setRecipient] = createSignal('reporter');
+  const [teamMember, setTeamMember] = createSignal('');
 
   const createMessage = (text: string) => {
     return {
-      id: 12345,
+      id: crypto.randomUUID(),
+      type: MESSAGE_TYPE.CHAT,
       text,
-      user: sender() === 'team' ? USERS.collaborator : USERS.reporter,
+      sender: getSender(),
       timestamp: new Date()
     }
   };
+
+  const getSender = () => {
+    if(sender() === 'reporter') return USERS.reporter;
+
+    const user = activeCase()?.school?.staff?.filter(s => s.id === teamMember())[0];
+
+    return {
+      id: teamMember(),
+      displayName: `${user?.firstName} ${user?.lastName}`,
+      role: "collaborator",
+      status: 1,
+      title: user?.title,
+  }
+  }
 
   const sendMessage = (newMessage:Message) => {
     if(recipient() === "reporter") {
@@ -53,9 +75,19 @@ export default function Chatting(props:any) {
     }
   };
 
+  const handleSenderSelection: JSX.EventHandlerUnion<HTMLSelectElement, Event> = (event) => {
+    const value = event.currentTarget.value as string;
+    console.log(value)
+    setTeamMember(value);
+  }
+
+  const buttonIsDisabled = () => {
+    return !message().length || (sender() === 'team' && teamMember() === '')
+  }
+
   return (
     <div class="chatting-container">
-      <div>
+      <div> 
         <fieldset class="radio-group">
           <legend>Choose Sender</legend>
           <div class="radio-option">
@@ -80,11 +112,27 @@ export default function Chatting(props:any) {
             />
             <label for="send-team">Collaborator</label>
           </div>
+          <div>
+            <select 
+              name="collaborator" 
+              class="filter-select" 
+              disabled={sender() === 'reporter'}
+              onChange={handleSenderSelection}
+            >
+            <option value="">Choose sender...</option>
+              <For each={activeCase()?.school?.staff}>
+                {(user) => (
+                  <option value={user.id}>{user.firstName} {user.lastName}</option>
+                )}
+              </For>
+            </select>
+          </div>
+          
         </fieldset>
       </div>
       <div>
         <fieldset class="radio-group">
-          <legend>Choose Recipient</legend>
+          <legend>Choose Target</legend>
           <div class="radio-option">
             <input
               type="radio"
@@ -121,7 +169,11 @@ export default function Chatting(props:any) {
           onKeyPress={(e) => e.key === "Enter" && handleMessageSubmit(e)} />
       </div>
       <div class="send-button">
-        <button class="message-send" onClick={handleMessageSubmit}>Send to {recipient()}</button>
+        <button 
+          class="message-send" 
+          onClick={handleMessageSubmit}
+          disabled={buttonIsDisabled()}
+        >Send to {recipient()}</button>
       </div>
     </div>
   );

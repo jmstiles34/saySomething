@@ -12,6 +12,7 @@
   z-index: 100;
   list-style:none;
   padding: 0;
+  border-radius: 4px;
 }
 
 .profile-list li {

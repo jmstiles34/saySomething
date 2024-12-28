@@ -8,18 +8,19 @@ import { Case, Counselor, Message, School, Tip } from '../common/types/types';
 import Chat from "./dashboard/chat/Chat";
 
 export default function Dashboard(props:any) {
-  const { activeCounselor, schools, tips, reporterChat, teamChat } = 
+  const { selectedCase, activeCounselor, schools, tips, reporterChat, teamChat } = 
     useChatContext() as {
+      selectedCase:Signal<Case | null>, 
       activeCounselor:Signal<Counselor>, 
       schools:School[], 
       tips:Tip[], 
       reporterChat:Signal<Message[]>, 
       teamChat:Signal<Message[]>
-    };
+    }; 
   const [reporterMessages, setReporterMessages] = reporterChat;
   const [teamMessages, setTeamMessages] = teamChat;
   const [activeTipId, setActiveTipId] = createSignal<string | null>(null);
-  const [activeCase, setActiveCase] = createSignal<Case | null>(null);
+  const [activeCase, setActiveCase] = selectedCase;
   const [counselor, setCounselor] = activeCounselor;
 
   onMount(() => {

@@ -1,12 +1,20 @@
-import { createSignal, For, Show } from 'solid-js';
+import { createEffect, createSignal, For, Show } from 'solid-js';
 import "./Stakeholders.css";
-import { formatPhoneNumber } from '/src/common/utils/utils';
+import { formatPhoneNumber } from '../../../../common/utils/utils';
 import { Staff } from '../../../../common/types/types';
 
 export default function Stakeholders(props:any) {
   const [expandedList, setExpandedList] = createSignal<string[]>([]);
   const [filteredContacts, setFilteredContacts] = createSignal<Staff[]>(props.allContacts);
+  const [invitedContacts, setInvitedContacts] = createSignal<string[]>(props.contacts);
   const [searchValue, setSearchValue] = createSignal<string>("");
+
+  createEffect(() => {
+    if (props.contacts || props.allContacts) {
+      setFilteredContacts(props.allContacts)
+      setInvitedContacts(props.contacts)
+    }
+  });
 
   const handleCallClick = (message:string) => {
     props.addCallMessage(`Outgoing call to ${message}`);
@@ -63,7 +71,7 @@ export default function Stakeholders(props:any) {
           </div>
         </Show>
 
-        <For each={filteredContacts().filter((contact:Staff) => props.contacts.includes(contact.id))}>
+        <For each={filteredContacts().filter((contact:Staff) => invitedContacts().includes(contact.id))}>
           {(contact) => (
             <div class="stakeholder-card" onClick={() => handleCardClick(contact.id)}>
               <div>
@@ -104,7 +112,7 @@ export default function Stakeholders(props:any) {
           </div>
         </Show>
       
-        <For each={filteredContacts().filter((contact:Staff) => !props.contacts.includes(contact.id))}>
+        <For each={filteredContacts().filter((contact:Staff) => !invitedContacts().includes(contact.id))}>
           {(contact) => (
             <div class="stakeholder-card" onClick={() => handleCardClick(contact.id)}>
               <div>

@@ -3,6 +3,7 @@
 	--color-aquablue: hsl(190, 54%, 51%);
   --color-aquablue-25: hsla(190, 54%, 51%, .25);
   --color-bg: hsl(0, 0%, 90%);
+  --color-bg-75: hsla(0, 0%, 90%, .75);
   --color-blue: hsl(207, 44%, 49%);
   --color-border: hsl(0, 0%, 90%);
   --color-burntorange: hsl(14, 54%, 51%);
@@ -18,12 +19,14 @@
   --color-icon: hsl(0, 0%, 40%);
 	--color-ltgreen: hsl(85, 54%, 51%);
   --color-ltgreen-25: hsla(85, 54%, 51%, .25);
+  --color-ltgreen-75: hsla(85, 54%, 51%, .75);
   --color-red: hsl(3, 67%, 52%);
   --color-text: hsl(0, 0%, 30%);
   --color-white: hsl(0, 0%, 100%);
   --color-white-75: hsla(0, 0%, 100%, .75);
   --color-yellow: hsl(51, 100%, 50%);
   --color-yellow-50: hsla(51, 100%, 50%, .50);
+  --color-yellow-75: hsla(51, 100%, 50%, .75);
 
   /* fonts */
   --sans-serif: "Lato", sans-serif;

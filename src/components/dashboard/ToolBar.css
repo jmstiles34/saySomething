@@ -71,16 +71,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   &:hover {
-    background-color: var(--color-yellow);
+    background-color: var(--color-yellow-75);
   }
   transition: none;
 }
 
 .list-card-active {
   font-weight: bold;
-  background-color: var(--color-ltgreen);
+  background-color: var(--color-ltgreen-75);
   &:hover {
-    background-color: var(--color-ltgreen);
+    background-color: var(--color-ltgreen-75);
   }
 }
 
@@ -89,8 +89,7 @@
 }
 
 .tip-message-count {
-  background-color: var(--color-icon);
-  color: var(--color-white);
+  background-color: var(--color-bg-75);
   border-radius: 6px;
   width: fit-content;
   padding: 1px 4px;

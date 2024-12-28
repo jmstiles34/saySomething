@@ -113,7 +113,7 @@
     {
         "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
         "type": "stakeholders",
-        "text": "Jordan Garcia was added to Reporter Dialog.",
+        "text": "Alice Lewis was added to Reporter Dialog.",
         "sender": {
             "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -127,10 +127,10 @@
     {
         "id": "12345",
         "type": "chat",
-        "text": "Hi, this is Jordan. I’ve been briefed on the situation. Thank you for reaching out—it’s really brave of you to do so. I’ll be working with Ellie to make sure this gets addressed safely and quickly.",
+        "text": "Hi, this is Alice. I’ve been briefed on the situation. Thank you for reaching out—it’s really brave of you to do so. I’ll be working with Ellie to make sure this gets addressed safely and quickly.",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -142,7 +142,7 @@
     {
         "id": "12345",
         "type": "chat",
-        "text": "Jordan, I’ve got a tipster reporting a 9th grader named Ryan. The student has been making threats about bringing a knife to school and hurting others. Tipster says Ryan is unpredictable and has been in fights recently.",
+        "text": "Alice, I’ve got a tipster reporting a 9th grader named Ryan. The student has been making threats about bringing a knife to school and hurting others. Tipster says Ryan is unpredictable and has been in fights recently.",
         "sender": {
             "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -159,7 +159,7 @@
         "text": "Got it. Let’s prioritize safety here. Are we clear on whether this is direct planning or general threats?",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -186,7 +186,7 @@
         "text": "Understood. Let’s treat it as a high-risk case until we know more. Have we confirmed the school’s name and the grade level?",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -213,7 +213,7 @@
         "text": "That’s helpful. I’ll notify school officials as soon as we’re done with the chat. Let’s also flag this for a behavioral threat assessment. Any indication the tipster feels personally targeted?",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -240,7 +240,7 @@
         "text": "Good call. Let’s make sure we emphasize their safety if they bring up any further concerns. Do we need to follow up with the tipster about any other recent incidents?",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -267,7 +267,7 @@
         "text": "Okay. Let’s keep the tone supportive and gather as much as we can. If they share additional details about his behaviors or possible triggers, that’ll help the school’s intervention team.",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -294,7 +294,7 @@
         "text": "Perfect. If the tipster mentions Ryan’s friends or potential allies, we should document that too—it could help with assessing the broader context of the threats.",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -321,7 +321,7 @@
         "text": "Great. I’ll monitor this chat in case you need backup or need me to take over. Let me know when you’re ready to escalate this to the school.",
         "sender": {
             "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Jordan Garcia",
+            "displayName": "Alice Lewis",
             "role": "collaborator",
             "status": 1,
             "title": "Principal"
@@ -430,7 +430,7 @@
         {
             "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
             "type": "stakeholders",
-            "text": "Chris Lopez was added to Reporter Dialog.",
+            "text": "Sam Jackson was added to Reporter Dialog.",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -444,10 +444,10 @@
         {
             "id": "12345",
             "type": "chat",
-            "text": "Hi, I’m Chris. I work on coordinating with schools to address situations like these. Thanks for letting us know about this. Have you mentioned this to any staff at your school, like a teacher or counselor?",
+            "text": "Hi, I’m Sam. I work on coordinating with schools to address situations like these. Thanks for letting us know about this. Have you mentioned this to any staff at your school, like a teacher or counselor?",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -473,7 +473,7 @@
             "text": "Completely understandable, and your privacy is our top priority. Thanks to your information, we can notify the school in a way that doesn’t point back to you. We’ll ensure they’re aware of what’s happening in those bathrooms during the times you mentioned.",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -540,7 +540,7 @@
             "text": "Thanks again for trusting us. We’ll take it from here. Take care!",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -579,7 +579,7 @@
         {
             "id": "12345",
             "type": "chat",
-            "text": "Hey Chris, I’ve got a tipster reporting students vaping in the bathrooms at Jefferson High School. It’s happening mostly in the upstairs bathrooms near the science wing, during lunch and between classes. Sounds like a recurring issue.",
+            "text": "Hey Sam, I’ve got a tipster reporting students vaping in the bathrooms at Jefferson High School. It’s happening mostly in the upstairs bathrooms near the science wing, during lunch and between classes. Sounds like a recurring issue.",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
                 "displayName": "Ellie Johnson",
@@ -596,7 +596,7 @@
             "text": "Got it. Any specific individuals named or just general observations?",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -623,7 +623,7 @@
             "text": "Makes sense. We should assure them their anonymity is protected while gathering just enough detail for the school to take action. Have they mentioned any staff or authority figures being aware?",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -650,7 +650,7 @@
             "text": "I’d classify it as a medium priority for now unless we hear more about immediate danger or health concerns. Schools usually take vaping issues seriously, so a well-timed report can make a difference.",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -677,7 +677,7 @@
             "text": "Yes, but only after confirming the details we have so far. The SRO can investigate further, but we don’t want to overload the school with vague reports. Precision is key.",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -704,7 +704,7 @@
             "text": "Perfect. Let me know once the chat wraps up, and I’ll prep the report for the school admin and SRO. We’ll also recommend adding monitoring or periodic walkthroughs in that area.",
             "sender": {
                 "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Chris Lopez",
+                "displayName": "Sam Jackson",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Teacher"
@@ -714,7 +714,7 @@
         {
             "id": "12345",
         "type": "chat",
-            "text": "Will do. Thanks, Chris! I’ll update you shortly. 😊",
+            "text": "Will do. Thanks, Sam! I’ll update you shortly. 😊",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -840,7 +840,7 @@
         {
             "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
             "type": "stakeholders",
-            "text": "Robin Martinez was added to Reporter Dialog.",
+            "text": "Julia Martin was added to Reporter Dialog.",
             "sender": {
                 "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
             "displayName": "Ellie Johnson",
@@ -857,7 +857,7 @@
             "text": "Hi, I’m joining the chat. Thank you for speaking up about this. I’m here to help as well. Can I ask if you’ve seen or heard anything that makes you think the threats could lead to immediate danger?",
             "sender": {
                 "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Robin Martinez",
+                "displayName": "Julia Martin",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Coach"
@@ -883,7 +883,7 @@
             "text": "I understand. Threats like this, whether meant to intimidate or followed through, are taken very seriously. We want to ensure everyone feels safe to speak out. Do you think his girlfriend or any of the friends he’s threatened would be willing to share what’s happening if we assured them it would be handled confidentially?",
             "sender": {
                 "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Robin Martinez",
+                "displayName": "Julia Martin",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Coach"
@@ -925,7 +925,7 @@
             "text": "Got it. What details do we have so far?",
             "sender": {
                 "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Robin Martinez",
+                "displayName": "Julia Martin",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Coach"
@@ -952,7 +952,7 @@
             "text": "That’s alarming. Did the tipster share any names or identifying details?",
             "sender": {
                 "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Robin Martinez",
+                "displayName": "Julia Martin",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Coach"
@@ -1007,7 +1007,7 @@
             "text": "Agreed. Let’s work with what we have for now. Have we reassured them about confidentiality and safety while gathering as much detail as possible?",
             "sender": {
                 "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Robin Martinez",
+                "displayName": "Julia Martin",
                 "role": "collaborator",
                 "status": 1,
                 "title": "Coach"

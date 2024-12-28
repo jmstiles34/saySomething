@@ -1,0 +1,16 @@
+.notifications-button {
+  anchor-name: --notificationsButton;
+}
+
+.notifications-popover {
+  position: fixed;
+  position-anchor: --notificationsButton;
+  position-area: bottom left;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 100;
+  list-style:none;
+  padding: 0;
+  border-radius: 4px;
+}

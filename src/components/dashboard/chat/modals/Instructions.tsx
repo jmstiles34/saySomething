@@ -45,7 +45,7 @@ export default function Instructions(props:any) {
         </li>
       </ul>
 
-      <h2 class="section">Additional Notes</h2>
+      <h2 class="section border">Additional Notes</h2>
       <p class="note">Document all contact attempts in the tip management system. Escalate to the district superintendent for conflicting priorities.</p>
     </div>
   )

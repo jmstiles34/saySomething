@@ -1,5 +1,5 @@
 import { createContext, createSignal, useContext } from "solid-js";
-import type { Counselor, Message } from "../common/types/types";
+import type { Case, Counselor, Message } from "../common/types/types";
 import { tips } from '../data/tips.json';
 import { schools } from '../data/schools.json';
 import { counselors } from '../data/counselors.json';
@@ -12,10 +12,12 @@ export function ChatProvider(props:any) {
   const [activeCounselor, setActiveCounselor] = createSignal<Counselor | undefined>(
     counselors.find((c:Counselor) => c.id === "2d57065b-3230-4f0f-b2ba-c8814d4d4c50")
   );
+  const [selectedCase, setSelectedCase] = createSignal<Case | null>(null);
 
   return (
     <ChatContext.Provider
       value={{
+        selectedCase: [selectedCase, setSelectedCase],
         activeCounselor: [activeCounselor, setActiveCounselor],
         reporterChat: [reporterMessages, setReporterMessages],
         teamChat: [teamMessages, setTeamMessages],
