@@ -64,7 +64,7 @@ export function ChatProvider(props:any) {
         tips,
         schools,
         counselors,
-        messages: rootMessages()
+        rootMessages: [rootMessages, setRootMessages]
       }}
     >
       {props.children}

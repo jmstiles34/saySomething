@@ -156,7 +156,9 @@ export default function Chat(props:any) {
   };
 
   const sendMessage = (newMessage:Message): void => {
-    props.setMessages([...props.messages, newMessage]);
+    const newList = [...messageList(), newMessage];
+    props.setMessages(newList);
+    props.updateRootMessages(props.target, newList)
   };
 
   const simpleInput = (text:string): void => {

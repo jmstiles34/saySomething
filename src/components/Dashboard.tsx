@@ -7,7 +7,7 @@ import { Case, Counselor, Message, School, Tip } from '../common/types/types';
 import Chat from "./dashboard/chat/Chat";
 
 export default function Dashboard(props:any) {
-  const { selectedCase, activeCounselor, schools, tips, reporterChat, teamChat, messages } = 
+  const { selectedCase, activeCounselor, schools, tips, reporterChat, teamChat, rootMessages } = 
     useChatContext() as {
       selectedCase:Signal<Case | null>, 
       activeCounselor:Signal<Counselor>, 
@@ -15,13 +15,14 @@ export default function Dashboard(props:any) {
       tips:Tip[], 
       reporterChat:Signal<Message[]>, 
       teamChat:Signal<Message[]>,
-      messages:{}
+      rootMessages:Signal<{}>
     }; 
   const [reporterMessages, setReporterMessages] = reporterChat;
   const [teamMessages, setTeamMessages] = teamChat;
   const [activeTipId, setActiveTipId] = createSignal<string | null>(null);
   const [activeCase, setActiveCase] = selectedCase;
   const [counselor, setCounselor] = activeCounselor;
+  const [messages, setMessages] = rootMessages;
 
   onMount(() => {
     setActiveTipId('TIP-5600');
@@ -39,8 +40,8 @@ export default function Dashboard(props:any) {
       } else {
         setActiveCase(null)
       }
-      setReporterMessages(messages[activeTipId()]?.reporterDialog || [])
-      setTeamMessages(messages[activeTipId()]?.teamComm || [])
+      setReporterMessages(messages()[activeTipId()]?.reporterDialog || [])
+      setTeamMessages(messages()[activeTipId()]?.teamComm || [])
     }
   });
   
@@ -54,6 +55,26 @@ export default function Dashboard(props:any) {
       });
     } else {
       setActiveCase(null)
+    }
+  }
+
+  const updateRootMessages = (target:string, newMessages:Message[]) => {
+    if(target === "reporter"){
+      setMessages({
+        ...messages(),
+        [activeTipId() as string]: {
+          ...messages()[activeTipId()],
+          reporterDialog: newMessages
+        }
+      });
+    } else {
+      setMessages({
+        ...messages(),
+        [activeTipId() as string]: {
+          ...messages()[activeTipId()],
+          teamComm: newMessages
+        }
+      });
     }
   }
 
@@ -72,6 +93,7 @@ export default function Dashboard(props:any) {
           case={activeCase()}
           messages={reporterMessages()}
           setMessages={setReporterMessages}
+          updateRootMessages={updateRootMessages}
           setActiveCase={setActiveCase}
           activeCounselor={counselor()}
         />
@@ -81,6 +103,7 @@ export default function Dashboard(props:any) {
           case={activeCase()}
           messages={teamMessages()}
           setMessages={setTeamMessages}
+          updateRootMessages={updateRootMessages}
           setActiveCase={setActiveCase}
           activeCounselor={counselor()}
         />
