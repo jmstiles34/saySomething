@@ -7,13 +7,13 @@ export default function Stakeholders(props:any) {
   const [expandedList, setExpandedList] = createSignal<string[]>([]);
   const [filteredContacts, setFilteredContacts] = createSignal<Staff[]>(props.allContacts);
   const [invitedContacts, setInvitedContacts] = createSignal<string[]>(props.contacts);
+  const [caseTags, setCaseTags] = createSignal(new Set(props.tags));
   const [searchValue, setSearchValue] = createSignal<string>("");
 
   createEffect(() => {
-    if (props.contacts || props.allContacts) {
-      setFilteredContacts(props.allContacts)
-      setInvitedContacts(props.contacts)
-    }
+    setFilteredContacts(props.allContacts)
+    setInvitedContacts(props.contacts)
+    setCaseTags(new Set(props.tags))
   });
 
   const handleCallClick = (message:string) => {
@@ -39,6 +39,10 @@ export default function Stakeholders(props:any) {
       })]) 
     }
   }
+
+  const countCommonTags = (arr:string[]) => {
+    return arr.filter(item => caseTags().has(item)).length;
+}
 
   return (
     <div class="stakeholder-wrapper">
@@ -75,12 +79,18 @@ export default function Stakeholders(props:any) {
           {(contact) => (
             <div class="stakeholder-card" onClick={() => handleCardClick(contact.id)}>
               <div>
-                <div><strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}</div>
+                <div>
+                  <strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}
+                  <Show when={countCommonTags(contact.tags || [])}> ⭐️</Show>
+                </div>
                 <div>{props.school.name}</div>
                 <Show when={expandedList().includes(contact.id)}>
                   <div>{contact.email}</div>
                   <div>Cell: {formatPhoneNumber(contact.phone.cell)}</div>
                   <div>Phone: {formatPhoneNumber(contact.phone.work)}</div>
+                  <div class="specialty-list">
+                    <strong>Specialty:</strong> {contact.tags?.join(", ")}
+                  </div>
                 </Show>
               </div>
 
@@ -116,12 +126,18 @@ export default function Stakeholders(props:any) {
           {(contact) => (
             <div class="stakeholder-card" onClick={() => handleCardClick(contact.id)}>
               <div>
-                <div><strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}</div>
+                <div>
+                  <strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}
+                  <Show when={countCommonTags(contact.tags || [])}> ⭐️</Show>
+                </div>
                 <div>{props.school.name}</div>
                 <Show when={expandedList().includes(contact.id)}>
                   <div>{contact.email}</div>
                   <div>Cell: {formatPhoneNumber(contact.phone.cell)}</div>
                   <div>Phone: {formatPhoneNumber(contact.phone.work)}</div>
+                  <div class="specialty-list">
+                    <strong>Specialty:</strong> {contact.tags?.join(", ")}
+                  </div>
                 </Show>
               </div>
 

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 import { ChatProvider } from "../src/context/ChatContext";
 
-const App: Component = () => {
+const App: Component = () => {  
   return (
     <ChatProvider>
       <div id="app">

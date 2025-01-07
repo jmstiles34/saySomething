@@ -1,1033 +1,1051 @@
 {
     "messages": {
-  "TIP-6832": {
-    "reporterDialog": [
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Hi, I need to report something. There's this kid at my school who’s been saying some really scary stuff about hurting people. I don’t know if he’s serious, but it’s freaking me out.",
-        "sender": {
-            "id": 1,
-            "displayName": "Anonymous User",
-            "role": "reporter",
-            "status": 1,
-            "title": ""
-        },
-        "timestamp": "2024-12-03T21:40:23.505Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Thank you for reaching out. I’m here to help. Can you tell me more about what this student has been saying or doing?",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T21:40:37.716Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "He’s been talking about bringing a knife to school and saying things like, \"You’ll see what happens.\" He also gets really mad at people a lot. I’m scared he might actually do something.",
-        "sender": {
-            "id": 1,
-            "displayName": "Anonymous User",
-            "role": "reporter",
-            "status": 1,
-            "title": ""
-        },
-        "timestamp": "2024-12-03T21:40:46.535Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "I understand why that would be concerning. Your safety and the safety of others are very important. Have you seen him with any weapons, or is this based on what he’s said?",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T21:40:54.918Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Just what he’s said. But he’s kind of... I don’t know... unpredictable. He’s been getting into fights too.",
-        "sender": {
-            "id": 1,
-            "displayName": "Anonymous User",
-            "role": "reporter",
-            "status": 1,
-            "title": ""
-        },
-        "timestamp": "2024-12-03T21:41:05.954Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": " I appreciate you sharing this. Your information can help us take steps to keep everyone safe. Can you tell me the student’s name or anything else that might help us identify him?",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T21:41:19.810Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "His name is Ryan. He’s in 9th grade. He’s in some of my classes.",
-        "sender": {
-            "id": 1,
-            "displayName": "Anonymous User",
-            "role": "reporter",
-            "status": 1,
-            "title": ""
-        },
-        "timestamp": "2024-12-03T21:42:11.512Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Got it. I’m going to bring another team member into this conversation so we can act quickly. Please stay with us for a moment.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T21:42:20.715Z"
-    },
-    {
-        "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
-        "type": "stakeholders",
-        "text": "Alice Lewis was added to Reporter Dialog.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T21:42:27.343Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Hi, this is Alice. I’ve been briefed on the situation. Thank you for reaching out—it’s really brave of you to do so. I’ll be working with Ellie to make sure this gets addressed safely and quickly.",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T21:43:27.343Z"
-    }
-],
-"teamComm": [
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Alice, I’ve got a tipster reporting a 9th grader named Ryan. The student has been making threats about bringing a knife to school and hurting others. Tipster says Ryan is unpredictable and has been in fights recently.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:00:17.092Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Got it. Let’s prioritize safety here. Are we clear on whether this is direct planning or general threats?",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:00:33.556Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "No indication of direct planning yet—tipster says it’s based on verbal threats. No sightings of a weapon.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:00:41.496Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Understood. Let’s treat it as a high-risk case until we know more. Have we confirmed the school’s name and the grade level?",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:00:50.038Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Yes, 9th grade, confirmed school is Bright Future Academy. Tipster shared that Ryan says these things around his friends, so multiple witnesses may know about this.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:01:36.575Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "That’s helpful. I’ll notify school officials as soon as we’re done with the chat. Let’s also flag this for a behavioral threat assessment. Any indication the tipster feels personally targeted?",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:01:44.661Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "No direct threats toward the tipster, but they’re scared and want to remain anonymous. I reassured them we’re protecting their identity.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:01:55.177Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Good call. Let’s make sure we emphasize their safety if they bring up any further concerns. Do we need to follow up with the tipster about any other recent incidents?",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:02:15.745Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Not yet. Tipster mentioned fights and a pattern of unpredictable behavior. They don’t seem to have more specific details right now.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:02:24.311Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Okay. Let’s keep the tone supportive and gather as much as we can. If they share additional details about his behaviors or possible triggers, that’ll help the school’s intervention team.",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:02:31.278Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Agreed. I’ll keep the conversation open and focused on their safety and what they know.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:02:39.410Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Perfect. If the tipster mentions Ryan’s friends or potential allies, we should document that too—it could help with assessing the broader context of the threats.",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:02:48.460Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Got it. I’ll bring it up gently if it feels appropriate. For now, they seem nervous but willing to share what they know.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:02:58.696Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Great. I’ll monitor this chat in case you need backup or need me to take over. Let me know when you’re ready to escalate this to the school.",
-        "sender": {
-            "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
-            "displayName": "Alice Lewis",
-            "role": "collaborator",
-            "status": 1,
-            "title": "Principal"
-        },
-        "timestamp": "2024-12-03T22:03:12.654Z"
-    },
-    {
-        "id": "12345",
-        "type": "chat",
-        "text": "Will do. Thanks, Jordan.",
-        "sender": {
-            "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-            "role": "counselor",
-            "status": 1,
-            "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-        },
-        "timestamp": "2024-12-03T22:03:51.827Z"
-    }
-]
-},
-    "TIP-5600": {
-        "reporterDialog": [
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Hi, I want to report something going on at my school. There are kids vaping in the bathrooms, and it’s happening a lot. I’m worried about what it’s doing to them and how it’s affecting others.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
+        "TIP-6832": {
+            "reporterDialog": [
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Hi, I need to report something. There's this kid at my school who's been saying some really scary stuff about hurting people. I don't know if he's serious, but it's freaking me out.",
+                "sender": {
+                    "id": 1,
+                    "displayName": "Anonymous User",
+                    "role": "reporter",
+                    "status": 1,
+                    "title": ""
+                },
+                "timestamp": "2024-12-03T21:40:23.505Z"
             },
-            "timestamp": "2024-12-02T21:47:43.945Z"
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Thank you for reaching out. I'm here to help. Can you tell me more about what this student has been saying or doing?",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T21:40:37.716Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "He's been talking about bringing a knife to school and saying things like, \"You'll see what happens.\" He also gets really mad at people a lot. I'm scared he might actually do something.",
+                "sender": {
+                    "id": 1,
+                    "displayName": "Anonymous User",
+                    "role": "reporter",
+                    "status": 1,
+                    "title": ""
+                },
+                "timestamp": "2024-12-03T21:40:46.535Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "I understand why that would be concerning. Your safety and the safety of others are very important. Have you seen him with any weapons, or is this based on what he's said?",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T21:40:54.918Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Just what he's said. But he's kind of... I don't know... unpredictable. He's been getting into fights too.",
+                "sender": {
+                    "id": 1,
+                    "displayName": "Anonymous User",
+                    "role": "reporter",
+                    "status": 1,
+                    "title": ""
+                },
+                "timestamp": "2024-12-03T21:41:05.954Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": " I appreciate you sharing this. Your information can help us take steps to keep everyone safe. Can you tell me the student's name or anything else that might help us identify him?",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T21:41:19.810Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "His name is Ryan. He's in 9th grade. He's in some of my classes.",
+                "sender": {
+                    "id": 1,
+                    "displayName": "Anonymous User",
+                    "role": "reporter",
+                    "status": 1,
+                    "title": ""
+                },
+                "timestamp": "2024-12-03T21:42:11.512Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Got it. I'm going to bring another team member into this conversation so we can act quickly. Please stay with us for a moment.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T21:42:20.715Z"
+            },
+            {
+                "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
+                "type": "stakeholders",
+                "text": "Alice Lewis was added to Reporter Dialog.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T21:42:27.343Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Hi, this is Alice. I've been briefed on the situation. Thank you for reaching out—it's really brave of you to do so. I'll be working with Ellie to make sure this gets addressed safely and quickly.",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T21:43:27.343Z"
+            }
+        ],
+        "teamComm": [
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Alice, I've got a tipster reporting a 9th grader named Ryan. The student has been making threats about bringing a knife to school and hurting others. Tipster says Ryan is unpredictable and has been in fights recently.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:00:17.092Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Got it. Let's prioritize safety here. Are we clear on whether this is direct planning or general threats?",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:00:33.556Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "No indication of direct planning yet—tipster says it's based on verbal threats. No sightings of a weapon.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:00:41.496Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Understood. Let's treat it as a high-risk case until we know more. Have we confirmed the school's name and the grade level?",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:00:50.038Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Yes, 9th grade, confirmed school is Bright Future Academy. Tipster shared that Ryan says these things around his friends, so multiple witnesses may know about this.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:01:36.575Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "That's helpful. I'll notify school officials as soon as we're done with the chat. Let's also flag this for a behavioral threat assessment. Any indication the tipster feels personally targeted?",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:01:44.661Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "No direct threats toward the tipster, but they're scared and want to remain anonymous. I reassured them we're protecting their identity.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:01:55.177Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Good call. Let's make sure we emphasize their safety if they bring up any further concerns. Do we need to follow up with the tipster about any other recent incidents?",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:02:15.745Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Not yet. Tipster mentioned fights and a pattern of unpredictable behavior. They don't seem to have more specific details right now.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:02:24.311Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Okay. Let's keep the tone supportive and gather as much as we can. If they share additional details about his behaviors or possible triggers, that'll help the school's intervention team.",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:02:31.278Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Agreed. I'll keep the conversation open and focused on their safety and what they know.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:02:39.410Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Perfect. If the tipster mentions Ryan's friends or potential allies, we should document that too—it could help with assessing the broader context of the threats.",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:02:48.460Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Got it. I'll bring it up gently if it feels appropriate. For now, they seem nervous but willing to share what they know.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:02:58.696Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Great. I'll monitor this chat in case you need backup or need me to take over. Let me know when you're ready to escalate this to the school.",
+                "sender": {
+                    "id": "4d89615b-5e3e-49c3-825b-43513ff05687",
+                    "displayName": "Alice Lewis",
+                    "role": "collaborator",
+                    "status": 1,
+                    "title": "Principal"
+                },
+                "timestamp": "2024-12-03T22:03:12.654Z"
+            },
+            {
+                "id": "12345",
+                "type": "chat",
+                "text": "Will do. Thanks, Jordan.",
+                "sender": {
+                    "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                    "role": "counselor",
+                    "status": 1,
+                    "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                },
+                "timestamp": "2024-12-03T22:03:51.827Z"
+            }
+        ]
         },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Hi there, thank you for reaching out and letting us know. Your concern is important, and we appreciate you stepping forward. Can you tell me which school you’re referring to and which bathrooms this is happening in?",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-02T21:47:55.303Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "It’s at Jefferson High School. Mostly in the upstairs bathrooms near the science wing. It happens between classes and during lunch.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-02T21:48:19.591Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Got it. Thanks for the details. Are there any specific times or people involved that you’re aware of? This will help us address the issue more effectively.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-02T21:48:26.562Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Not specific people, but I see a group of older students hanging around there a lot. They make it hard for anyone else to use the bathroom. I’ve even seen them try to get younger kids to join in.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-03T21:48:34.528Z"
-        },
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "That sounds really concerning. Thank you for sharing this. I’d like to bring in another team member who works closely with school administrators to help ensure this issue gets the right attention. One moment.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:48:43.339Z"
-        },
-        {
-            "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
-            "type": "stakeholders",
-            "text": "Sam Jackson was added to Reporter Dialog.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:48:07.132Z"
-        },
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "Hi, I’m Sam. I work on coordinating with schools to address situations like these. Thanks for letting us know about this. Have you mentioned this to any staff at your school, like a teacher or counselor?",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:49:07.132Z"
-        },
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "No, I didn’t want to get involved directly. I just wanted to let someone know without causing trouble for myself.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-03T21:49:17.920Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Completely understandable, and your privacy is our top priority. Thanks to your information, we can notify the school in a way that doesn’t point back to you. We’ll ensure they’re aware of what’s happening in those bathrooms during the times you mentioned.",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:49:42.628Z"
-        },
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "In the meantime, are you feeling safe at school? Is there anything else about this situation or anything else that’s been bothering you?",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:49:53.320Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Yeah, I’m safe. I just think it’s not right, and someone needs to do something. That’s all.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-03T21:50:08.952Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "You’re doing the right thing by speaking up. We’ll handle this carefully and work with the school to address it. If you see anything else or need to talk again, you can always reach out to us here. Does that sound good?",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:50:18.270Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Yeah, thank you. That’s all I needed to say.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-03T21:50:28.505Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Thanks again for trusting us. We’ll take it from here. Take care!",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:50:36.906Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Thanks. Bye.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-03T21:50:50.244Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Bye! Stay safe! 😊",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:51:00.926Z"
-        }
-    ],
-    "teamComm": [
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "Hey Sam, I’ve got a tipster reporting students vaping in the bathrooms at Jefferson High School. It’s happening mostly in the upstairs bathrooms near the science wing, during lunch and between classes. Sounds like a recurring issue.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-                "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:54:16.307Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Got it. Any specific individuals named or just general observations?",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:54:30.698Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "No specific names so far. They mentioned a group of older students hanging around and even trying to get younger kids to join in. The tipster seems worried but doesn’t want to involve themselves directly.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:54:44.599Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Makes sense. We should assure them their anonymity is protected while gathering just enough detail for the school to take action. Have they mentioned any staff or authority figures being aware?",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:54:53.175Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Not yet. I’ll check, but it seems like they came to us first. Do you think we should flag this as an urgent situation or monitor it further?",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:55:02.918Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "I’d classify it as a medium priority for now unless we hear more about immediate danger or health concerns. Schools usually take vaping issues seriously, so a well-timed report can make a difference.",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:55:12.354Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Agreed. I’ll keep the conversation focused on their observations and make sure they know we’ll handle it without exposing them. Should we include the school resource officer (SRO) in this report?",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:55:22.104Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Yes, but only after confirming the details we have so far. The SRO can investigate further, but we don’t want to overload the school with vague reports. Precision is key.",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:55:36.965Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Got it. I’ll gather as much as I can from the tipster. They seem a little hesitant, so I’ll keep it light and supportive.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:55:45.750Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Perfect. Let me know once the chat wraps up, and I’ll prep the report for the school admin and SRO. We’ll also recommend adding monitoring or periodic walkthroughs in that area.",
-            "sender": {
-                "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
-                "displayName": "Sam Jackson",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Teacher"
-            },
-            "timestamp": "2024-12-03T21:55:56.643Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Will do. Thanks, Sam! I’ll update you shortly. 😊",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-03T21:56:17.035Z"
-        }
-    ]
-},
-"TIP-2315": {
-    "reporterDialog": [
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Hi, I need to report something. There’s this student at my school who’s being really abusive to his girlfriend. It’s bad… like he pushes her around in the hallways and calls her awful names.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-04T18:56:33.327Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "<p>Thank you for reaching out. This is very serious, and I&rsquo;m here to listen and help. Can you tell me a bit more about what you&rsquo;ve seen or heard?</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T18:57:39.720Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "He’s always yelling at her in public, like in the cafeteria, and I’ve seen him grab her arm really hard when she tries to walk away. But it’s not just her. He’s threatening anyone who tries to help her, saying stuff like, “If you say anything, I’ll kill you.” He scares everyone.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-04T18:57:48.039Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "<p>I&rsquo;m so sorry you and others are experiencing this. You did the right thing by reaching out. It&rsquo;s very important that everyone feels safe. Do you know his name and the girlfriend&rsquo;s name, or would you prefer to keep this anonymous for now?</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T18:57:56.791Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "I’d rather keep it anonymous. I’m really scared he’ll find out. He’s dangerous, and I don’t want to make things worse.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-04T18:58:07.736Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "<p>Your safety is our top priority. I&rsquo;ll make sure this stays confidential. This situation is serious, and we&rsquo;ll take steps to help the girlfriend and address the threats. Can you tell me if this has been going on for a while or if it&rsquo;s something new?</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T18:58:15.554Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "It’s been going on for months, but the threats have gotten worse lately. I’m worried he might actually do something violent.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-04T18:58:31.059Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "<p>That&rsquo;s very concerning, and your fear is valid. We&rsquo;ll make sure the right steps are taken to protect everyone involved. I&rsquo;m going to bring in another counselor to help us act quickly and effectively. One moment.</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T18:58:57.510Z"
-        },
-        {
-            "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
-            "type": "stakeholders",
-            "text": "Julia Martin was added to Reporter Dialog.",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T18:58:59.966Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Hi, I’m joining the chat. Thank you for speaking up about this. I’m here to help as well. Can I ask if you’ve seen or heard anything that makes you think the threats could lead to immediate danger?",
-            "sender": {
-                "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Julia Martin",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Coach"
-            },
-            "timestamp": "2024-12-04T18:59:29.966Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Not exactly, but he keeps saying stuff like, “You’ll regret it if you talk.” I don’t know if he’s serious or just trying to scare people, but it’s making everyone afraid to even say something to a teacher.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-04T18:59:45.710Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "I understand. Threats like this, whether meant to intimidate or followed through, are taken very seriously. We want to ensure everyone feels safe to speak out. Do you think his girlfriend or any of the friends he’s threatened would be willing to share what’s happening if we assured them it would be handled confidentially?",
-            "sender": {
-                "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Julia Martin",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Coach"
-            },
-            "timestamp": "2024-12-04T19:00:12.139Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Maybe, but they’re just as scared as I am. If there’s a way to help without getting them in trouble or putting them in danger, that would be better.",
-            "sender": {
-                "id": 1,
-                "displayName": "Anonymous User",
-                "role": "reporter",
-                "status": 1,
-                "title": ""
-            },
-            "timestamp": "2024-12-04T19:00:21.447Z"
-        }
-    ],
-    "teamComm": [
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "<p>Hey, I&rsquo;ve got a tip from an anonymous student. It&rsquo;s about a classmate who&rsquo;s abusive toward his girlfriend and threatening others who might report him. It&rsquo;s escalating, and I think we need to take immediate steps.</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T19:02:06.991Z"
-        },
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "Got it. What details do we have so far?",
-            "sender": {
-                "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Julia Martin",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Coach"
-            },
-            "timestamp": "2024-12-04T19:02:31.705Z"
-        },
-        {
-            "id": "12345",
-            "type": "chat",
-            "text": "<p>The tipster says the abusive behavior has been happening for months, but the threats are getting more intense. He&rsquo;s explicitly said things like, &ldquo;If you talk, I&rsquo;ll kill you.&rdquo; No direct signs of a weapon or immediate plans for violence yet, but the fear is widespread.</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T19:02:39.944Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "That’s alarming. Did the tipster share any names or identifying details?",
-            "sender": {
-                "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Julia Martin",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Coach"
-            },
-            "timestamp": "2024-12-04T19:03:45.683Z"
-        },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "<p>Not yet. They&rsquo;re very cautious about staying anonymous, which makes sense given the threats. I don&rsquo;t want to push too hard on that and risk shutting them down.</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T19:04:08.413Z"
-        },
-        {
-            "id": "12345",
-            "type": "attach",
-            "text": "",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-                "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T19:04:08.413Z",
-            "attachments": [
+            "TIP-5600": {
+                "reporterDialog": [
                 {
-                  "file": "cat01.jpg",
-                  "flagged": "safe"
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Hi, I want to report something going on at my school. There are kids vaping in the bathrooms, and it's happening a lot. I'm worried about what it's doing to them and how it's affecting others.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-02T21:47:43.945Z"
                 },
                 {
-                  "file": "cat02.jpg",
-                  "flagged": "inappropriate"
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Hi there, thank you for reaching out and letting us know. Your concern is important, and we appreciate you stepping forward. Can you tell me which school you're referring to and which bathrooms this is happening in?",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-02T21:47:55.303Z"
                 },
                 {
-                  "file": "cat03.jpg",
-                  "flagged": "illegal"
+                    "id": "12345",
+                "type": "chat",
+                    "text": "It's at Jefferson High School. Mostly in the upstairs bathrooms near the science wing. It happens between classes and during lunch.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-02T21:48:19.591Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Got it. Thanks for the details. Are there any specific times or people involved that you're aware of? This will help us address the issue more effectively.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-02T21:48:26.562Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Not specific people, but I see a group of older students hanging around there a lot. They make it hard for anyone else to use the bathroom. I've even seen them try to get younger kids to join in.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-03T21:48:34.528Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "That sounds really concerning. Thank you for sharing this. I'd like to bring in another team member who works closely with school administrators to help ensure this issue gets the right attention. One moment.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:48:43.339Z"
+                },
+                {
+                    "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
+                    "type": "stakeholders",
+                    "text": "Sam Jackson was added to Reporter Dialog.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:48:07.132Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "Hi, I'm Sam. I work on coordinating with schools to address situations like these. Thanks for letting us know about this. Have you mentioned this to any staff at your school, like a teacher or counselor?",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:49:07.132Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "No, I didn't want to get involved directly. I just wanted to let someone know without causing trouble for myself.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-03T21:49:17.920Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Completely understandable, and your privacy is our top priority. Thanks to your information, we can notify the school in a way that doesn't point back to you. We'll ensure they're aware of what's happening in those bathrooms during the times you mentioned.",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:49:42.628Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "In the meantime, are you feeling safe at school? Is there anything else about this situation or anything else that's been bothering you?",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:49:53.320Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Yeah, I'm safe. I just think it's not right, and someone needs to do something. That's all.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-03T21:50:08.952Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "You're doing the right thing by speaking up. We'll handle this carefully and work with the school to address it. If you see anything else or need to talk again, you can always reach out to us here. Does that sound good?",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:50:18.270Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Yeah, thank you. That's all I needed to say.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-03T21:50:28.505Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Thanks again for trusting us. We'll take it from here. Take care!",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:50:36.906Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Thanks. Bye.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-03T21:50:50.244Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Bye! Stay safe! 😊",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:51:00.926Z"
                 }
-              ]
+            ],
+            "teamComm": [
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "Hey Sam, I've got a tipster reporting students vaping in the bathrooms at Jefferson High School. It's happening mostly in the upstairs bathrooms near the science wing, during lunch and between classes. Sounds like a recurring issue.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                        "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:54:16.307Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Got it. Any specific individuals named or just general observations?",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:54:30.698Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "No specific names so far. They mentioned a group of older students hanging around and even trying to get younger kids to join in. The tipster seems worried but doesn't want to involve themselves directly.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:54:44.599Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Makes sense. We should assure them their anonymity is protected while gathering just enough detail for the school to take action. Have they mentioned any staff or authority figures being aware?",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:54:53.175Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Not yet. I'll check, but it seems like they came to us first. Do you think we should flag this as an urgent situation or monitor it further?",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:55:02.918Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "I'd classify it as a medium priority for now unless we hear more about immediate danger or health concerns. Schools usually take vaping issues seriously, so a well-timed report can make a difference.",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:55:12.354Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Agreed. I'll keep the conversation focused on their observations and make sure they know we'll handle it without exposing them. Should we include the school resource officer (SRO) in this report?",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:55:22.104Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Yes, but only after confirming the details we have so far. The SRO can investigate further, but we don't want to overload the school with vague reports. Precision is key.",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:55:36.965Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Got it. I'll gather as much as I can from the tipster. They seem a little hesitant, so I'll keep it light and supportive.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:55:45.750Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Perfect. Let me know once the chat wraps up, and I'll prep the report for the school admin and SRO. We'll also recommend adding monitoring or periodic walkthroughs in that area.",
+                    "sender": {
+                        "id": "3b1e6898-f063-4c79-a3dd-b25dc5aeec62",
+                        "displayName": "Sam Jackson",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Teacher"
+                    },
+                    "timestamp": "2024-12-03T21:55:56.643Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Will do. Thanks, Sam! I'll update you shortly. 😊",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-03T21:56:17.035Z"
+                }
+            ]
         },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "Agreed. Let’s work with what we have for now. Have we reassured them about confidentiality and safety while gathering as much detail as possible?",
-            "sender": {
-                "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
-                "displayName": "Julia Martin",
-                "role": "collaborator",
-                "status": 1,
-                "title": "Coach"
-            },
-            "timestamp": "2024-12-04T19:04:24.768Z"
+        "TIP-2315": {
+            "reporterDialog": [
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Hi, I need to report something. There's this student at my school who's being really abusive to his girlfriend. It's bad… like he pushes her around in the hallways and calls her awful names.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-04T18:56:33.327Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "<p>Thank you for reaching out. This is very serious, and I&rsquo;m here to listen and help. Can you tell me a bit more about what you&rsquo;ve seen or heard?</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T18:57:39.720Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "He's always yelling at her in public, like in the cafeteria, and I've seen him grab her arm really hard when she tries to walk away. But it's not just her. He's threatening anyone who tries to help her, saying stuff like, “If you say anything, I'll kill you.” He scares everyone.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-04T18:57:48.039Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "<p>I&rsquo;m so sorry you and others are experiencing this. You did the right thing by reaching out. It&rsquo;s very important that everyone feels safe. Do you know his name and the girlfriend&rsquo;s name, or would you prefer to keep this anonymous for now?</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T18:57:56.791Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "I'd rather keep it anonymous. I'm really scared he'll find out. He's dangerous, and I don't want to make things worse.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-04T18:58:07.736Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "<p>Your safety is our top priority. I&rsquo;ll make sure this stays confidential. This situation is serious, and we&rsquo;ll take steps to help the girlfriend and address the threats. Can you tell me if this has been going on for a while or if it&rsquo;s something new?</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T18:58:15.554Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "It's been going on for months, but the threats have gotten worse lately. I'm worried he might actually do something violent.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-04T18:58:31.059Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "<p>That&rsquo;s very concerning, and your fear is valid. We&rsquo;ll make sure the right steps are taken to protect everyone involved. I&rsquo;m going to bring in another counselor to help us act quickly and effectively. One moment.</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T18:58:57.510Z"
+                },
+                {
+                    "id": "69f0c1e3-ef76-4a9c-9828-4e566b5cb3d8",
+                    "type": "stakeholders",
+                    "text": "Julia Martin was added to Reporter Dialog.",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T18:58:59.966Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Hi, I'm joining the chat. Thank you for speaking up about this. I'm here to help as well. Can I ask if you've seen or heard anything that makes you think the threats could lead to immediate danger?",
+                    "sender": {
+                        "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
+                        "displayName": "Julia Martin",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Coach"
+                    },
+                    "timestamp": "2024-12-04T18:59:29.966Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Not exactly, but he keeps saying stuff like, “You'll regret it if you talk.” I don't know if he's serious or just trying to scare people, but it's making everyone afraid to even say something to a teacher.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-04T18:59:45.710Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "I understand. Threats like this, whether meant to intimidate or followed through, are taken very seriously. We want to ensure everyone feels safe to speak out. Do you think his girlfriend or any of the friends he's threatened would be willing to share what's happening if we assured them it would be handled confidentially?",
+                    "sender": {
+                        "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
+                        "displayName": "Julia Martin",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Coach"
+                    },
+                    "timestamp": "2024-12-04T19:00:12.139Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Maybe, but they're just as scared as I am. If there's a way to help without getting them in trouble or putting them in danger, that would be better.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-04T19:00:21.447Z"
+                }
+            ],
+            "teamComm": [
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "<p>Hey, I&rsquo;ve got a tip from an anonymous student. It&rsquo;s about a classmate who&rsquo;s abusive toward his girlfriend and threatening others who might report him. It&rsquo;s escalating, and I think we need to take immediate steps.</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T19:02:06.991Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "Got it. What details do we have so far?",
+                    "sender": {
+                        "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
+                        "displayName": "Julia Martin",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Coach"
+                    },
+                    "timestamp": "2024-12-04T19:02:31.705Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "<p>The tipster says the abusive behavior has been happening for months, but the threats are getting more intense. He&rsquo;s explicitly said things like, &ldquo;If you talk, I&rsquo;ll kill you.&rdquo; No direct signs of a weapon or immediate plans for violence yet, but the fear is widespread.</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T19:02:39.944Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "That's alarming. Did the tipster share any names or identifying details?",
+                    "sender": {
+                        "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
+                        "displayName": "Julia Martin",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Coach"
+                    },
+                    "timestamp": "2024-12-04T19:03:45.683Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "<p>Not yet. They&rsquo;re very cautious about staying anonymous, which makes sense given the threats. I don&rsquo;t want to push too hard on that and risk shutting them down.</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T19:04:08.413Z"
+                },
+                {
+                    "id": "12345",
+                    "type": "attach",
+                    "text": "",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                        "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T19:04:08.413Z",
+                    "attachments": [
+                        {
+                        "file": "cat01.jpg",
+                        "flagged": "safe"
+                        },
+                        {
+                        "file": "cat02.jpg",
+                        "flagged": "inappropriate"
+                        },
+                        {
+                        "file": "cat03.jpg",
+                        "flagged": "illegal"
+                        }
+                    ]
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "Agreed. Let's work with what we have for now. Have we reassured them about confidentiality and safety while gathering as much detail as possible?",
+                    "sender": {
+                        "id": "bbbbee6b-e487-4e23-becb-81e0161a094d",
+                        "displayName": "Julia Martin",
+                        "role": "collaborator",
+                        "status": 1,
+                        "title": "Coach"
+                    },
+                    "timestamp": "2024-12-04T19:04:24.768Z"
+                },
+                {
+                    "id": "12345",
+                "type": "chat",
+                    "text": "<p>Yes, I&rsquo;ve stressed that we&rsquo;ll keep their identity protected. They&rsquo;ve agreed to stay in touch if we have further questions. I&rsquo;m trying to gauge if there&rsquo;s an immediate risk to the girlfriend or others.</p>",
+                    "sender": {
+                        "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+                    "displayName": "Ellie Johnson",
+                        "role": "counselor",
+                        "status": 1,
+                        "title": "Crisis Center Counselor",
+                        "colors": ["#D8A57B", "#7BC63F"]
+                    },
+                    "timestamp": "2024-12-04T19:04:33.211Z"
+                }
+            ]
         },
-        {
-            "id": "12345",
-        "type": "chat",
-            "text": "<p>Yes, I&rsquo;ve stressed that we&rsquo;ll keep their identity protected. They&rsquo;ve agreed to stay in touch if we have further questions. I&rsquo;m trying to gauge if there&rsquo;s an immediate risk to the girlfriend or others.</p>",
-            "sender": {
-                "id": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
-            "displayName": "Ellie Johnson",
-                "role": "counselor",
-                "status": 1,
-                "title": "SHP Counselor",
-                "colors": ["#D8A57B", "#7BC63F"]
-            },
-            "timestamp": "2024-12-04T19:04:33.211Z"
+        "TIP-8999": {
+            "reporterDialog": [
+                {
+                    "id": "12345",
+                    "type": "chat",
+                    "text": "Tyler is very abusive to his girlfriend Sarah. They are in 11th grade. Tyler is telling Sarah's friends he will kill them if they say anything about it. Coach Johnson and administration should speak with Emmitt whom is Sarah's best friend. Tyler comes to campus to stalk Sarah and makes her follow rules by threat of harm.",
+                    "sender": {
+                        "id": 1,
+                        "displayName": "Anonymous User",
+                        "role": "reporter",
+                        "status": 1,
+                        "title": ""
+                    },
+                    "timestamp": "2024-12-03T21:40:23.505Z"
+                }
+            ],
+            "teamComm": []
         }
-    ]
-}
 }}

@@ -1,21 +1,21 @@
 import { createEffect, createSignal, onMount } from "solid-js";
 import type { Signal } from "solid-js";
 import { useChatContext } from "../context/ChatContext";
-import { messages } from '../data/messages.json';
 import "./Dashboard.css";
 import ToolBar from "./dashboard/ToolBar";
 import { Case, Counselor, Message, School, Tip } from '../common/types/types';
 import Chat from "./dashboard/chat/Chat";
 
 export default function Dashboard(props:any) {
-  const { selectedCase, activeCounselor, schools, tips, reporterChat, teamChat } = 
+  const { selectedCase, activeCounselor, schools, tips, reporterChat, teamChat, messages } = 
     useChatContext() as {
       selectedCase:Signal<Case | null>, 
       activeCounselor:Signal<Counselor>, 
       schools:School[], 
       tips:Tip[], 
       reporterChat:Signal<Message[]>, 
-      teamChat:Signal<Message[]>
+      teamChat:Signal<Message[]>,
+      messages:{}
     }; 
   const [reporterMessages, setReporterMessages] = reporterChat;
   const [teamMessages, setTeamMessages] = teamChat;

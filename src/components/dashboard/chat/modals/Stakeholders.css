@@ -104,3 +104,9 @@
   outline: none;
   width: 100%;
 }
+
+.specialty-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}

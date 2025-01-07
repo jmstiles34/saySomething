@@ -173,7 +173,8 @@
             "work": "555-646-9104",
             "cell": "555-435-2973"
           },
-          "teamLead": false
+          "teamLead": false,
+          "tags": ["Vaping", "Substance Abuse"]
         },
         {
           "id": "ac868e8f-54c8-413d-b6e5-8368dcce1b5f",
@@ -199,7 +200,8 @@
             "work": "555-590-6912",
             "cell": "555-655-7074"
           },
-          "teamLead": true
+          "teamLead": true,
+          "tags": ["Bullying", "Threat of Violence"]
         },
         {
           "id": "bbcd706f-bf0d-4996-9fc2-ea314dd777e6",

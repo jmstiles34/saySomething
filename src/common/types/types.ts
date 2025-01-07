@@ -43,6 +43,7 @@ export type Staff = {
   phone: Phone,
   teamLead: boolean,
   notify_msg?: string
+  tags?: string[];
 }
 
 type Phone = {
@@ -56,6 +57,7 @@ export type User = {
   role: string;
   status: number;
   title: string;
+  tags?: string[];
 }
 
 export type Message = {
@@ -63,7 +65,7 @@ export type Message = {
   type?: string;
   text: string;
   sender: {
-    id: number;
+    id: string;
     displayName: string;
     role: string;
     status?: number;
@@ -71,6 +73,7 @@ export type Message = {
     colors?: string[];
   };
   timestamp: Date;
+  currentTime?: boolean;
   attachments?: Attachment[] | FakeAttachment[]
 }
 

@@ -19,7 +19,7 @@
       ]
     },
     {
-      "tipId": "TIP-6832", 
+      "tipId": "TIP-6832",  
       "status": "in-progress",
       "lifeSafety": true,
       "submittedAt": "2024-12-14T00:52:26.645545",
@@ -237,9 +237,9 @@
     {
       "tipId": "TIP-2315",
       "status": "in-progress",
-      "lifeSafety": true,
+      "lifeSafety": false,
       "submittedAt": "2024-11-20T00:52:26.645908",
-      "tipType": "critical",
+      "tipType": "bullying",
       "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
       "schoolId": "da9d50fc-871c-41cf-90c9-e9d5702bddee",
       "stakeholders": [
@@ -309,19 +309,13 @@
     {
       "tipId": "TIP-8999",
       "status": "in-progress",
-      "lifeSafety": false,
+      "lifeSafety": true,
       "submittedAt": "2024-12-14T00:52:26.645772",
-      "tipType": "bullying",
+      "tipType": "critical",
       "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
       "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
-      "stakeholders": [
-        "b8c20d2c-3db1-42d0-9c39-63d05a8c653e",
-        "4cb4decd-0e55-4273-b6dd-c9c6616c6315"
-      ],
-      "tags": [
-        "Hate Speech",
-        "Low Risk"
-      ]
+      "stakeholders": [],
+      "tags": []
     },
     {
       "tipId": "TIP-5191",
