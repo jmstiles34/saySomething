@@ -1,10 +1,10 @@
 import { createContext, createSignal, useContext } from "solid-js";
-import type { Case, Counselor, Message } from "../common/types/types";
+import type { Case, Counselor, Message, Tip } from "../common/types/types";
 import { tips } from '../data/tips.json';
 import { schools } from '../data/schools.json';
 import { counselors } from '../data/counselors.json';
 import { messages } from '../data/messages.json';
-import { subHours, subMinutes } from 'date-fns'
+import { subMinutes } from 'date-fns'
 
 const ChatContext = createContext();
 const seedTips = ["TIP-6832", "TIP-5600", "TIP-2315", "TIP-8999"];
@@ -21,6 +21,7 @@ export function ChatProvider(props:any) {
     counselors.find((c:Counselor) => c.id === "2d57065b-3230-4f0f-b2ba-c8814d4d4c50")
   );
   const [selectedCase, setSelectedCase] = createSignal<Case | null>(null);
+  const [rootTips, setRootTips] = createSignal<Tip[] | null>(tips as Tip[]);
 
   const randomBetween = (min:number, max:number) => {    
     if (min > max) {
@@ -61,10 +62,10 @@ export function ChatProvider(props:any) {
         activeCounselor: [activeCounselor, setActiveCounselor],
         reporterChat: [reporterMessages, setReporterMessages],
         teamChat: [teamMessages, setTeamMessages],
-        tips,
         schools,
         counselors,
-        rootMessages: [rootMessages, setRootMessages]
+        rootMessages: [rootMessages, setRootMessages],
+        rootTips: [rootTips, setRootTips]
       }}
     >
       {props.children}

@@ -100,6 +100,10 @@
   animation: text-pulse 3s ease-in-out infinite;
 }
 
+.tip-bg-pulse {
+  animation: bg-pulse 2s ease-in-out 5;
+}
+
 @keyframes text-pulse {
   0%, 60%, 100% {
       transform: scale(1);
@@ -110,5 +114,17 @@
       transform: scale(1.05);
       text-shadow: 0 0 2px var(--color-yellow);
       color: var(--color-burntorange);
+  }
+}
+
+@keyframes bg-pulse {
+  0% {
+      background-color: var(--color-white);
+  }
+  50% {
+      background-color: var( --color-aquablue-25);
+  }
+  100% {
+      background-color: var(--color-white);
   }
 }

@@ -187,7 +187,7 @@
             "work": "555-956-1116",
             "cell": "555-930-2765"
           },
-          "teamLead": true
+          "teamLead": false
         },
         {
           "id": "00acca6b-22be-4bad-9e20-be9a278416f1",
@@ -220,14 +220,15 @@
           "id": "8a558cc8-a784-4a76-b484-0bbf3bed8f8c",
           "firstName": "Diana",
           "lastName": "Thompson",
-          "title": "Librarian",
+          "title": "Counselor",
           "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
           "email": "diana.thompson@school.edu",
           "phone": {
             "work": "555-556-8800",
             "cell": "555-796-5200"
           },
-          "teamLead": false
+          "teamLead": false,
+          "tags": ["Bullying", "Cyberbullying"]
         },
         {
           "id": "7b4972ea-9b89-4df4-a8d7-c83a228fc69a",
@@ -253,7 +254,8 @@
             "work": "555-478-9452",
             "cell": "555-850-6073"
           },
-          "teamLead": true
+          "teamLead": false,
+          "tags": ["High Risk", "Critical Risk"]
         },
         {
           "id": "05564634-1cc9-42ab-b913-0d231b61877d",
@@ -266,7 +268,7 @@
             "work": "555-989-1203",
             "cell": "555-405-7286"
           },
-          "teamLead": true
+          "teamLead": false
         },
         {
           "id": "7327f7ac-8f9a-4387-8bf4-3dbf70f8908b",
@@ -279,7 +281,8 @@
             "work": "555-601-4040",
             "cell": "555-566-2496"
           },
-          "teamLead": false
+          "teamLead": false,
+          "tags": ["Abuse/Neglect", "Depression"]
         },
         {
           "id": "89e28de6-490a-4dbb-b7f9-6ebfba39bbdf",
@@ -292,7 +295,7 @@
             "work": "555-875-1561",
             "cell": "555-308-1856"
           },
-          "teamLead": true
+          "teamLead": false
         }
       ]
     },

@@ -1,20 +1,17 @@
 import { createEffect, createSignal, For, Show } from "solid-js";
+import type { Signal } from "solid-js";
 import "./ToolBar.css";
 import { Tip } from "../../common/types/types";
 import { useChatContext } from "../../context/ChatContext";
 import { TIP_CATEGORY } from "../../common/constants/constants";
 import { formatCamelCase, randomNumber } from "../../common/utils/utils";
 
-type GroupTip = {
-  icon: string,
-  tips: Tip[]
-}
-
 export default function ToolBar(props:any) {
-  const {tips} = useChatContext() as {tips:Tip[]};
+  const {rootTips} = useChatContext() as {rootTips:Signal<Tip[]>};
   const [isExpanded, setIsExpanded] = createSignal(false);
-  const [groupName, setGroupName] = createSignal('mine');
   const [openGroups, setOpenGroups] = createSignal<string[]>(['mine']);
+  const [tips, setTips] = rootTips;
+  const [animationPlayed, setAnimationPlayed] = createSignal<boolean>(false);
   
   createEffect(() => {
     if(props.counselorId){
@@ -29,20 +26,19 @@ export default function ToolBar(props:any) {
     return {
       mine: {
         icon: "user",
-        tips: tips
+        tips: tips()
           .filter((t:Tip) => t.assignedTo === id)
-          .map((t:Tip) => { return {...t, unread: randomNumber(5)}})
       },
       team: {
         icon: "user",
-        tips: tips
+        tips: tips()
           .filter((t:Tip) => t.assignedTo !== id && t.assignedTo !== null)
           .map((t:Tip) => { return {...t, unread: randomNumber(5)}})
-      },
+      }/* ,
       unassigned: {
         icon: "user",
-        tips: tips.filter((t:Tip) => t.assignedTo === null)
-      }
+        tips: tips().filter((t:Tip) => t.assignedTo === null)
+      } */
     }
   }
   const [groupedTips, setGroupedTips] = createSignal<object>(buildGroupedTips(props.counselorId));
@@ -74,13 +70,13 @@ export default function ToolBar(props:any) {
                 <ul>
                   <For each={data.tips}>
                     {(tip) => (
-                      <li>
+                      <li class={(group === 'mine' && tip.tipId === 'TIP-8999') ? 'tip-bg-pulse' : ''}>
                         <button
                           class={`toolbar-list-card ${props.tipId === tip.tipId ? 'list-card-active' : ''}`}
                           onClick={() => props.handleTipUpdate(tip.tipId)}
                         >
                           <div>{TIP_CATEGORY[tip.tipType as keyof typeof TIP_CATEGORY].icon}</div>
-                          <div class={`list-card-tipid ${tip.unread && tip.unread > 3 ? 'tip-id-pulse' : ''}`}>
+                          <div class={`list-card-tipid ${tip.unread && tip.unread > 10 ? 'tip-id-pulse' : ''}`}>
                             {tip.tipId}
                           </div> 
                           <Show when={isExpanded() && tip.unread && tip.unread > 0}>

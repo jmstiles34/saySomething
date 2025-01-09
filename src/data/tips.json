@@ -308,14 +308,14 @@
     },
     {
       "tipId": "TIP-8999",
-      "status": "in-progress",
+      "status": "new",
       "lifeSafety": true,
       "submittedAt": "2024-12-14T00:52:26.645772",
       "tipType": "critical",
-      "assignedTo": "2d57065b-3230-4f0f-b2ba-c8814d4d4c50",
+      "assignedTo": null,
       "schoolId": "69d1b92a-25b6-4a91-998f-6592cdf761c7",
       "stakeholders": [],
-      "tags": []
+      "tags": ["Bullying", "Abuse/Neglect", "High Risk"]
     },
     {
       "tipId": "TIP-5191",

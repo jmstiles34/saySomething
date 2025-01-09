@@ -160,6 +160,7 @@
 
 .avatar-span {
   grid-row: span 2;
+  min-width: 40px;
 }
 
 .message-element-avatar {

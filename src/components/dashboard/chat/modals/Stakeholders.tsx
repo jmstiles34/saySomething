@@ -81,7 +81,7 @@ export default function Stakeholders(props:any) {
               <div>
                 <div>
                   <strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}
-                  <Show when={countCommonTags(contact.tags || [])}> ⭐️</Show>
+                  <Show when={contact.teamLead}> ⭐️</Show>
                 </div>
                 <div>{props.school.name}</div>
                 <Show when={expandedList().includes(contact.id)}>
@@ -89,7 +89,7 @@ export default function Stakeholders(props:any) {
                   <div>Cell: {formatPhoneNumber(contact.phone.cell)}</div>
                   <div>Phone: {formatPhoneNumber(contact.phone.work)}</div>
                   <div class="specialty-list">
-                    <strong>Specialty:</strong> {contact.tags?.join(", ")}
+                    <strong>Specialty:&nbsp;</strong> {contact.tags?.join(", ")}
                   </div>
                 </Show>
               </div>
@@ -128,7 +128,7 @@ export default function Stakeholders(props:any) {
               <div>
                 <div>
                   <strong>{contact.firstName} {contact.lastName}</strong>, {contact.title}
-                  <Show when={countCommonTags(contact.tags || [])}> ⭐️</Show>
+                  <Show when={contact.teamLead}> ⭐️</Show>
                 </div>
                 <div>{props.school.name}</div>
                 <Show when={expandedList().includes(contact.id)}>
@@ -136,7 +136,7 @@ export default function Stakeholders(props:any) {
                   <div>Cell: {formatPhoneNumber(contact.phone.cell)}</div>
                   <div>Phone: {formatPhoneNumber(contact.phone.work)}</div>
                   <div class="specialty-list">
-                    <strong>Specialty:</strong> {contact.tags?.join(", ")}
+                    <strong>Specialty: </strong> {contact.tags?.join(", ")}
                   </div>
                 </Show>
               </div>
